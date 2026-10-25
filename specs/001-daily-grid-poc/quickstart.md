@@ -16,6 +16,9 @@ Design references: [plan.md](plan.md), [data-model.md](data-model.md),
 | `npm run dev` | Dev server at http://localhost:3000 |
 | `npm run validate:data` | Dataset schema, references, category coverage, schedule solvability |
 | `npm run schedule -- --days 60` | Append validated daily puzzles to `data/schedule.json` |
+
+> **Maintenance**: `validate:data` fails when the schedule covers fewer than 30 future days.
+> Run `npm run schedule -- --days 60` and commit at least once a month to keep builds green.
 | `npm run typecheck` / `npm run lint` | TS strict check / ESLint (incl. no React/DOM in `src/game`) |
 | `npm test` | Vitest unit + data tests |
 | `npm run test:e2e` | Playwright E2E (fixed clock) |
@@ -36,4 +39,4 @@ Design references: [plan.md](plan.md), [data-model.md](data-model.md),
 | V9 | Data integrity (SC-003) | `npm run validate:data` | 0 errors; all scheduled grids pass FR-013 |
 | V10 | Search quality (SC-004) | Unit: fixture of queries incl. "hokko", "Hokkō", "spe week" | Intended trainee in top 5 for ≥ 95% |
 | V11 | Accessibility (FR-028/029) | E2E keyboard-only full game; axe scan; 360 px viewport | Completable; 0 serious axe violations |
-| V12 | Performance (SC-007) | Lighthouse mobile on `out/` | Interactive ≤ 2 s; JS + data ≤ 250 KB gz |
+| V12 | Performance (SC-007) | `npm run build && npm run size`; Lighthouse mobile on `out/` | Interactive ≤ 2 s; JS + CSS + data ≤ 300 KB gz |

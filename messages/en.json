@@ -1,0 +1,101 @@
+{
+  "common": {
+    "title": "Umagrid",
+    "description": "A daily Umamusume grid trivia game.",
+    "fanNotice": "Umagrid is an unofficial fan project. Umamusume: Pretty Derby names, images, and materials are trademarks and copyrights of Cygames, Inc.",
+    "aboutLink": "About & credits",
+    "loading": "Loading…"
+  },
+  "nav": {
+    "label": "Main",
+    "daily": "Daily",
+    "practice": "Practice",
+    "howToPlay": "How to play",
+    "stats": "Stats"
+  },
+  "howToPlay": {
+    "title": "How to play",
+    "goal": "Fill the 3×3 grid with Umamusume trainees.",
+    "rule": {
+      "pick": "Tap an empty cell and search for a trainee.",
+      "match": "The trainee must match both the row category and the column category.",
+      "guesses": "You have 9 guesses in total. Wrong guesses still use one up.",
+      "noReuse": "Each trainee version can only be used once per grid.",
+      "versions": "Alternate outfits are separate answers with their own aptitudes, e.g. \"Special Week\" and \"Special Week · Summer\".",
+      "rules": "Tap a category to read its exact rule.",
+      "reset": "A new grid is published every day at 00:00 UTC."
+    },
+    "start": "Let's play!"
+  },
+  "stats": {
+    "title": "Statistics",
+    "played": "Played",
+    "average": "Average score",
+    "perfect": "Perfect grids",
+    "currentStreak": "Current streak",
+    "bestStreak": "Best streak",
+    "deviceOnly": "Statistics are stored only on this device.",
+    "close": "Close"
+  },
+  "practice": {
+    "title": "Practice",
+    "subtitle": "Unlimited grids. They don't affect your daily progress or statistics.",
+    "newGrid": "New grid",
+    "noGrid": "Couldn't build a grid for this seed. Try a new grid."
+  },
+  "about": {
+    "title": "About Umagrid",
+    "intro": "Umagrid is a daily grid trivia game about Umamusume: Pretty Derby, inspired by PokeDoku and Immaculate Grid.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "Umagrid is an unofficial, non-commercial fan project and is not affiliated with or endorsed by Cygames, Inc. Umamusume: Pretty Derby names, images, and materials are trademarks and copyrights of Cygames, Inc. Real-horse names belong to their respective owners.",
+    "sourcesTitle": "Data sources",
+    "guidelines": "Umagrid is free, has no ads, and follows the official",
+    "guidelinesLink": "Umamusume: Pretty Derby Fan-Created Content Guidelines.",
+    "source": {
+      "gametora": { "name": "GameTora", "use": "trainee versions, aptitudes, birthdays, and dorms." },
+      "umamusuWiki": { "name": "Umamusume Wiki (umamusu.wiki, CC BY-SA)", "use": "real-horse coat, sire line, and race wins." },
+      "images": "Trainee chibi images are game assets © Cygames, Inc."
+    },
+    "privacyTitle": "Privacy",
+    "privacy": "Umagrid has no accounts and sends no data anywhere. Your progress and statistics are stored only in your browser.",
+    "back": "Back to the game"
+  },
+  "game": {
+    "dailyTitle": "Umagrid #{number}",
+    "boardLabel": "Game board",
+    "gridLabel": "Puzzle grid: pick a trainee that matches both the row and the column",
+    "remaining": "{count, plural, one {# guess left} other {# guesses left}}",
+    "giveUp": "Give up",
+    "confirmGiveUp": "Confirm give up",
+    "cancel": "Cancel",
+    "cellEmpty": "{row} × {col}, empty",
+    "cellFilled": "{row} × {col}, {name}",
+    "searchLabel": "Search Umamusume trainees",
+    "searchPlaceholder": "Type a name…",
+    "noResults": "No matches",
+    "original": "Original",
+    "alreadyUsed": "Already used",
+    "correct": "Correct! {name} fits {where}.",
+    "incorrect": "Wrong: {name} doesn't fit {where}.",
+    "finalScore": "Final score: {score}/9",
+    "nextPuzzle": "Next grid in",
+    "noPuzzle": "Today's grid isn't available yet. Please check back later.",
+    "showResults": "Results"
+  },
+  "results": {
+    "title": "Results",
+    "score": "You filled {score}/9 cells",
+    "share": "Share",
+    "copied": "Copied to clipboard!",
+    "copyFailed": "Couldn't copy automatically. Select the text below and copy it.",
+    "shareTextLabel": "Share text",
+    "shareDaily": "Umagrid #{number} {score}/9",
+    "sharePractice": "Umagrid Practice {score}/9",
+    "answersHeading": "All valid answers",
+    "rarity": "Rarity",
+    "rarityUnavailable": "Rarity scores will be available in a future version.",
+    "notFilled": "Not filled",
+    "validAnswers": "{count, plural, one {# valid answer} other {# valid answers}}",
+    "close": "Close"
+  }
+}

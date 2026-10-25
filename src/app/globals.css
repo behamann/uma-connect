@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #2563eb;
+  --color-brand-dark: #1e40af;
+  --color-cell: #f8fafc;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  @apply min-h-dvh bg-slate-100 text-slate-900 antialiased;
+}
+
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-brand-dark;
+}

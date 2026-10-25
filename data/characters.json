@@ -1,0 +1,4626 @@
+{
+  "characters": [
+    {
+      "id": "special-week",
+      "name": {
+        "en": "Special Week"
+      },
+      "aliases": [
+        "スペシャルウィーク"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 2
+      },
+      "irl": {
+        "birthYear": 1995,
+        "coat": "dark-bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "tokyo-yushun",
+          "tenno-sho-spring",
+          "tenno-sho-autumn",
+          "japan-cup"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/special-week",
+        "irl": "https://umamusu.wiki/IRL:Special_Week"
+      }
+    },
+    {
+      "id": "silence-suzuka",
+      "name": {
+        "en": "Silence Suzuka"
+      },
+      "aliases": [
+        "サイレンススズカ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 1
+      },
+      "irl": {
+        "birthYear": 1994,
+        "coat": "chestnut",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/silence-suzuka",
+        "irl": "https://umamusu.wiki/IRL:Silence_Suzuka"
+      }
+    },
+    {
+      "id": "tokai-teio",
+      "name": {
+        "en": "Tokai Teio"
+      },
+      "aliases": [
+        "トウカイテイオー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 20
+      },
+      "irl": {
+        "birthYear": 1988,
+        "coat": "bay",
+        "maleLine": [
+          "symboli-rudolf",
+          "partholon",
+          "milesian",
+          "my-babu"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tokyo-yushun",
+          "japan-cup",
+          "arima-kinen"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/tokai-teio",
+        "irl": "https://umamusu.wiki/IRL:Tokai_Teio"
+      }
+    },
+    {
+      "id": "maruzensky",
+      "name": {
+        "en": "Maruzensky"
+      },
+      "aliases": [
+        "マルゼンスキー"
+      ],
+      "dorm": null,
+      "birthday": {
+        "month": 5,
+        "day": 19
+      },
+      "irl": {
+        "birthYear": 1974,
+        "coat": "bay",
+        "maleLine": [
+          "nijinsky",
+          "northern-dancer",
+          "nearctic",
+          "nearco"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/maruzensky",
+        "irl": "https://umamusu.wiki/IRL:Maruzensky"
+      }
+    },
+    {
+      "id": "fuji-kiseki",
+      "name": {
+        "en": "Fuji Kiseki"
+      },
+      "aliases": [
+        "フジキセキ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 15
+      },
+      "irl": {
+        "birthYear": 1992,
+        "coat": "dark-bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/fuji-kiseki",
+        "irl": "https://umamusu.wiki/IRL:Fuji_Kiseki"
+      }
+    },
+    {
+      "id": "oguri-cap",
+      "name": {
+        "en": "Oguri Cap"
+      },
+      "aliases": [
+        "オグリキャップ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 1985,
+        "coat": "grey",
+        "maleLine": [
+          "dancing-cap",
+          "native-dancer",
+          "polynesian",
+          "unbreakable"
+        ],
+        "g1Wins": [
+          "arima-kinen",
+          "mile-championship",
+          "yasuda-kinen"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/oguri-cap",
+        "irl": "https://umamusu.wiki/IRL:Oguri_Cap"
+      }
+    },
+    {
+      "id": "gold-ship",
+      "name": {
+        "en": "Gold Ship"
+      },
+      "aliases": [
+        "ゴールドシップ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 6
+      },
+      "irl": {
+        "birthYear": 2009,
+        "coat": "grey",
+        "maleLine": [
+          "stay-gold",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "kikuka-sho",
+          "arima-kinen",
+          "takarazuka-kinen",
+          "tenno-sho-spring"
+        ],
+        "g1WinCount": 6,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/gold-ship",
+        "irl": "https://umamusu.wiki/IRL:Gold_Ship"
+      }
+    },
+    {
+      "id": "vodka",
+      "name": {
+        "en": "Vodka"
+      },
+      "aliases": [
+        "ウオッカ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 2004,
+        "coat": "bay",
+        "maleLine": [
+          "tanino-gimlet",
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "hanshin-juvenile-fillies",
+          "tokyo-yushun",
+          "yasuda-kinen",
+          "tenno-sho-autumn",
+          "victoria-mile",
+          "japan-cup"
+        ],
+        "g1WinCount": 7,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/vodka",
+        "irl": "https://umamusu.wiki/IRL:Vodka"
+      }
+    },
+    {
+      "id": "daiwa-scarlet",
+      "name": {
+        "en": "Daiwa Scarlet"
+      },
+      "aliases": [
+        "ダイワスカーレット"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 13
+      },
+      "irl": {
+        "birthYear": 2004,
+        "coat": "chestnut",
+        "maleLine": [
+          "agnes-tachyon",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "shuka-sho",
+          "queen-elizabeth-ii-cup",
+          "arima-kinen"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/daiwa-scarlet",
+        "irl": "https://umamusu.wiki/IRL:Daiwa_Scarlet"
+      }
+    },
+    {
+      "id": "taiki-shuttle",
+      "name": {
+        "en": "Taiki Shuttle"
+      },
+      "aliases": [
+        "タイキシャトル"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 23
+      },
+      "irl": {
+        "birthYear": 1994,
+        "coat": "chestnut",
+        "maleLine": [
+          "devil-s-bag",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "mile-championship",
+          "sprinters-stakes",
+          "yasuda-kinen",
+          "prix-jacques-le-marois"
+        ],
+        "g1WinCount": 5,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/taiki-shuttle",
+        "irl": "https://umamusu.wiki/IRL:Taiki_Shuttle"
+      }
+    },
+    {
+      "id": "grass-wonder",
+      "name": {
+        "en": "Grass Wonder"
+      },
+      "aliases": [
+        "グラスワンダー"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 2,
+        "day": 18
+      },
+      "irl": {
+        "birthYear": 1995,
+        "coat": "chestnut",
+        "maleLine": [
+          "silver-hawk",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "arima-kinen",
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/grass-wonder",
+        "irl": "https://umamusu.wiki/IRL:Grass_Wonder"
+      }
+    },
+    {
+      "id": "hishi-amazon",
+      "name": {
+        "en": "Hishi Amazon"
+      },
+      "aliases": [
+        "ヒシアマゾン"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 26
+      },
+      "irl": {
+        "birthYear": 1991,
+        "coat": "dark-bay",
+        "maleLine": [
+          "theatrical",
+          "nureyev",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "hanshin-juvenile-fillies",
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/hishi-amazon",
+        "irl": "https://umamusu.wiki/IRL:Hishi_Amazon"
+      }
+    },
+    {
+      "id": "mejiro-mcqueen",
+      "name": {
+        "en": "Mejiro McQueen"
+      },
+      "aliases": [
+        "メジロマックイーン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 3
+      },
+      "irl": {
+        "birthYear": 1987,
+        "coat": "grey",
+        "maleLine": [
+          "mejiro-titan",
+          "mejiro-asama",
+          "partholon",
+          "milesian"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "tenno-sho-spring",
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mejiro-mcqueen",
+        "irl": "https://umamusu.wiki/IRL:Mejiro_McQueen"
+      }
+    },
+    {
+      "id": "el-condor-pasa",
+      "name": {
+        "en": "El Condor Pasa"
+      },
+      "aliases": [
+        "エルコンドルパサー"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 17
+      },
+      "irl": {
+        "birthYear": 1995,
+        "coat": "dark-bay",
+        "maleLine": [
+          "kingmambo",
+          "mr-prospector",
+          "raise-a-native",
+          "native-dancer"
+        ],
+        "g1Wins": [
+          "nhk-mile-cup",
+          "japan-cup",
+          "grand-prix-de-saint-cloud"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/el-condor-pasa",
+        "irl": "https://umamusu.wiki/IRL:El_Condor_Pasa"
+      }
+    },
+    {
+      "id": "tm-opera-o",
+      "name": {
+        "en": "TM Opera O"
+      },
+      "aliases": [
+        "テイエムオペラオー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 13
+      },
+      "irl": {
+        "birthYear": 1996,
+        "coat": "chestnut",
+        "maleLine": [
+          "opera-house",
+          "sadler-s-wells",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tenno-sho-spring",
+          "takarazuka-kinen",
+          "tenno-sho-autumn",
+          "japan-cup",
+          "arima-kinen"
+        ],
+        "g1WinCount": 7,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/tm-opera-o",
+        "irl": "https://umamusu.wiki/IRL:T.M._Opera_O"
+      }
+    },
+    {
+      "id": "narita-brian",
+      "name": {
+        "en": "Narita Brian"
+      },
+      "aliases": [
+        "ナリタブライアン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 3
+      },
+      "irl": {
+        "birthYear": 1991,
+        "coat": "dark-bay",
+        "maleLine": [
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "satsuki-sho",
+          "tokyo-yushun",
+          "kikuka-sho",
+          "arima-kinen"
+        ],
+        "g1WinCount": 5,
+        "titles": [
+          "triple-crown"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/narita-brian",
+        "irl": "https://umamusu.wiki/IRL:Narita_Brian"
+      }
+    },
+    {
+      "id": "symboli-rudolf",
+      "name": {
+        "en": "Symboli Rudolf"
+      },
+      "aliases": [
+        "シンボリルドルフ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 13
+      },
+      "irl": {
+        "birthYear": 1981,
+        "coat": "bay",
+        "maleLine": [
+          "partholon",
+          "milesian",
+          "my-babu",
+          "djebel"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tokyo-yushun",
+          "kikuka-sho",
+          "arima-kinen",
+          "tenno-sho-spring",
+          "japan-cup"
+        ],
+        "g1WinCount": 7,
+        "titles": [
+          "triple-crown"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/symboli-rudolf",
+        "irl": "https://umamusu.wiki/IRL:Symboli_Rudolf"
+      }
+    },
+    {
+      "id": "air-groove",
+      "name": {
+        "en": "Air Groove"
+      },
+      "aliases": [
+        "エアグルーヴ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 6
+      },
+      "irl": {
+        "birthYear": 1993,
+        "coat": "bay",
+        "maleLine": [
+          "tony-bin",
+          "kampala",
+          "kalamoun",
+          "zeddaan"
+        ],
+        "g1Wins": [
+          "yushun-himba",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/air-groove",
+        "irl": "https://umamusu.wiki/IRL:Air_Groove"
+      }
+    },
+    {
+      "id": "agnes-digital",
+      "name": {
+        "en": "Agnes Digital"
+      },
+      "aliases": [
+        "アグネスデジタル"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 15
+      },
+      "irl": {
+        "birthYear": 1997,
+        "coat": "chestnut",
+        "maleLine": [
+          "crafty-prospector",
+          "mr-prospector",
+          "raise-a-native",
+          "native-dancer"
+        ],
+        "g1Wins": [
+          "mile-championship",
+          "mile-championship-nambu-hai",
+          "tenno-sho-autumn",
+          "hong-kong-cup",
+          "february-stakes",
+          "yasuda-kinen"
+        ],
+        "g1WinCount": 6,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/agnes-digital",
+        "irl": "https://umamusu.wiki/IRL:Agnes_Digital"
+      }
+    },
+    {
+      "id": "seiun-sky",
+      "name": {
+        "en": "Seiun Sky"
+      },
+      "aliases": [
+        "セイウンスカイ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 26
+      },
+      "irl": {
+        "birthYear": 1995,
+        "coat": "grey",
+        "maleLine": [
+          "sheriff-s-star",
+          "posse",
+          "forli",
+          "aristophanes"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "kikuka-sho"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/seiun-sky",
+        "irl": "https://umamusu.wiki/IRL:Seiun_Sky"
+      }
+    },
+    {
+      "id": "tamamo-cross",
+      "name": {
+        "en": "Tamamo Cross"
+      },
+      "aliases": [
+        "タマモクロス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 23
+      },
+      "irl": {
+        "birthYear": 1984,
+        "coat": "grey",
+        "maleLine": [
+          "c-b-cross",
+          "fortino",
+          "grey-sovereign",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen",
+          "tenno-sho-spring",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/tamamo-cross",
+        "irl": "https://umamusu.wiki/IRL:Tamamo_Cross"
+      }
+    },
+    {
+      "id": "fine-motion",
+      "name": {
+        "en": "Fine Motion"
+      },
+      "aliases": [
+        "ファインモーション"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 1,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 1999,
+        "coat": "bay",
+        "maleLine": [
+          "danehill",
+          "danzig",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "shuka-sho",
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/fine-motion",
+        "irl": "https://umamusu.wiki/IRL:Fine_Motion"
+      }
+    },
+    {
+      "id": "biwa-hayahide",
+      "name": {
+        "en": "Biwa Hayahide"
+      },
+      "aliases": [
+        "ビワハヤヒデ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 1990,
+        "coat": "grey",
+        "maleLine": [
+          "sharrood",
+          "caro",
+          "fortino",
+          "grey-sovereign"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "tenno-sho-spring",
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/biwa-hayahide",
+        "irl": "https://umamusu.wiki/IRL:Biwa_Hayahide"
+      }
+    },
+    {
+      "id": "mayano-top-gun",
+      "name": {
+        "en": "Mayano Top Gun"
+      },
+      "aliases": [
+        "マヤノトップガン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 24
+      },
+      "irl": {
+        "birthYear": 1992,
+        "coat": "chestnut",
+        "maleLine": [
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "arima-kinen",
+          "takarazuka-kinen",
+          "tenno-sho-spring"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mayano-top-gun",
+        "irl": "https://umamusu.wiki/IRL:Mayano_Top_Gun"
+      }
+    },
+    {
+      "id": "manhattan-cafe",
+      "name": {
+        "en": "Manhattan Cafe"
+      },
+      "aliases": [
+        "マンハッタンカフェ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 5
+      },
+      "irl": {
+        "birthYear": 1998,
+        "coat": "dark-bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "arima-kinen",
+          "tenno-sho-spring"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/manhattan-cafe",
+        "irl": "https://umamusu.wiki/IRL:Manhattan_Cafe"
+      }
+    },
+    {
+      "id": "mihono-bourbon",
+      "name": {
+        "en": "Mihono Bourbon"
+      },
+      "aliases": [
+        "ミホノブルボン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 25
+      },
+      "irl": {
+        "birthYear": 1989,
+        "coat": "chestnut",
+        "maleLine": [
+          "magnitude",
+          "mill-reef",
+          "never-bend",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "satsuki-sho",
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mihono-bourbon",
+        "irl": "https://umamusu.wiki/IRL:Mihono_Bourbon"
+      }
+    },
+    {
+      "id": "mejiro-ryan",
+      "name": {
+        "en": "Mejiro Ryan"
+      },
+      "aliases": [
+        "メジロライアン"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 11
+      },
+      "irl": {
+        "birthYear": 1987,
+        "coat": "bay",
+        "maleLine": [
+          "amber-shadai",
+          "northern-taste",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mejiro-ryan",
+        "irl": "https://umamusu.wiki/IRL:Mejiro_Ryan"
+      }
+    },
+    {
+      "id": "hishi-akebono",
+      "name": {
+        "en": "Hishi Akebono"
+      },
+      "aliases": [
+        "ヒシアケボノ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 1992,
+        "coat": "dark-bay",
+        "maleLine": [
+          "woodman",
+          "mr-prospector",
+          "raise-a-native",
+          "native-dancer"
+        ],
+        "g1Wins": [
+          "sprinters-stakes"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/hishi-akebono",
+        "irl": "https://umamusu.wiki/IRL:Hishi_Akebono"
+      }
+    },
+    {
+      "id": "yukino-bijin",
+      "name": {
+        "en": "Yukino Bijin"
+      },
+      "aliases": [
+        "ユキノビジン"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 1990,
+        "coat": "chestnut",
+        "maleLine": [
+          "sakura-yutaka-o",
+          "tesco-boy",
+          "princely-gift",
+          "nasrullah"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/yukino-bijin",
+        "irl": "https://umamusu.wiki/IRL:Yukino_Bijin"
+      }
+    },
+    {
+      "id": "rice-shower",
+      "name": {
+        "en": "Rice Shower"
+      },
+      "aliases": [
+        "ライスシャワー"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 5
+      },
+      "irl": {
+        "birthYear": 1989,
+        "coat": "dark-bay",
+        "maleLine": [
+          "real-shadai",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "tenno-sho-spring"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/rice-shower",
+        "irl": "https://umamusu.wiki/IRL:Rice_Shower"
+      }
+    },
+    {
+      "id": "ines-fujin",
+      "name": {
+        "en": "Ines Fujin"
+      },
+      "aliases": [
+        "アイネスフウジン"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 1987,
+        "coat": "dark-bay",
+        "maleLine": [
+          "sea-hawk",
+          "herbager",
+          "vandale",
+          "plassy"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/ines-fujin",
+        "irl": "https://umamusu.wiki/IRL:Ines_Fujin"
+      }
+    },
+    {
+      "id": "agnes-tachyon",
+      "name": {
+        "en": "Agnes Tachyon"
+      },
+      "aliases": [
+        "アグネスタキオン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 13
+      },
+      "irl": {
+        "birthYear": 1998,
+        "coat": "chestnut",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "satsuki-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/agnes-tachyon",
+        "irl": "https://umamusu.wiki/IRL:Agnes_Tachyon"
+      }
+    },
+    {
+      "id": "admire-vega",
+      "name": {
+        "en": "Admire Vega"
+      },
+      "aliases": [
+        "アドマイヤベガ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 12
+      },
+      "irl": {
+        "birthYear": 1996,
+        "coat": "bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/admire-vega",
+        "irl": "https://umamusu.wiki/IRL:Admire_Vega"
+      }
+    },
+    {
+      "id": "inari-one",
+      "name": {
+        "en": "Inari One"
+      },
+      "aliases": [
+        "イナリワン"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 5,
+        "day": 7
+      },
+      "irl": {
+        "birthYear": 1984,
+        "coat": "bay",
+        "maleLine": [
+          "mill-george",
+          "mill-reef",
+          "never-bend",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "tenno-sho-spring",
+          "takarazuka-kinen",
+          "arima-kinen"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/inari-one",
+        "irl": "https://umamusu.wiki/IRL:Inari_One"
+      }
+    },
+    {
+      "id": "winning-ticket",
+      "name": {
+        "en": "Winning Ticket"
+      },
+      "aliases": [
+        "ウイニングチケット"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 21
+      },
+      "irl": {
+        "birthYear": 1990,
+        "coat": "brown",
+        "maleLine": [
+          "tony-bin",
+          "kampala",
+          "kalamoun",
+          "zeddaan"
+        ],
+        "g1Wins": [
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/winning-ticket",
+        "irl": "https://umamusu.wiki/IRL:Winning_Ticket"
+      }
+    },
+    {
+      "id": "air-shakur",
+      "name": {
+        "en": "Air Shakur"
+      },
+      "aliases": [
+        "エアシャカール"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 26
+      },
+      "irl": {
+        "birthYear": 1997,
+        "coat": "dark-bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "kikuka-sho"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/air-shakur",
+        "irl": "https://umamusu.wiki/IRL:Air_Shakur"
+      }
+    },
+    {
+      "id": "eishin-flash",
+      "name": {
+        "en": "Eishin Flash"
+      },
+      "aliases": [
+        "エイシンフラッシュ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 2007,
+        "coat": "dark-bay",
+        "maleLine": [
+          "king-s-best",
+          "kingmambo",
+          "mr-prospector",
+          "raise-a-native"
+        ],
+        "g1Wins": [
+          "tokyo-yushun",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/eishin-flash",
+        "irl": "https://umamusu.wiki/IRL:Eishin_Flash"
+      }
+    },
+    {
+      "id": "curren-chan",
+      "name": {
+        "en": "Curren Chan"
+      },
+      "aliases": [
+        "カレンチャン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 31
+      },
+      "irl": {
+        "birthYear": 2007,
+        "coat": "grey",
+        "maleLine": [
+          "kurofune",
+          "french-deputy",
+          "deputy-minister",
+          "vice-regent"
+        ],
+        "g1Wins": [
+          "sprinters-stakes",
+          "takamatsunomiya-kinen"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/curren-chan",
+        "irl": "https://umamusu.wiki/IRL:Curren_Chan"
+      }
+    },
+    {
+      "id": "kawakami-princess",
+      "name": {
+        "en": "Kawakami Princess"
+      },
+      "aliases": [
+        "カワカミプリンセス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 6,
+        "day": 5
+      },
+      "irl": {
+        "birthYear": 2003,
+        "coat": "bay",
+        "maleLine": [
+          "king-halo",
+          "dancing-brave",
+          "lyphard",
+          "northern-dancer"
+        ],
+        "g1Wins": [
+          "yushun-himba",
+          "shuka-sho"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/kawakami-princess",
+        "irl": "https://umamusu.wiki/IRL:Kawakami_Princess"
+      }
+    },
+    {
+      "id": "gold-city",
+      "name": {
+        "en": "Gold City"
+      },
+      "aliases": [
+        "ゴールドシチー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 16
+      },
+      "irl": {
+        "birthYear": 1984,
+        "coat": "chestnut",
+        "maleLine": [
+          "viceregal",
+          "northern-dancer",
+          "nearctic",
+          "nearco"
+        ],
+        "g1Wins": [
+          "hanshin-juvenile-fillies"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/gold-city",
+        "irl": "https://umamusu.wiki/IRL:Gold_City"
+      }
+    },
+    {
+      "id": "sakura-bakushin-o",
+      "name": {
+        "en": "Sakura Bakushin O"
+      },
+      "aliases": [
+        "サクラバクシンオー"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 14
+      },
+      "irl": {
+        "birthYear": 1989,
+        "coat": "bay",
+        "maleLine": [
+          "sakura-yutaka-o",
+          "tesco-boy",
+          "princely-gift",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "sprinters-stakes"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/sakura-bakushin-o",
+        "irl": "https://umamusu.wiki/IRL:Sakura_Bakushin_O"
+      }
+    },
+    {
+      "id": "seeking-the-pearl",
+      "name": {
+        "en": "Seeking the Pearl"
+      },
+      "aliases": [
+        "シーキングザパール"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 16
+      },
+      "irl": {
+        "birthYear": 1994,
+        "coat": "bay",
+        "maleLine": [
+          "seeking-the-gold",
+          "mr-prospector",
+          "raise-a-native",
+          "native-dancer"
+        ],
+        "g1Wins": [
+          "nhk-mile-cup",
+          "prix-maurice-de-gheest"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/seeking-the-pearl",
+        "irl": "https://umamusu.wiki/IRL:Seeking_the_Pearl"
+      }
+    },
+    {
+      "id": "shinko-windy",
+      "name": {
+        "en": "Shinko Windy"
+      },
+      "aliases": [
+        "シンコウウインディ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 14
+      },
+      "irl": {
+        "birthYear": 1993,
+        "coat": "chestnut",
+        "maleLine": [
+          "doulab",
+          "topsider",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "february-stakes"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/shinko-windy",
+        "irl": "https://umamusu.wiki/IRL:Shinko_Windy"
+      }
+    },
+    {
+      "id": "sweep-tosho",
+      "name": {
+        "en": "Sweep Tosho"
+      },
+      "aliases": [
+        "スイープトウショウ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 9
+      },
+      "irl": {
+        "birthYear": 2001,
+        "coat": "bay",
+        "maleLine": [
+          "end-sweep",
+          "forty-niner",
+          "mr-prospector",
+          "raise-a-native"
+        ],
+        "g1Wins": [
+          "shuka-sho",
+          "takarazuka-kinen",
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/sweep-tosho",
+        "irl": "https://umamusu.wiki/IRL:Sweep_Tosho"
+      }
+    },
+    {
+      "id": "super-creek",
+      "name": {
+        "en": "Super Creek"
+      },
+      "aliases": [
+        "スーパークリーク"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 1985,
+        "coat": "bay",
+        "maleLine": [
+          "no-attention",
+          "green-dancer",
+          "nijinsky",
+          "northern-dancer"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "tenno-sho-autumn",
+          "tenno-sho-spring"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/super-creek",
+        "irl": "https://umamusu.wiki/IRL:Super_Creek"
+      }
+    },
+    {
+      "id": "smart-falcon",
+      "name": {
+        "en": "Smart Falcon"
+      },
+      "aliases": [
+        "スマートファルコン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 2005,
+        "coat": "chestnut",
+        "maleLine": [
+          "gold-allure",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "jbc-classic",
+          "tokyo-daishoten",
+          "teio-sho",
+          "kawasaki-kinen"
+        ],
+        "g1WinCount": 6,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/smart-falcon",
+        "irl": "https://umamusu.wiki/IRL:Smart_Falcon"
+      }
+    },
+    {
+      "id": "zenno-rob-roy",
+      "name": {
+        "en": "Zenno Rob Roy"
+      },
+      "aliases": [
+        "ゼンノロブロイ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 2000,
+        "coat": "dark-bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "tenno-sho-autumn",
+          "japan-cup",
+          "arima-kinen"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/zenno-rob-roy",
+        "irl": "https://umamusu.wiki/IRL:Zenno_Rob_Roy"
+      }
+    },
+    {
+      "id": "tosen-jordan",
+      "name": {
+        "en": "Tosen Jordan"
+      },
+      "aliases": [
+        "トーセンジョーダン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 2006,
+        "coat": "bay",
+        "maleLine": [
+          "jungle-pocket",
+          "tony-bin",
+          "kampala",
+          "kalamoun"
+        ],
+        "g1Wins": [
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/tosen-jordan",
+        "irl": "https://umamusu.wiki/IRL:Tosen_Jordan"
+      }
+    },
+    {
+      "id": "nakayama-festa",
+      "name": {
+        "en": "Nakayama Festa"
+      },
+      "aliases": [
+        "ナカヤマフェスタ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 5
+      },
+      "irl": {
+        "birthYear": 2006,
+        "coat": "bay",
+        "maleLine": [
+          "stay-gold",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/nakayama-festa",
+        "irl": "https://umamusu.wiki/IRL:Nakayama_Festa"
+      }
+    },
+    {
+      "id": "narita-taishin",
+      "name": {
+        "en": "Narita Taishin"
+      },
+      "aliases": [
+        "ナリタタイシン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 6,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 1990,
+        "coat": "bay",
+        "maleLine": [
+          "rivlia",
+          "riverman",
+          "never-bend",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "satsuki-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/narita-taishin",
+        "irl": "https://umamusu.wiki/IRL:Narita_Taishin"
+      }
+    },
+    {
+      "id": "nishino-flower",
+      "name": {
+        "en": "Nishino Flower"
+      },
+      "aliases": [
+        "ニシノフラワー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 19
+      },
+      "irl": {
+        "birthYear": 1989,
+        "coat": "brown",
+        "maleLine": [
+          "majestic-light",
+          "majestic-prince",
+          "raise-a-native",
+          "native-dancer"
+        ],
+        "g1Wins": [
+          "hanshin-juvenile-fillies",
+          "oka-sho",
+          "sprinters-stakes"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/nishino-flower",
+        "irl": "https://umamusu.wiki/IRL:Nishino_Flower"
+      }
+    },
+    {
+      "id": "haru-urara",
+      "name": {
+        "en": "Haru Urara"
+      },
+      "aliases": [
+        "ハルウララ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 1996,
+        "coat": "bay",
+        "maleLine": [
+          "nippo-teio",
+          "lypheor",
+          "lyphard",
+          "northern-dancer"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/haru-urara",
+        "irl": "https://umamusu.wiki/IRL:Haru_Urara"
+      }
+    },
+    {
+      "id": "bamboo-memory",
+      "name": {
+        "en": "Bamboo Memory"
+      },
+      "aliases": [
+        "バンブーメモリー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 14
+      },
+      "irl": {
+        "birthYear": 1985,
+        "coat": "chestnut",
+        "maleLine": [
+          "morning-frolic",
+          "grey-dawn",
+          "herbager",
+          "vandale"
+        ],
+        "g1Wins": [
+          "yasuda-kinen",
+          "sprinters-stakes"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/bamboo-memory",
+        "irl": "https://umamusu.wiki/IRL:Bamboo_Memory"
+      }
+    },
+    {
+      "id": "biko-pegasus",
+      "name": {
+        "en": "Biko Pegasus"
+      },
+      "aliases": [
+        "ビコーペガサス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 8
+      },
+      "irl": {
+        "birthYear": 1991,
+        "coat": "bay",
+        "maleLine": [
+          "danzig",
+          "northern-dancer",
+          "nearctic",
+          "nearco"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/biko-pegasus",
+        "irl": "https://umamusu.wiki/IRL:Biko_Pegasus"
+      }
+    },
+    {
+      "id": "marvelous-sunday",
+      "name": {
+        "en": "Marvelous Sunday"
+      },
+      "aliases": [
+        "マーベラスサンデー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 31
+      },
+      "irl": {
+        "birthYear": 1992,
+        "coat": "liver-chestnut",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/marvelous-sunday",
+        "irl": "https://umamusu.wiki/IRL:Marvelous_Sunday"
+      }
+    },
+    {
+      "id": "matikanefukukitaru",
+      "name": {
+        "en": "Matikanefukukitaru"
+      },
+      "aliases": [
+        "マチカネフクキタル"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 22
+      },
+      "irl": {
+        "birthYear": 1994,
+        "coat": "chestnut",
+        "maleLine": [
+          "crystal-glitters",
+          "blushing-groom",
+          "red-god",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "kikuka-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/matikanefukukitaru",
+        "irl": "https://umamusu.wiki/IRL:Matikanefukukitaru"
+      }
+    },
+    {
+      "id": "mr-cb",
+      "name": {
+        "en": "Mr. C.B."
+      },
+      "aliases": [
+        "ミスターシービー"
+      ],
+      "dorm": null,
+      "birthday": {
+        "month": 4,
+        "day": 7
+      },
+      "irl": {
+        "birthYear": 1980,
+        "coat": "dark-bay",
+        "maleLine": [
+          "tosho-boy",
+          "tesco-boy",
+          "princely-gift",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tokyo-yushun",
+          "kikuka-sho",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 4,
+        "titles": [
+          "triple-crown"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mr-cb",
+        "irl": "https://umamusu.wiki/IRL:Mr._C.B."
+      }
+    },
+    {
+      "id": "meisho-doto",
+      "name": {
+        "en": "Meisho Doto"
+      },
+      "aliases": [
+        "メイショウドトウ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 25
+      },
+      "irl": {
+        "birthYear": 1996,
+        "coat": "bay",
+        "maleLine": [
+          "bigstone",
+          "last-tycoon",
+          "try-my-best",
+          "northern-dancer"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/meisho-doto",
+        "irl": "https://umamusu.wiki/IRL:Meisho_Doto"
+      }
+    },
+    {
+      "id": "mejiro-dober",
+      "name": {
+        "en": "Mejiro Dober"
+      },
+      "aliases": [
+        "メジロドーベル"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 5,
+        "day": 6
+      },
+      "irl": {
+        "birthYear": 1994,
+        "coat": "bay",
+        "maleLine": [
+          "mejiro-ryan",
+          "amber-shadai",
+          "northern-taste",
+          "northern-dancer"
+        ],
+        "g1Wins": [
+          "hanshin-juvenile-fillies",
+          "yushun-himba",
+          "shuka-sho",
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 5,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mejiro-dober",
+        "irl": "https://umamusu.wiki/IRL:Mejiro_Dober"
+      }
+    },
+    {
+      "id": "nice-nature",
+      "name": {
+        "en": "Nice Nature"
+      },
+      "aliases": [
+        "ナイスネイチャ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 16
+      },
+      "irl": {
+        "birthYear": 1988,
+        "coat": "bay",
+        "maleLine": [
+          "nice-dancer",
+          "northern-dancer",
+          "nearctic",
+          "nearco"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/nice-nature",
+        "irl": "https://umamusu.wiki/IRL:Nice_Nature"
+      }
+    },
+    {
+      "id": "king-halo",
+      "name": {
+        "en": "King Halo"
+      },
+      "aliases": [
+        "キングヘイロー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 28
+      },
+      "irl": {
+        "birthYear": 1995,
+        "coat": "bay",
+        "maleLine": [
+          "dancing-brave",
+          "lyphard",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "takamatsunomiya-kinen"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/king-halo",
+        "irl": "https://umamusu.wiki/IRL:King_Halo"
+      }
+    },
+    {
+      "id": "matikanetannhauser",
+      "name": {
+        "en": "Matikanetannhauser"
+      },
+      "aliases": [
+        "マチカネタンホイザ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 7
+      },
+      "irl": {
+        "birthYear": 1989,
+        "coat": "chestnut",
+        "maleLine": [
+          "northern-taste",
+          "northern-dancer",
+          "nearctic",
+          "nearco"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/matikanetannhauser",
+        "irl": "https://umamusu.wiki/IRL:Matikanetannhauser"
+      }
+    },
+    {
+      "id": "ikuno-dictus",
+      "name": {
+        "en": "Ikuno Dictus"
+      },
+      "aliases": [
+        "イクノディクタス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 16
+      },
+      "irl": {
+        "birthYear": 1987,
+        "coat": "chestnut",
+        "maleLine": [
+          "dictus",
+          "sanctus",
+          "fine-top",
+          "fine-art"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/ikuno-dictus",
+        "irl": "https://umamusu.wiki/IRL:Ikuno_Dictus"
+      }
+    },
+    {
+      "id": "mejiro-palmer",
+      "name": {
+        "en": "Mejiro Palmer"
+      },
+      "aliases": [
+        "メジロパーマー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 21
+      },
+      "irl": {
+        "birthYear": 1987,
+        "coat": "bay",
+        "maleLine": [
+          "mejiro-eagle",
+          "mejiro-samman",
+          "charlottesville",
+          "prince-chevalier"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen",
+          "arima-kinen"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mejiro-palmer",
+        "irl": "https://umamusu.wiki/IRL:Mejiro_Palmer"
+      }
+    },
+    {
+      "id": "daitaku-helios",
+      "name": {
+        "en": "Daitaku Helios"
+      },
+      "aliases": [
+        "ダイタクヘリオス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 1987,
+        "coat": "dark-bay",
+        "maleLine": [
+          "bizen-nishiki",
+          "dandy-lute",
+          "luthier",
+          "klairon"
+        ],
+        "g1Wins": [
+          "mile-championship"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/daitaku-helios",
+        "irl": "https://umamusu.wiki/IRL:Daitaku_Helios"
+      }
+    },
+    {
+      "id": "twin-turbo",
+      "name": {
+        "en": "Twin Turbo"
+      },
+      "aliases": [
+        "ツインターボ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 13
+      },
+      "irl": {
+        "birthYear": 1988,
+        "coat": "bay",
+        "maleLine": [
+          "lyra-ridge",
+          "lyphard",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/twin-turbo",
+        "irl": "https://umamusu.wiki/IRL:Twin_Turbo"
+      }
+    },
+    {
+      "id": "satono-diamond",
+      "name": {
+        "en": "Satono Diamond"
+      },
+      "aliases": [
+        "サトノダイヤモンド"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 1,
+        "day": 30
+      },
+      "irl": {
+        "birthYear": 2013,
+        "coat": "bay",
+        "maleLine": [
+          "deep-impact",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "arima-kinen"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/satono-diamond",
+        "irl": "https://umamusu.wiki/IRL:Satono_Diamond"
+      }
+    },
+    {
+      "id": "kitasan-black",
+      "name": {
+        "en": "Kitasan Black"
+      },
+      "aliases": [
+        "キタサンブラック"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 2012,
+        "coat": "dark-bay",
+        "maleLine": [
+          "black-tide",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "tenno-sho-spring",
+          "japan-cup",
+          "osaka-hai",
+          "tenno-sho-autumn",
+          "arima-kinen"
+        ],
+        "g1WinCount": 7,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/kitasan-black",
+        "irl": "https://umamusu.wiki/IRL:Kitasan_Black"
+      }
+    },
+    {
+      "id": "sakura-chiyono-o",
+      "name": {
+        "en": "Sakura Chiyono O"
+      },
+      "aliases": [
+        "サクラチヨノオー"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 2,
+        "day": 19
+      },
+      "irl": {
+        "birthYear": 1985,
+        "coat": "bay",
+        "maleLine": [
+          "maruzensky",
+          "nijinsky",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/sakura-chiyono-o",
+        "irl": "https://umamusu.wiki/IRL:Sakura_Chiyono_O"
+      }
+    },
+    {
+      "id": "sirius-symboli",
+      "name": {
+        "en": "Sirius Symboli"
+      },
+      "aliases": [
+        "シリウスシンボリ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 26
+      },
+      "irl": {
+        "birthYear": 1982,
+        "coat": "bay",
+        "maleLine": [
+          "mogami",
+          "lyphard",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/sirius-symboli",
+        "irl": "https://umamusu.wiki/IRL:Sirius_Symboli"
+      }
+    },
+    {
+      "id": "mejiro-ardan",
+      "name": {
+        "en": "Mejiro Ardan"
+      },
+      "aliases": [
+        "メジロアルダン"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 28
+      },
+      "irl": {
+        "birthYear": 1985,
+        "coat": "dark-bay",
+        "maleLine": [
+          "aswan",
+          "northern-taste",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mejiro-ardan",
+        "irl": "https://umamusu.wiki/IRL:Mejiro_Ardan"
+      }
+    },
+    {
+      "id": "yaeno-muteki",
+      "name": {
+        "en": "Yaeno Muteki"
+      },
+      "aliases": [
+        "ヤエノムテキ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 11
+      },
+      "irl": {
+        "birthYear": 1985,
+        "coat": "chestnut",
+        "maleLine": [
+          "yamaninsky",
+          "nijinsky",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/yaeno-muteki",
+        "irl": "https://umamusu.wiki/IRL:Yaeno_Muteki"
+      }
+    },
+    {
+      "id": "tsurumaru-tsuyoshi",
+      "name": {
+        "en": "Tsurumaru Tsuyoshi"
+      },
+      "aliases": [
+        "ツルマルツヨシ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 6
+      },
+      "irl": {
+        "birthYear": 1995,
+        "coat": "dark-bay",
+        "maleLine": [
+          "symboli-rudolf",
+          "partholon",
+          "milesian",
+          "my-babu"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/tsurumaru-tsuyoshi",
+        "irl": "https://umamusu.wiki/IRL:Tsurumaru_Tsuyoshi"
+      }
+    },
+    {
+      "id": "mejiro-bright",
+      "name": {
+        "en": "Mejiro Bright"
+      },
+      "aliases": [
+        "メジロブライト"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 19
+      },
+      "irl": {
+        "birthYear": 1994,
+        "coat": "bay",
+        "maleLine": [
+          "mejiro-ryan",
+          "amber-shadai",
+          "northern-taste",
+          "northern-dancer"
+        ],
+        "g1Wins": [
+          "tenno-sho-spring"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mejiro-bright",
+        "irl": "https://umamusu.wiki/IRL:Mejiro_Bright"
+      }
+    },
+    {
+      "id": "sakura-laurel",
+      "name": {
+        "en": "Sakura Laurel"
+      },
+      "aliases": [
+        "サクラローレル"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 5,
+        "day": 8
+      },
+      "irl": {
+        "birthYear": 1991,
+        "coat": "liver-chestnut",
+        "maleLine": [
+          "rainbow-quest",
+          "blushing-groom",
+          "red-god",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "tenno-sho-spring",
+          "arima-kinen"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/sakura-laurel",
+        "irl": "https://umamusu.wiki/IRL:Sakura_Laurel"
+      }
+    },
+    {
+      "id": "narita-top-road",
+      "name": {
+        "en": "Narita Top Road"
+      },
+      "aliases": [
+        "ナリタトップロード"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 1996,
+        "coat": "chestnut",
+        "maleLine": [
+          "soccer-boy",
+          "dictus",
+          "sanctus",
+          "fine-top"
+        ],
+        "g1Wins": [
+          "kikuka-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/narita-top-road",
+        "irl": "https://umamusu.wiki/IRL:Narita_Top_Road"
+      }
+    },
+    {
+      "id": "yamanin-zephyr",
+      "name": {
+        "en": "Yamanin Zephyr"
+      },
+      "aliases": [
+        "ヤマニンゼファー"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 5,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 1988,
+        "coat": "bay",
+        "maleLine": [
+          "nihon-pillow-winner",
+          "steel-heart",
+          "habitat",
+          "sir-gaylord"
+        ],
+        "g1Wins": [
+          "yasuda-kinen",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/yamanin-zephyr",
+        "irl": "https://umamusu.wiki/IRL:Yamanin_Zephyr"
+      }
+    },
+    {
+      "id": "furioso",
+      "name": {
+        "en": "Furioso"
+      },
+      "aliases": [
+        "フリオーソ"
+      ],
+      "dorm": null,
+      "birthday": {
+        "month": 5,
+        "day": 1
+      },
+      "irl": {
+        "birthYear": 2004,
+        "coat": "chestnut",
+        "maleLine": [
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "japan-dirt-derby",
+          "teio-sho",
+          "kawasaki-kinen",
+          "kashiwa-kinen"
+        ],
+        "g1WinCount": 5,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/furioso",
+        "irl": "https://umamusu.wiki/IRL:Furioso"
+      }
+    },
+    {
+      "id": "transcend",
+      "name": {
+        "en": "Transcend"
+      },
+      "aliases": [
+        "トランセンド"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 9
+      },
+      "irl": {
+        "birthYear": 2006,
+        "coat": "bay",
+        "maleLine": [
+          "wild-rush",
+          "wild-again",
+          "icecapade",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "champions-cup",
+          "february-stakes",
+          "mile-championship-nambu-hai"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/transcend",
+        "irl": "https://umamusu.wiki/IRL:Transcend"
+      }
+    },
+    {
+      "id": "espoir-city",
+      "name": {
+        "en": "Espoir City"
+      },
+      "aliases": [
+        "エスポワールシチー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 22
+      },
+      "irl": {
+        "birthYear": 2005,
+        "coat": "chestnut",
+        "maleLine": [
+          "gold-allure",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "kashiwa-kinen",
+          "mile-championship-nambu-hai",
+          "champions-cup",
+          "february-stakes",
+          "jbc-sprint"
+        ],
+        "g1WinCount": 9,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/espoir-city",
+        "irl": "https://umamusu.wiki/IRL:Espoir_City"
+      }
+    },
+    {
+      "id": "north-flight",
+      "name": {
+        "en": "North Flight"
+      },
+      "aliases": [
+        "ノースフライト"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 12
+      },
+      "irl": {
+        "birthYear": 1990,
+        "coat": "bay",
+        "maleLine": [
+          "tony-bin",
+          "kampala",
+          "kalamoun",
+          "zeddaan"
+        ],
+        "g1Wins": [
+          "yasuda-kinen",
+          "mile-championship"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/north-flight",
+        "irl": "https://umamusu.wiki/IRL:North_Flight"
+      }
+    },
+    {
+      "id": "symboli-kris-s",
+      "name": {
+        "en": "Symboli Kris S"
+      },
+      "aliases": [
+        "シンボリクリスエス"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 1,
+        "day": 21
+      },
+      "irl": {
+        "birthYear": 1999,
+        "coat": "dark-bay",
+        "maleLine": [
+          "kris-s",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "arima-kinen",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/symboli-kris-s",
+        "irl": "https://umamusu.wiki/IRL:Symboli_Kris_S"
+      }
+    },
+    {
+      "id": "tanino-gimlet",
+      "name": {
+        "en": "Tanino Gimlet"
+      },
+      "aliases": [
+        "タニノギムレット"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 1999,
+        "coat": "bay",
+        "maleLine": [
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/tanino-gimlet",
+        "irl": "https://umamusu.wiki/IRL:Tanino_Gimlet"
+      }
+    },
+    {
+      "id": "daiichi-ruby",
+      "name": {
+        "en": "Daiichi Ruby"
+      },
+      "aliases": [
+        "ダイイチルビー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 15
+      },
+      "irl": {
+        "birthYear": 1987,
+        "coat": "dark-bay",
+        "maleLine": [
+          "tosho-boy",
+          "tesco-boy",
+          "princely-gift",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "yasuda-kinen",
+          "sprinters-stakes"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/daiichi-ruby",
+        "irl": "https://umamusu.wiki/IRL:Daiichi_Ruby"
+      }
+    },
+    {
+      "id": "mejiro-ramonu",
+      "name": {
+        "en": "Mejiro Ramonu"
+      },
+      "aliases": [
+        "メジロラモーヌ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 9
+      },
+      "irl": {
+        "birthYear": 1983,
+        "coat": "dark-bay",
+        "maleLine": [
+          "mogami",
+          "lyphard",
+          "northern-dancer",
+          "nearctic"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "yushun-himba",
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 3,
+        "titles": [
+          "triple-tiara"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/mejiro-ramonu",
+        "irl": "https://umamusu.wiki/IRL:Mejiro_Ramonu"
+      }
+    },
+    {
+      "id": "aston-machan",
+      "name": {
+        "en": "Aston Machan"
+      },
+      "aliases": [
+        "アストンマーチャン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 5
+      },
+      "irl": {
+        "birthYear": 2004,
+        "coat": "bay",
+        "maleLine": [
+          "admire-cozzene",
+          "cozzene",
+          "caro",
+          "fortino"
+        ],
+        "g1Wins": [
+          "sprinters-stakes"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/aston-machan",
+        "irl": "https://umamusu.wiki/IRL:Aston_Machan"
+      }
+    },
+    {
+      "id": "satono-crown",
+      "name": {
+        "en": "Satono Crown"
+      },
+      "aliases": [
+        "サトノクラウン"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 2012,
+        "coat": "brown",
+        "maleLine": [
+          "marju",
+          "last-tycoon",
+          "try-my-best",
+          "northern-dancer"
+        ],
+        "g1Wins": [
+          "hong-kong-vase",
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/satono-crown",
+        "irl": "https://umamusu.wiki/IRL:Satono_Crown"
+      }
+    },
+    {
+      "id": "cheval-grand",
+      "name": {
+        "en": "Cheval Grand"
+      },
+      "aliases": [
+        "シュヴァルグラン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 14
+      },
+      "irl": {
+        "birthYear": 2012,
+        "coat": "chestnut",
+        "maleLine": [
+          "heart-s-cry",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "japan-cup"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/cheval-grand",
+        "irl": "https://umamusu.wiki/IRL:Cheval_Grand"
+      }
+    },
+    {
+      "id": "verxina",
+      "name": {
+        "en": "Verxina"
+      },
+      "aliases": [
+        "ヴィルシーナ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 5
+      },
+      "irl": {
+        "birthYear": 2009,
+        "coat": "black",
+        "maleLine": [
+          "deep-impact",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "victoria-mile"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/verxina",
+        "irl": "https://umamusu.wiki/IRL:Verxina"
+      }
+    },
+    {
+      "id": "vivlos",
+      "name": {
+        "en": "Vivlos"
+      },
+      "aliases": [
+        "ヴィブロス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 9
+      },
+      "irl": {
+        "birthYear": 2013,
+        "coat": "black",
+        "maleLine": [
+          "deep-impact",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "shuka-sho",
+          "dubai-turf"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/vivlos",
+        "irl": "https://umamusu.wiki/IRL:Vivlos"
+      }
+    },
+    {
+      "id": "dantsu-flame",
+      "name": {
+        "en": "Dantsu Flame"
+      },
+      "aliases": [
+        "ダンツフレーム"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 19
+      },
+      "irl": {
+        "birthYear": 1998,
+        "coat": "bay",
+        "maleLine": [
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/dantsu-flame",
+        "irl": "https://umamusu.wiki/IRL:Dantsu_Flame"
+      }
+    },
+    {
+      "id": "ksmiracle",
+      "name": {
+        "en": "K.S.Miracle"
+      },
+      "aliases": [
+        "ケイエスミラクル"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 16
+      },
+      "irl": {
+        "birthYear": 1988,
+        "coat": "bay",
+        "maleLine": [
+          "stutz-blackhawk",
+          "mr-prospector",
+          "raise-a-native",
+          "native-dancer"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/ksmiracle",
+        "irl": "https://umamusu.wiki/IRL:K.S.Miracle"
+      }
+    },
+    {
+      "id": "jungle-pocket",
+      "name": {
+        "en": "Jungle Pocket"
+      },
+      "aliases": [
+        "ジャングルポケット"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 7
+      },
+      "irl": {
+        "birthYear": 1998,
+        "coat": "bay",
+        "maleLine": [
+          "tony-bin",
+          "kampala",
+          "kalamoun",
+          "zeddaan"
+        ],
+        "g1Wins": [
+          "tokyo-yushun",
+          "japan-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/jungle-pocket",
+        "irl": "https://umamusu.wiki/IRL:Jungle_Pocket"
+      }
+    },
+    {
+      "id": "believe",
+      "name": {
+        "en": "Believe"
+      },
+      "aliases": [
+        "ビリーヴ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 26
+      },
+      "irl": {
+        "birthYear": 1998,
+        "coat": "bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "sprinters-stakes",
+          "takamatsunomiya-kinen"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/believe",
+        "irl": "https://umamusu.wiki/IRL:Believe"
+      }
+    },
+    {
+      "id": "no-reason",
+      "name": {
+        "en": "No Reason"
+      },
+      "aliases": [
+        "ノーリーズン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 6,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 1999,
+        "coat": "bay",
+        "maleLine": [
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "satsuki-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/no-reason",
+        "irl": "https://umamusu.wiki/IRL:No_Reason"
+      }
+    },
+    {
+      "id": "still-in-love",
+      "name": {
+        "en": "Still in Love"
+      },
+      "aliases": [
+        "スティルインラブ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 2
+      },
+      "irl": {
+        "birthYear": 2000,
+        "coat": "chestnut",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "yushun-himba",
+          "shuka-sho"
+        ],
+        "g1WinCount": 3,
+        "titles": [
+          "triple-tiara"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/still-in-love",
+        "irl": "https://umamusu.wiki/IRL:Still_in_Love"
+      }
+    },
+    {
+      "id": "copano-rickey",
+      "name": {
+        "en": "Copano Rickey"
+      },
+      "aliases": [
+        "コパノリッキー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 24
+      },
+      "irl": {
+        "birthYear": 2010,
+        "coat": "chestnut",
+        "maleLine": [
+          "gold-allure",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "february-stakes",
+          "kashiwa-kinen",
+          "jbc-classic",
+          "teio-sho",
+          "mile-championship-nambu-hai",
+          "tokyo-daishoten"
+        ],
+        "g1WinCount": 11,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/copano-rickey",
+        "irl": "https://umamusu.wiki/IRL:Copano_Rickey"
+      }
+    },
+    {
+      "id": "hokko-tarumae",
+      "name": {
+        "en": "Hokko Tarumae"
+      },
+      "aliases": [
+        "ホッコータルマエ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 26
+      },
+      "irl": {
+        "birthYear": 2009,
+        "coat": "bay",
+        "maleLine": [
+          "king-kamehameha",
+          "kingmambo",
+          "mr-prospector",
+          "raise-a-native"
+        ],
+        "g1Wins": [
+          "kashiwa-kinen",
+          "teio-sho",
+          "jbc-classic",
+          "tokyo-daishoten",
+          "kawasaki-kinen",
+          "champions-cup"
+        ],
+        "g1WinCount": 10,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/hokko-tarumae",
+        "irl": "https://umamusu.wiki/IRL:Hokko_Tarumae"
+      }
+    },
+    {
+      "id": "wonder-acute",
+      "name": {
+        "en": "Wonder Acute"
+      },
+      "aliases": [
+        "ワンダーアキュート"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 14
+      },
+      "irl": {
+        "birthYear": 2006,
+        "coat": "bay",
+        "maleLine": [
+          "charismatic",
+          "summer-squall",
+          "storm-bird",
+          "northern-dancer"
+        ],
+        "g1Wins": [
+          "jbc-classic",
+          "teio-sho",
+          "kashiwa-kinen"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/wonder-acute",
+        "irl": "https://umamusu.wiki/IRL:Wonder_Acute"
+      }
+    },
+    {
+      "id": "sounds-of-earth",
+      "name": {
+        "en": "Sounds of Earth"
+      },
+      "aliases": [
+        "サウンズオブアース"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 12
+      },
+      "irl": {
+        "birthYear": 2011,
+        "coat": "dark-bay",
+        "maleLine": [
+          "neo-universe",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/sounds-of-earth",
+        "irl": "https://umamusu.wiki/IRL:Sounds_of_Earth"
+      }
+    },
+    {
+      "id": "royce-and-royce",
+      "name": {
+        "en": "Royce and Royce"
+      },
+      "aliases": [
+        "ロイスアンドロイス"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 1990,
+        "coat": "bay",
+        "maleLine": [
+          "tony-bin",
+          "kampala",
+          "kalamoun",
+          "zeddaan"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/royce-and-royce",
+        "irl": "https://umamusu.wiki/IRL:Royce_and_Royce"
+      }
+    },
+    {
+      "id": "katsuragi-ace",
+      "name": {
+        "en": "Katsuragi Ace"
+      },
+      "aliases": [
+        "カツラギエース"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 24
+      },
+      "irl": {
+        "birthYear": 1980,
+        "coat": "dark-bay",
+        "maleLine": [
+          "boysie-boy",
+          "king-s-troop",
+          "princely-gift",
+          "nasrullah"
+        ],
+        "g1Wins": [
+          "takarazuka-kinen",
+          "japan-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/katsuragi-ace",
+        "irl": "https://umamusu.wiki/IRL:Katsuragi_Ace"
+      }
+    },
+    {
+      "id": "neo-universe",
+      "name": {
+        "en": "Neo Universe"
+      },
+      "aliases": [
+        "ネオユニヴァース"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 21
+      },
+      "irl": {
+        "birthYear": 2000,
+        "coat": "bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/neo-universe",
+        "irl": "https://umamusu.wiki/IRL:Neo_Universe"
+      }
+    },
+    {
+      "id": "hishi-miracle",
+      "name": {
+        "en": "Hishi Miracle"
+      },
+      "aliases": [
+        "ヒシミラクル"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 31
+      },
+      "irl": {
+        "birthYear": 1999,
+        "coat": "grey",
+        "maleLine": [
+          "soccer-boy",
+          "dictus",
+          "sanctus",
+          "fine-top"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "tenno-sho-spring",
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/hishi-miracle",
+        "irl": "https://umamusu.wiki/IRL:Hishi_Miracle"
+      }
+    },
+    {
+      "id": "tap-dance-city",
+      "name": {
+        "en": "Tap Dance City"
+      },
+      "aliases": [
+        "タップダンスシチー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 16
+      },
+      "irl": {
+        "birthYear": 1997,
+        "coat": "bay",
+        "maleLine": [
+          "pleasant-tap",
+          "pleasant-colony",
+          "his-majesty",
+          "ribot"
+        ],
+        "g1Wins": [
+          "japan-cup",
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/tap-dance-city",
+        "irl": "https://umamusu.wiki/IRL:Tap_Dance_City"
+      }
+    },
+    {
+      "id": "duramente",
+      "name": {
+        "en": "Duramente"
+      },
+      "aliases": [
+        "ドゥラメンテ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 22
+      },
+      "irl": {
+        "birthYear": 2012,
+        "coat": "bay",
+        "maleLine": [
+          "king-kamehameha",
+          "kingmambo",
+          "mr-prospector",
+          "raise-a-native"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tokyo-yushun"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/duramente",
+        "irl": "https://umamusu.wiki/IRL:Duramente"
+      }
+    },
+    {
+      "id": "rhein-kraft",
+      "name": {
+        "en": "Rhein Kraft"
+      },
+      "aliases": [
+        "ラインクラフト"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 2002,
+        "coat": "bay",
+        "maleLine": [
+          "end-sweep",
+          "forty-niner",
+          "mr-prospector",
+          "raise-a-native"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "nhk-mile-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/rhein-kraft",
+        "irl": "https://umamusu.wiki/IRL:Rhein_Kraft"
+      }
+    },
+    {
+      "id": "cesario",
+      "name": {
+        "en": "Cesario"
+      },
+      "aliases": [
+        "シーザリオ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 31
+      },
+      "irl": {
+        "birthYear": 2002,
+        "coat": "black",
+        "maleLine": [
+          "special-week",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "yushun-himba",
+          "american-oaks"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/cesario",
+        "irl": "https://umamusu.wiki/IRL:Cesario"
+      }
+    },
+    {
+      "id": "air-messiah",
+      "name": {
+        "en": "Air Messiah"
+      },
+      "aliases": [
+        "エアメサイア"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 2002,
+        "coat": "bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "shuka-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/air-messiah",
+        "irl": "https://umamusu.wiki/IRL:Air_Messiah"
+      }
+    },
+    {
+      "id": "daring-heart",
+      "name": {
+        "en": "Daring Heart"
+      },
+      "aliases": [
+        "デアリングハート"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 9
+      },
+      "irl": {
+        "birthYear": 2002,
+        "coat": "chestnut",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/daring-heart",
+        "irl": "https://umamusu.wiki/IRL:Daring_Heart"
+      }
+    },
+    {
+      "id": "fusaichi-pandora",
+      "name": {
+        "en": "Fusaichi Pandora"
+      },
+      "aliases": [
+        "フサイチパンドラ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 27
+      },
+      "irl": {
+        "birthYear": 2003,
+        "coat": "chestnut",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/fusaichi-pandora",
+        "irl": "https://umamusu.wiki/IRL:Fusaichi_Pandora"
+      }
+    },
+    {
+      "id": "buena-vista",
+      "name": {
+        "en": "Buena Vista"
+      },
+      "aliases": [
+        "ブエナビスタ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 14
+      },
+      "irl": {
+        "birthYear": 2006,
+        "coat": "dark-bay",
+        "maleLine": [
+          "special-week",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "hanshin-juvenile-fillies",
+          "oka-sho",
+          "yushun-himba",
+          "victoria-mile",
+          "tenno-sho-autumn",
+          "japan-cup"
+        ],
+        "g1WinCount": 6,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/buena-vista",
+        "irl": "https://umamusu.wiki/IRL:Buena_Vista"
+      }
+    },
+    {
+      "id": "orfevre",
+      "name": {
+        "en": "Orfevre"
+      },
+      "aliases": [
+        "オルフェーヴル"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 14
+      },
+      "irl": {
+        "birthYear": 2008,
+        "coat": "chestnut",
+        "maleLine": [
+          "stay-gold",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "tokyo-yushun",
+          "kikuka-sho",
+          "arima-kinen",
+          "takarazuka-kinen"
+        ],
+        "g1WinCount": 6,
+        "titles": [
+          "triple-crown"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/orfevre",
+        "irl": "https://umamusu.wiki/IRL:Orfevre"
+      }
+    },
+    {
+      "id": "gentildonna",
+      "name": {
+        "en": "Gentildonna"
+      },
+      "aliases": [
+        "ジェンティルドンナ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 20
+      },
+      "irl": {
+        "birthYear": 2009,
+        "coat": "bay",
+        "maleLine": [
+          "deep-impact",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "yushun-himba",
+          "shuka-sho",
+          "japan-cup",
+          "dubai-sheema-classic",
+          "arima-kinen"
+        ],
+        "g1WinCount": 7,
+        "titles": [
+          "triple-tiara"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/gentildonna",
+        "irl": "https://umamusu.wiki/IRL:Gentildonna"
+      }
+    },
+    {
+      "id": "win-variation",
+      "name": {
+        "en": "Win Variation"
+      },
+      "aliases": [
+        "ウインバリアシオン"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 2008,
+        "coat": "bay",
+        "maleLine": [
+          "heart-s-cry",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/win-variation",
+        "irl": "https://umamusu.wiki/IRL:Win_Variation"
+      }
+    },
+    {
+      "id": "admire-groove",
+      "name": {
+        "en": "Admire Groove"
+      },
+      "aliases": [
+        "アドマイヤグルーヴ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 30
+      },
+      "irl": {
+        "birthYear": 2000,
+        "coat": "bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/admire-groove",
+        "irl": "https://umamusu.wiki/IRL:Admire_Groove"
+      }
+    },
+    {
+      "id": "dream-journey",
+      "name": {
+        "en": "Dream Journey"
+      },
+      "aliases": [
+        "ドリームジャーニー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 24
+      },
+      "irl": {
+        "birthYear": 2004,
+        "coat": "bay",
+        "maleLine": [
+          "stay-gold",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "takarazuka-kinen",
+          "arima-kinen"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/dream-journey",
+        "irl": "https://umamusu.wiki/IRL:Dream_Journey"
+      }
+    },
+    {
+      "id": "calstone-light-o",
+      "name": {
+        "en": "Calstone Light O"
+      },
+      "aliases": [
+        "カルストンライトオ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 3
+      },
+      "irl": {
+        "birthYear": 1998,
+        "coat": "dark-bay",
+        "maleLine": [
+          "warning",
+          "known-fact",
+          "in-reality",
+          "intentionally"
+        ],
+        "g1Wins": [
+          "sprinters-stakes"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/calstone-light-o",
+        "irl": "https://umamusu.wiki/IRL:Calstone_Light_O"
+      }
+    },
+    {
+      "id": "durandal",
+      "name": {
+        "en": "Durandal"
+      },
+      "aliases": [
+        "デュランダル"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 25
+      },
+      "irl": {
+        "birthYear": 1999,
+        "coat": "chestnut",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "sprinters-stakes",
+          "mile-championship"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/durandal",
+        "irl": "https://umamusu.wiki/IRL:Durandal"
+      }
+    },
+    {
+      "id": "bubble-gum-fellow",
+      "name": {
+        "en": "Bubble Gum Fellow"
+      },
+      "aliases": [
+        "バブルガムフェロー"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 11
+      },
+      "irl": {
+        "birthYear": 1993,
+        "coat": "bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "tenno-sho-autumn"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/bubble-gum-fellow",
+        "irl": "https://umamusu.wiki/IRL:Bubble_Gum_Fellow"
+      }
+    },
+    {
+      "id": "fenomeno",
+      "name": {
+        "en": "Fenomeno"
+      },
+      "aliases": [
+        "フェノーメノ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 20
+      },
+      "irl": {
+        "birthYear": 2009,
+        "coat": "dark-bay",
+        "maleLine": [
+          "stay-gold",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "tenno-sho-spring"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/fenomeno",
+        "irl": "https://umamusu.wiki/IRL:Fenomeno"
+      }
+    },
+    {
+      "id": "almond-eye",
+      "name": {
+        "en": "Almond Eye"
+      },
+      "aliases": [
+        "アーモンドアイ"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 3,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 2015,
+        "coat": "bay",
+        "maleLine": [
+          "lord-kanaloa",
+          "king-kamehameha",
+          "kingmambo",
+          "mr-prospector"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "yushun-himba",
+          "shuka-sho",
+          "japan-cup",
+          "dubai-turf",
+          "tenno-sho-autumn",
+          "victoria-mile"
+        ],
+        "g1WinCount": 9,
+        "titles": [
+          "triple-tiara"
+        ]
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/almond-eye",
+        "irl": "https://umamusu.wiki/IRL:Almond_Eye"
+      }
+    },
+    {
+      "id": "lucky-lilac",
+      "name": {
+        "en": "Lucky Lilac"
+      },
+      "aliases": [
+        "ラッキーライラック"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 3
+      },
+      "irl": {
+        "birthYear": 2015,
+        "coat": "chestnut",
+        "maleLine": [
+          "orfevre",
+          "stay-gold",
+          "sunday-silence",
+          "halo"
+        ],
+        "g1Wins": [
+          "hanshin-juvenile-fillies",
+          "queen-elizabeth-ii-cup",
+          "osaka-hai"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/lucky-lilac",
+        "irl": "https://umamusu.wiki/IRL:Lucky_Lilac"
+      }
+    },
+    {
+      "id": "gran-alegria",
+      "name": {
+        "en": "Gran Alegria"
+      },
+      "aliases": [
+        "グランアレグリア"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 1,
+        "day": 24
+      },
+      "irl": {
+        "birthYear": 2016,
+        "coat": "bay",
+        "maleLine": [
+          "deep-impact",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "yasuda-kinen",
+          "sprinters-stakes",
+          "mile-championship",
+          "victoria-mile"
+        ],
+        "g1WinCount": 6,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/gran-alegria",
+        "irl": "https://umamusu.wiki/IRL:Gran_Alegria"
+      }
+    },
+    {
+      "id": "loves-only-you",
+      "name": {
+        "en": "Loves Only You"
+      },
+      "aliases": [
+        "ラヴズオンリーユー"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 26
+      },
+      "irl": {
+        "birthYear": 2016,
+        "coat": "bay",
+        "maleLine": [
+          "deep-impact",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "yushun-himba",
+          "queen-elizabeth-ii-cup-hk",
+          "breeders-cup-filly-mare-turf",
+          "hong-kong-cup"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/loves-only-you",
+        "irl": "https://umamusu.wiki/IRL:Loves_Only_You"
+      }
+    },
+    {
+      "id": "chrono-genesis",
+      "name": {
+        "en": "Chrono Genesis"
+      },
+      "aliases": [
+        "クロノジェネシス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 6
+      },
+      "irl": {
+        "birthYear": 2016,
+        "coat": "grey",
+        "maleLine": [
+          "bago",
+          "nashwan",
+          "blushing-groom",
+          "red-god"
+        ],
+        "g1Wins": [
+          "shuka-sho",
+          "takarazuka-kinen",
+          "arima-kinen"
+        ],
+        "g1WinCount": 4,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/chrono-genesis",
+        "irl": "https://umamusu.wiki/IRL:Chrono_Genesis"
+      }
+    },
+    {
+      "id": "curren-bouquetdor",
+      "name": {
+        "en": "Curren Bouquetd'or"
+      },
+      "aliases": [
+        "カレンブーケドール"
+      ],
+      "dorm": "miho",
+      "birthday": {
+        "month": 4,
+        "day": 23
+      },
+      "irl": {
+        "birthYear": 2016,
+        "coat": "bay",
+        "maleLine": [
+          "deep-impact",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [],
+        "g1WinCount": 0,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/curren-bouquetdor",
+        "irl": "https://umamusu.wiki/IRL:Curren_Bouquetd'or"
+      }
+    },
+    {
+      "id": "stay-gold",
+      "name": {
+        "en": "Stay Gold"
+      },
+      "aliases": [
+        "ステイゴールド"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 24
+      },
+      "irl": {
+        "birthYear": 1994,
+        "coat": "dark-bay",
+        "maleLine": [
+          "sunday-silence",
+          "halo",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "dubai-sheema-classic",
+          "hong-kong-vase"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/stay-gold",
+        "irl": "https://umamusu.wiki/IRL:Stay_Gold"
+      }
+    },
+    {
+      "id": "red-desire",
+      "name": {
+        "en": "Red Desire"
+      },
+      "aliases": [
+        "レッドディザイア"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 19
+      },
+      "irl": {
+        "birthYear": 2006,
+        "coat": "bay",
+        "maleLine": [
+          "manhattan-cafe",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "shuka-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/red-desire",
+        "irl": "https://umamusu.wiki/IRL:Red_Desire"
+      }
+    },
+    {
+      "id": "kiseki",
+      "name": {
+        "en": "Kiseki"
+      },
+      "aliases": [
+        "キセキ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 13
+      },
+      "irl": {
+        "birthYear": 2014,
+        "coat": "dark-bay",
+        "maleLine": [
+          "rulership",
+          "king-kamehameha",
+          "kingmambo",
+          "mr-prospector"
+        ],
+        "g1Wins": [
+          "kikuka-sho"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/kiseki",
+        "irl": "https://umamusu.wiki/IRL:Kiseki"
+      }
+    },
+    {
+      "id": "epiphaneia",
+      "name": {
+        "en": "Epiphaneia"
+      },
+      "aliases": [
+        "エピファネイア"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 2,
+        "day": 11
+      },
+      "irl": {
+        "birthYear": 2010,
+        "coat": "bay",
+        "maleLine": [
+          "symboli-kris-s",
+          "kris-s",
+          "roberto",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "kikuka-sho",
+          "japan-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/epiphaneia",
+        "irl": "https://umamusu.wiki/IRL:Epiphaneia"
+      }
+    },
+    {
+      "id": "victoire-pisa",
+      "name": {
+        "en": "Victoire Pisa"
+      },
+      "aliases": [
+        "ヴィクトワールピサ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 3,
+        "day": 31
+      },
+      "irl": {
+        "birthYear": 2007,
+        "coat": "dark-bay",
+        "maleLine": [
+          "neo-universe",
+          "sunday-silence",
+          "halo",
+          "hail-to-reason"
+        ],
+        "g1Wins": [
+          "satsuki-sho",
+          "arima-kinen",
+          "dubai-world-cup"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/victoire-pisa",
+        "irl": "https://umamusu.wiki/IRL:Victoire_Pisa"
+      }
+    },
+    {
+      "id": "rose-kingdom",
+      "name": {
+        "en": "Rose Kingdom"
+      },
+      "aliases": [
+        "ローズキングダム"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 10
+      },
+      "irl": {
+        "birthYear": 2007,
+        "coat": "dark-bay",
+        "maleLine": [
+          "king-kamehameha",
+          "kingmambo",
+          "mr-prospector",
+          "raise-a-native"
+        ],
+        "g1Wins": [
+          "asahi-hai-futurity-stakes",
+          "japan-cup"
+        ],
+        "g1WinCount": 2,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/rose-kingdom",
+        "irl": "https://umamusu.wiki/IRL:Rose_Kingdom"
+      }
+    },
+    {
+      "id": "rulership",
+      "name": {
+        "en": "Rulership"
+      },
+      "aliases": [
+        "ルーラーシップ"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 5,
+        "day": 15
+      },
+      "irl": {
+        "birthYear": 2007,
+        "coat": "bay",
+        "maleLine": [
+          "king-kamehameha",
+          "kingmambo",
+          "mr-prospector",
+          "raise-a-native"
+        ],
+        "g1Wins": [
+          "queen-elizabeth-ii-cup-hk"
+        ],
+        "g1WinCount": 1,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/rulership",
+        "irl": "https://umamusu.wiki/IRL:Rulership"
+      }
+    },
+    {
+      "id": "phalaenopsis",
+      "name": {
+        "en": "Phalaenopsis"
+      },
+      "aliases": [
+        "ファレノプシス"
+      ],
+      "dorm": "ritto",
+      "birthday": {
+        "month": 4,
+        "day": 4
+      },
+      "irl": {
+        "birthYear": 1995,
+        "coat": "dark-bay",
+        "maleLine": [
+          "brian-s-time",
+          "roberto",
+          "hail-to-reason",
+          "turn-to"
+        ],
+        "g1Wins": [
+          "oka-sho",
+          "shuka-sho",
+          "queen-elizabeth-ii-cup"
+        ],
+        "g1WinCount": 3,
+        "titles": []
+      },
+      "sources": {
+        "profile": "https://gametora.com/umamusume/characters/phalaenopsis",
+        "irl": "https://umamusu.wiki/IRL:Phalaenopsis"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+node_modules
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# testing
+coverage/
+playwright-report/
+test-results/
+
+# data import cache
+data/.cache/
+
+# misc
+*.log
+.env*
+.DS_Store
+Thumbs.db
+*.tmp

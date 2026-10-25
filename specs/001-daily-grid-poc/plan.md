@@ -33,7 +33,8 @@ static hosting (Vercel or GitHub Pages)
 **Performance Goals**: Grid interactive ≤ 2 s on mid-range phone / 4G (SC-007); search results
 update per keystroke in < 50 ms over the full roster
 
-**Constraints**: No server/runtime third-party APIs; initial JS + dataset ≤ 250 KB gzipped;
+**Constraints**: No server/runtime third-party APIs; JS + CSS + dataset needed to play ≤ 300 KB gzipped
+(revised from 250 KB: the Next.js 16 + React 19 runtime alone is ~190 KB gz; checked by `npm run size`);
 portraits lazy-loaded; WCAG 2.1 AA; usable from 360 px width
 
 **Scale/Scope**: Hundreds of trainee versions, ~50 categories in 9 groups, 3 routes
@@ -49,7 +50,7 @@ portraits lazy-loaded; WCAG 2.1 AA; usable from 360 px width
 | II. Frontend-Only PoC | Static export, no backend/accounts, `localStorage`, date-deterministic daily grid | PASS | PASS — committed `schedule.json` + UTC puzzle number; rarity is a UI placeholder only |
 | III. i18n-Ready | No hardcoded UI strings; dataset labels per locale; locale-aware formatting | PASS | PASS — `messages/en.json` via next-intl; `LocalizedText` in dataset; `Intl` for dates/countdown |
 | IV. Pure, Tested Game Logic | Engine framework-agnostic with unit tests; E2E for main flow | PASS | PASS — `src/game/` has no React/DOM imports (lint rule); contracts in `contracts/game-engine.md` |
-| V. Simplicity & Accessibility | Dependencies justified; keyboard + screen reader; mobile-first | PASS | PASS — 4 runtime deps justified in research; Headless UI provides ARIA combobox/dialog |
+| V. Simplicity & Accessibility | Dependencies justified; keyboard + screen reader; mobile-first | PASS | PASS — runtime and dev deps justified in research; Headless UI provides ARIA combobox/dialog; cells expose accessible names |
 
 No violations; Complexity Tracking is empty.
 
@@ -99,10 +100,13 @@ src/
 │   ├── ResultsDialog.tsx  # score, answers, rarity slot, share, countdown
 │   ├── HowToPlayDialog.tsx
 │   ├── StatsDialog.tsx
+│   ├── Countdown.tsx      # time until next daily puzzle
 │   └── Portrait.tsx       # lazy image with name fallback
 ├── game/                  # pure engine — no React/DOM imports
 │   ├── types.ts
-│   ├── dataset.ts         # load + index dataset, Zod schemas
+│   ├── dataset.ts         # Zod schemas, loadDataset/loadSchedule, indexes
+│   ├── data.ts            # imports data/*.json → validated dataset + schedule singletons
+│   ├── text.ts            # localize(), displayName()
 │   ├── categories.ts      # match-rule evaluation
 │   ├── grid.ts            # resolve answers per cell, solvability (matching)
 │   ├── generator.ts       # seeded grid generation
@@ -120,7 +124,9 @@ src/
     └── request.ts         # next-intl config (locale = 'en')
 
 tests/
+├── fixtures/              # small synthetic datasets for unit tests
 ├── unit/game/             # Vitest: engine modules
+├── unit/storage/          # Vitest: localStorage adapter
 ├── data/                  # Vitest: dataset integrity + every scheduled grid solvable
 └── e2e/                   # Playwright: daily flow, resume, share, practice, a11y
 ```

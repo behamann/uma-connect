@@ -1,0 +1,845 @@
+{
+  "launchDate": "2026-10-25",
+  "puzzles": [
+    {
+      "puzzleNumber": 1,
+      "date": "2026-10-25",
+      "rows": [
+        "dirt-a",
+        "month-04",
+        "g1-count-3"
+      ],
+      "cols": [
+        "sprint-a",
+        "g1-dirt",
+        "turf-a"
+      ]
+    },
+    {
+      "puzzleNumber": 2,
+      "date": "2026-10-26",
+      "rows": [
+        "triple-crown",
+        "g1-overseas",
+        "g1-tokyo-yushun"
+      ],
+      "cols": [
+        "turf-a",
+        "g1-tenno-sho",
+        "medium-a"
+      ]
+    },
+    {
+      "puzzleNumber": 3,
+      "date": "2026-10-27",
+      "rows": [
+        "g1-overseas",
+        "pace-a",
+        "g1-mile"
+      ],
+      "cols": [
+        "born-1990s",
+        "sprint-a",
+        "turf-a"
+      ]
+    },
+    {
+      "puzzleNumber": 4,
+      "date": "2026-10-28",
+      "rows": [
+        "sprint-a",
+        "front-a",
+        "triple-tiara"
+      ],
+      "cols": [
+        "turf-a",
+        "born-2000s",
+        "pace-a"
+      ]
+    },
+    {
+      "puzzleNumber": 5,
+      "date": "2026-10-29",
+      "rows": [
+        "late-a",
+        "dorm-ritto",
+        "born-2000s"
+      ],
+      "cols": [
+        "g1-satsuki-sho",
+        "g1-japan-cup",
+        "g1-kikuka-sho"
+      ]
+    },
+    {
+      "puzzleNumber": 6,
+      "date": "2026-10-30",
+      "rows": [
+        "front-a",
+        "born-1990s",
+        "born-2000s"
+      ],
+      "cols": [
+        "sprint-a",
+        "g1-dirt",
+        "g1-satsuki-sho"
+      ]
+    },
+    {
+      "puzzleNumber": 7,
+      "date": "2026-10-31",
+      "rows": [
+        "late-a",
+        "triple-crown",
+        "mile-a"
+      ],
+      "cols": [
+        "pace-a",
+        "g1-tokyo-yushun",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 8,
+      "date": "2026-11-01",
+      "rows": [
+        "mile-a",
+        "medium-a",
+        "g1-overseas"
+      ],
+      "cols": [
+        "pace-a",
+        "month-03",
+        "turf-a"
+      ]
+    },
+    {
+      "puzzleNumber": 9,
+      "date": "2026-11-02",
+      "rows": [
+        "born-1980s",
+        "late-a",
+        "sprint-a"
+      ],
+      "cols": [
+        "dorm-miho",
+        "g1-oka-sho",
+        "month-04"
+      ]
+    },
+    {
+      "puzzleNumber": 10,
+      "date": "2026-11-03",
+      "rows": [
+        "turf-a",
+        "g1-tenno-sho",
+        "classic-winner"
+      ],
+      "cols": [
+        "born-2010s",
+        "month-04",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 11,
+      "date": "2026-11-04",
+      "rows": [
+        "g1-overseas",
+        "classic-winner",
+        "pace-a"
+      ],
+      "cols": [
+        "g1-oka-sho",
+        "long-a",
+        "month-05"
+      ]
+    },
+    {
+      "puzzleNumber": 12,
+      "date": "2026-11-05",
+      "rows": [
+        "born-1990s",
+        "g1-japan-cup",
+        "triple-crown"
+      ],
+      "cols": [
+        "g1-count-3",
+        "g1-kikuka-sho",
+        "medium-a"
+      ]
+    },
+    {
+      "puzzleNumber": 13,
+      "date": "2026-11-06",
+      "rows": [
+        "g1-mile",
+        "dorm-ritto",
+        "pace-a"
+      ],
+      "cols": [
+        "g1-count-5",
+        "g1-overseas",
+        "sprint-a"
+      ]
+    },
+    {
+      "puzzleNumber": 14,
+      "date": "2026-11-07",
+      "rows": [
+        "born-1990s",
+        "triple-tiara",
+        "month-02"
+      ],
+      "cols": [
+        "g1-count-3",
+        "dorm-miho",
+        "classic-winner"
+      ]
+    },
+    {
+      "puzzleNumber": 15,
+      "date": "2026-11-08",
+      "rows": [
+        "dirt-a",
+        "g1-tenno-sho",
+        "g1-tokyo-yushun"
+      ],
+      "cols": [
+        "month-03",
+        "turf-a",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 16,
+      "date": "2026-11-09",
+      "rows": [
+        "g1-dirt",
+        "triple-tiara",
+        "g1-japan-cup"
+      ],
+      "cols": [
+        "g1-count-3",
+        "born-2000s",
+        "late-a"
+      ]
+    },
+    {
+      "puzzleNumber": 17,
+      "date": "2026-11-10",
+      "rows": [
+        "g1-satsuki-sho",
+        "month-03",
+        "dirt-a"
+      ],
+      "cols": [
+        "pace-a",
+        "g1-count-3",
+        "born-2000s"
+      ]
+    },
+    {
+      "puzzleNumber": 18,
+      "date": "2026-11-11",
+      "rows": [
+        "g1-arima-kinen",
+        "dirt-a",
+        "dorm-ritto"
+      ],
+      "cols": [
+        "pace-a",
+        "g1-count-5",
+        "g1-overseas"
+      ]
+    },
+    {
+      "puzzleNumber": 19,
+      "date": "2026-11-12",
+      "rows": [
+        "month-04",
+        "month-05",
+        "mile-a"
+      ],
+      "cols": [
+        "long-a",
+        "classic-winner",
+        "g1-sprint"
+      ]
+    },
+    {
+      "puzzleNumber": 20,
+      "date": "2026-11-13",
+      "rows": [
+        "month-03",
+        "g1-takarazuka-kinen",
+        "g1-japan-cup"
+      ],
+      "cols": [
+        "dorm-ritto",
+        "g1-kikuka-sho",
+        "late-a"
+      ]
+    },
+    {
+      "puzzleNumber": 21,
+      "date": "2026-11-14",
+      "rows": [
+        "long-a",
+        "classic-winner",
+        "month-02"
+      ],
+      "cols": [
+        "g1-kikuka-sho",
+        "late-a",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 22,
+      "date": "2026-11-15",
+      "rows": [
+        "mile-a",
+        "g1-overseas",
+        "month-02"
+      ],
+      "cols": [
+        "long-a",
+        "medium-a",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 23,
+      "date": "2026-11-16",
+      "rows": [
+        "g1-tokyo-yushun",
+        "born-1980s",
+        "dirt-a"
+      ],
+      "cols": [
+        "g1-count-3",
+        "late-a",
+        "pace-a"
+      ]
+    },
+    {
+      "puzzleNumber": 24,
+      "date": "2026-11-17",
+      "rows": [
+        "end-a",
+        "month-02",
+        "g1-count-3"
+      ],
+      "cols": [
+        "mile-a",
+        "turf-a",
+        "g1-takarazuka-kinen"
+      ]
+    },
+    {
+      "puzzleNumber": 25,
+      "date": "2026-11-18",
+      "rows": [
+        "g1-oka-sho",
+        "g1-arima-kinen",
+        "triple-tiara"
+      ],
+      "cols": [
+        "born-2000s",
+        "late-a",
+        "turf-a"
+      ]
+    },
+    {
+      "puzzleNumber": 26,
+      "date": "2026-11-19",
+      "rows": [
+        "g1-sprint",
+        "g1-japan-cup",
+        "g1-mile"
+      ],
+      "cols": [
+        "month-05",
+        "dorm-ritto",
+        "pace-a"
+      ]
+    },
+    {
+      "puzzleNumber": 27,
+      "date": "2026-11-20",
+      "rows": [
+        "month-03",
+        "mile-a",
+        "sprint-a"
+      ],
+      "cols": [
+        "front-a",
+        "born-1980s",
+        "classic-winner"
+      ]
+    },
+    {
+      "puzzleNumber": 28,
+      "date": "2026-11-21",
+      "rows": [
+        "g1-tokyo-yushun",
+        "g1-mile",
+        "g1-kikuka-sho"
+      ],
+      "cols": [
+        "month-03",
+        "medium-a",
+        "classic-winner"
+      ]
+    },
+    {
+      "puzzleNumber": 29,
+      "date": "2026-11-22",
+      "rows": [
+        "born-1990s",
+        "classic-winner",
+        "g1-tenno-sho"
+      ],
+      "cols": [
+        "month-05",
+        "g1-kikuka-sho",
+        "end-a"
+      ]
+    },
+    {
+      "puzzleNumber": 30,
+      "date": "2026-11-23",
+      "rows": [
+        "g1-kikuka-sho",
+        "g1-takarazuka-kinen",
+        "front-a"
+      ],
+      "cols": [
+        "pace-a",
+        "month-04",
+        "born-1980s"
+      ]
+    },
+    {
+      "puzzleNumber": 31,
+      "date": "2026-11-24",
+      "rows": [
+        "g1-count-5",
+        "g1-japan-cup",
+        "g1-overseas"
+      ],
+      "cols": [
+        "classic-winner",
+        "dorm-miho",
+        "turf-a"
+      ]
+    },
+    {
+      "puzzleNumber": 32,
+      "date": "2026-11-25",
+      "rows": [
+        "end-a",
+        "g1-juvenile",
+        "born-2000s"
+      ],
+      "cols": [
+        "g1-tenno-sho",
+        "g1-count-3",
+        "dorm-miho"
+      ]
+    },
+    {
+      "puzzleNumber": 33,
+      "date": "2026-11-26",
+      "rows": [
+        "g1-juvenile",
+        "long-a",
+        "season-winter"
+      ],
+      "cols": [
+        "dorm-miho",
+        "end-a",
+        "g1-oka-sho"
+      ]
+    },
+    {
+      "puzzleNumber": 34,
+      "date": "2026-11-27",
+      "rows": [
+        "g1-japan-cup",
+        "month-03",
+        "g1-count-3"
+      ],
+      "cols": [
+        "mile-a",
+        "pace-a",
+        "g1-tenno-sho"
+      ]
+    },
+    {
+      "puzzleNumber": 35,
+      "date": "2026-11-28",
+      "rows": [
+        "month-03",
+        "g1-sprint",
+        "triple-crown"
+      ],
+      "cols": [
+        "classic-winner",
+        "late-a",
+        "born-1980s"
+      ]
+    },
+    {
+      "puzzleNumber": 36,
+      "date": "2026-11-29",
+      "rows": [
+        "pace-a",
+        "sprint-a",
+        "g1-takarazuka-kinen"
+      ],
+      "cols": [
+        "month-05",
+        "month-04",
+        "end-a"
+      ]
+    },
+    {
+      "puzzleNumber": 37,
+      "date": "2026-11-30",
+      "rows": [
+        "mile-a",
+        "triple-crown",
+        "g1-count-5"
+      ],
+      "cols": [
+        "g1-tenno-sho",
+        "g1-count-3",
+        "turf-a"
+      ]
+    },
+    {
+      "puzzleNumber": 38,
+      "date": "2026-12-01",
+      "rows": [
+        "sprint-a",
+        "turf-a",
+        "end-a"
+      ],
+      "cols": [
+        "month-03",
+        "month-02",
+        "month-05"
+      ]
+    },
+    {
+      "puzzleNumber": 39,
+      "date": "2026-12-02",
+      "rows": [
+        "g1-count-5",
+        "month-04",
+        "dorm-miho"
+      ],
+      "cols": [
+        "mile-a",
+        "medium-a",
+        "born-1990s"
+      ]
+    },
+    {
+      "puzzleNumber": 40,
+      "date": "2026-12-03",
+      "rows": [
+        "g1-mile",
+        "triple-crown",
+        "g1-sprint"
+      ],
+      "cols": [
+        "born-1980s",
+        "classic-winner",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 41,
+      "date": "2026-12-04",
+      "rows": [
+        "g1-kikuka-sho",
+        "triple-crown",
+        "g1-sprint"
+      ],
+      "cols": [
+        "pace-a",
+        "g1-count-5",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 42,
+      "date": "2026-12-05",
+      "rows": [
+        "g1-sprint",
+        "sprint-a",
+        "late-a"
+      ],
+      "cols": [
+        "g1-mile",
+        "dorm-ritto",
+        "g1-count-3"
+      ]
+    },
+    {
+      "puzzleNumber": 43,
+      "date": "2026-12-06",
+      "rows": [
+        "dorm-miho",
+        "long-a",
+        "late-a"
+      ],
+      "cols": [
+        "mile-a",
+        "month-05",
+        "g1-juvenile"
+      ]
+    },
+    {
+      "puzzleNumber": 44,
+      "date": "2026-12-07",
+      "rows": [
+        "front-a",
+        "triple-tiara",
+        "g1-count-3"
+      ],
+      "cols": [
+        "born-2000s",
+        "dorm-miho",
+        "classic-winner"
+      ]
+    },
+    {
+      "puzzleNumber": 45,
+      "date": "2026-12-08",
+      "rows": [
+        "g1-overseas",
+        "front-a",
+        "dirt-a"
+      ],
+      "cols": [
+        "month-04",
+        "pace-a",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 46,
+      "date": "2026-12-09",
+      "rows": [
+        "g1-sprint",
+        "g1-overseas",
+        "classic-winner"
+      ],
+      "cols": [
+        "born-1990s",
+        "g1-mile",
+        "sprint-a"
+      ]
+    },
+    {
+      "puzzleNumber": 47,
+      "date": "2026-12-10",
+      "rows": [
+        "month-02",
+        "medium-a",
+        "g1-tokyo-yushun"
+      ],
+      "cols": [
+        "born-2000s",
+        "g1-arima-kinen",
+        "dorm-ritto"
+      ]
+    },
+    {
+      "puzzleNumber": 48,
+      "date": "2026-12-11",
+      "rows": [
+        "dorm-ritto",
+        "dorm-miho",
+        "g1-dirt"
+      ],
+      "cols": [
+        "dirt-a",
+        "front-a",
+        "pace-a"
+      ]
+    },
+    {
+      "puzzleNumber": 49,
+      "date": "2026-12-12",
+      "rows": [
+        "mile-a",
+        "month-03",
+        "g1-japan-cup"
+      ],
+      "cols": [
+        "g1-count-5",
+        "late-a",
+        "born-2000s"
+      ]
+    },
+    {
+      "puzzleNumber": 50,
+      "date": "2026-12-13",
+      "rows": [
+        "born-1980s",
+        "dirt-a",
+        "born-1990s"
+      ],
+      "cols": [
+        "dorm-ritto",
+        "g1-tenno-sho",
+        "dorm-miho"
+      ]
+    },
+    {
+      "puzzleNumber": 51,
+      "date": "2026-12-14",
+      "rows": [
+        "g1-tokyo-yushun",
+        "dorm-miho",
+        "g1-count-5"
+      ],
+      "cols": [
+        "month-03",
+        "g1-arima-kinen",
+        "classic-winner"
+      ]
+    },
+    {
+      "puzzleNumber": 52,
+      "date": "2026-12-15",
+      "rows": [
+        "g1-count-3",
+        "g1-japan-cup",
+        "g1-oka-sho"
+      ],
+      "cols": [
+        "season-winter",
+        "late-a",
+        "triple-tiara"
+      ]
+    },
+    {
+      "puzzleNumber": 53,
+      "date": "2026-12-16",
+      "rows": [
+        "classic-winner",
+        "g1-takarazuka-kinen",
+        "turf-a"
+      ],
+      "cols": [
+        "mile-a",
+        "g1-count-5",
+        "born-1980s"
+      ]
+    },
+    {
+      "puzzleNumber": 54,
+      "date": "2026-12-17",
+      "rows": [
+        "g1-takarazuka-kinen",
+        "month-05",
+        "g1-tenno-sho"
+      ],
+      "cols": [
+        "end-a",
+        "g1-count-5",
+        "long-a"
+      ]
+    },
+    {
+      "puzzleNumber": 55,
+      "date": "2026-12-18",
+      "rows": [
+        "sprint-a",
+        "triple-tiara",
+        "long-a"
+      ],
+      "cols": [
+        "g1-oka-sho",
+        "dorm-miho",
+        "g1-count-3"
+      ]
+    },
+    {
+      "puzzleNumber": 56,
+      "date": "2026-12-19",
+      "rows": [
+        "g1-tenno-sho",
+        "long-a",
+        "month-05"
+      ],
+      "cols": [
+        "g1-count-3",
+        "late-a",
+        "g1-arima-kinen"
+      ]
+    },
+    {
+      "puzzleNumber": 57,
+      "date": "2026-12-20",
+      "rows": [
+        "month-03",
+        "medium-a",
+        "g1-juvenile"
+      ],
+      "cols": [
+        "front-a",
+        "pace-a",
+        "end-a"
+      ]
+    },
+    {
+      "puzzleNumber": 58,
+      "date": "2026-12-21",
+      "rows": [
+        "g1-overseas",
+        "g1-oka-sho",
+        "late-a"
+      ],
+      "cols": [
+        "month-04",
+        "mile-a",
+        "g1-sprint"
+      ]
+    },
+    {
+      "puzzleNumber": 59,
+      "date": "2026-12-22",
+      "rows": [
+        "g1-takarazuka-kinen",
+        "g1-tenno-sho",
+        "g1-sprint"
+      ],
+      "cols": [
+        "dorm-ritto",
+        "month-04",
+        "mile-a"
+      ]
+    },
+    {
+      "puzzleNumber": 60,
+      "date": "2026-12-23",
+      "rows": [
+        "g1-overseas",
+        "g1-mile",
+        "g1-oka-sho"
+      ],
+      "cols": [
+        "pace-a",
+        "dorm-miho",
+        "turf-a"
+      ]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ scripts, and tests — and later by a backend. Signatures are the contract; bodi
 ```ts
 // dataset.ts
 loadDataset(raw: { characters: unknown; trainees: unknown; categories: unknown }): Dataset; // throws on invalid
+loadSchedule(raw: unknown): Schedule; // throws on invalid (Zod: launchDate, puzzles[] of ScheduleEntry)
 interface Dataset {
   characters: Map<CharacterId, Character>;
   trainees: Map<TraineeId, TraineeVersion>;
@@ -41,7 +42,7 @@ buildSearchIndex(ds: Dataset, locale: string): SearchIndex;
 search(index: SearchIndex, query: string, limit?: number): TraineeId[];  // default limit 8
 
 // share.ts
-shareText(s: GameSession, puzzleNumber: number, url: string, t: ShareStrings): string;
+shareText(s: GameSession, puzzleNumber: number | null, url: string, t: ShareStrings): string; // null = practice
 
 // stats.ts
 computeStats(history: HistoryEntry[], todayPuzzle: number): PlayerStatistics;

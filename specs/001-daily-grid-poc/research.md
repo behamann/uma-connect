@@ -55,10 +55,14 @@
 
 ## R5. Search
 
-- **Decision**: Custom search over precomputed normalized strings: NFKD + strip diacritics
-  (`ō → o`), lowercase, remove non-alphanumerics; index name, aliases, and version tag. Ranking:
-  exact > name prefix > word prefix > substring; tie-break by original version first, then
-  alphabetical. Max 8 results; versions of the same character are adjacent.
+- **Decision**: Custom search over precomputed normalized strings: NFKD + strip combining marks
+  (`ō → o`), lowercase, replace every non-letter/non-digit with a space using Unicode classes
+  (`[^\p{L}\p{N}]`, so Japanese aliases are kept), split into words. The query is normalized the
+  same way and split into tokens; a candidate matches when **every** query token is a prefix of
+  some word in its name, an alias, or its version tag (so "spe week" finds "Special Week").
+  Ranking: exact full match > all tokens prefix the name > tokens prefix alias/version words >
+  substring of the joined name; tie-break by original version first, then alphabetical. Max 8
+  results; versions of the same character are adjacent.
 - **Rationale**: Roster is small (hundreds); no dependency needed and results are deterministic
   for SC-004 tests.
 - **Alternatives**: Fuse.js (fuzzy typos) — add only if SC-004 fails in playtest.
@@ -127,3 +131,16 @@
 | next-intl | Externalized strings, ICU plurals, future locales (Principle III) |
 | @headlessui/react | Accessible combobox/dialog (Principle V) |
 | zod | Dataset schema validation (Principle I) |
+
+## Dev dependency justification (Constitution V)
+
+| Dependency | Why |
+|---|---|
+| typescript, tailwindcss, @tailwindcss/postcss | Chosen stack (constitution) |
+| eslint, eslint-config-next | Lint quality gate (constitution workflow) |
+| prettier | Consistent formatting, avoids style churn in reviews |
+| vitest | Unit/data tests (constitution) |
+| @playwright/test | E2E tests (constitution) |
+| @axe-core/playwright | Automated WCAG checks in E2E (Principle V, R11) |
+| tsx | Run TypeScript scripts (`validate-data`, `generate-schedule`) reusing `src/game` without a build step |
+| serve | Serve the static `out/` folder for Playwright so E2E runs against the real export |

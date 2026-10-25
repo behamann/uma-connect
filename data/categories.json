@@ -1,0 +1,576 @@
+{
+  "groups": [
+    { "id": "track-aptitude", "label": { "en": "Track aptitude" } },
+    { "id": "distance-aptitude", "label": { "en": "Distance aptitude" } },
+    { "id": "style-aptitude", "label": { "en": "Running style aptitude" } },
+    { "id": "dorm", "label": { "en": "Dorm" } },
+    { "id": "birthday", "label": { "en": "Birthday" } },
+    { "id": "g1-wins", "label": { "en": "Real-life G1 wins" } },
+    { "id": "titles", "label": { "en": "Real-life titles" } },
+    { "id": "sire-line", "label": { "en": "Sire line" } },
+    { "id": "horse-profile", "label": { "en": "Real horse profile" } }
+  ],
+  "categories": [
+    {
+      "id": "turf-a",
+      "groupId": "track-aptitude",
+      "label": { "en": "Turf ≥ A" },
+      "rule": { "en": "This trainee version has Turf aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "track", "key": "turf", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "dirt-a",
+      "groupId": "track-aptitude",
+      "label": { "en": "Dirt ≥ A" },
+      "rule": { "en": "This trainee version has Dirt aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "track", "key": "dirt", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "sprint-a",
+      "groupId": "distance-aptitude",
+      "label": { "en": "Sprint ≥ A" },
+      "rule": { "en": "This trainee version has Sprint distance aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "distance", "key": "sprint", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "mile-a",
+      "groupId": "distance-aptitude",
+      "label": { "en": "Mile ≥ A" },
+      "rule": { "en": "This trainee version has Mile distance aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "distance", "key": "mile", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "medium-a",
+      "groupId": "distance-aptitude",
+      "label": { "en": "Medium ≥ A" },
+      "rule": { "en": "This trainee version has Medium distance aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "distance", "key": "medium", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "long-a",
+      "groupId": "distance-aptitude",
+      "label": { "en": "Long ≥ A" },
+      "rule": { "en": "This trainee version has Long distance aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "distance", "key": "long", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "front-a",
+      "groupId": "style-aptitude",
+      "label": { "en": "Front Runner ≥ A" },
+      "rule": { "en": "This trainee version has Front Runner aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "style", "key": "front", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "pace-a",
+      "groupId": "style-aptitude",
+      "label": { "en": "Pace Chaser ≥ A" },
+      "rule": { "en": "This trainee version has Pace Chaser aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "style", "key": "pace", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "late-a",
+      "groupId": "style-aptitude",
+      "label": { "en": "Late Surger ≥ A" },
+      "rule": { "en": "This trainee version has Late Surger aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "style", "key": "late", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "end-a",
+      "groupId": "style-aptitude",
+      "label": { "en": "End Closer ≥ A" },
+      "rule": { "en": "This trainee version has End Closer aptitude A or S." },
+      "match": { "type": "aptitude", "axis": "style", "key": "end", "min": "A" },
+      "enabled": true
+    },
+    {
+      "id": "dorm-ritto",
+      "groupId": "dorm",
+      "label": { "en": "Ritto Dorm" },
+      "rule": { "en": "Lives in the Ritto Dormitory at Tracen Academy (official profile)." },
+      "match": { "type": "equals", "field": "dorm", "value": "ritto" },
+      "enabled": true
+    },
+    {
+      "id": "dorm-miho",
+      "groupId": "dorm",
+      "label": { "en": "Miho Dorm" },
+      "rule": { "en": "Lives in the Miho Dormitory at Tracen Academy (official profile)." },
+      "match": { "type": "equals", "field": "dorm", "value": "miho" },
+      "enabled": true
+    },
+    {
+      "id": "season-spring",
+      "groupId": "birthday",
+      "label": { "en": "Spring birthday" },
+      "rule": { "en": "Official birthday in March, April, or May." },
+      "match": { "type": "birthMonth", "months": [3, 4, 5] },
+      "enabled": false
+    },
+    {
+      "id": "season-summer",
+      "groupId": "birthday",
+      "label": { "en": "Summer birthday" },
+      "rule": { "en": "Official birthday in June, July, or August." },
+      "match": { "type": "birthMonth", "months": [6, 7, 8] },
+      "enabled": false
+    },
+    {
+      "id": "season-autumn",
+      "groupId": "birthday",
+      "label": { "en": "Autumn birthday" },
+      "rule": { "en": "Official birthday in September, October, or November." },
+      "match": { "type": "birthMonth", "months": [9, 10, 11] },
+      "enabled": false
+    },
+    {
+      "id": "season-winter",
+      "groupId": "birthday",
+      "label": { "en": "Winter birthday" },
+      "rule": { "en": "Official birthday in December, January, or February." },
+      "match": { "type": "birthMonth", "months": [12, 1, 2] },
+      "enabled": true
+    },
+    {
+      "id": "month-01",
+      "groupId": "birthday",
+      "label": { "en": "Born in January" },
+      "rule": { "en": "Official birthday in January." },
+      "match": { "type": "birthMonth", "months": [1] },
+      "enabled": false
+    },
+    {
+      "id": "month-02",
+      "groupId": "birthday",
+      "label": { "en": "Born in February" },
+      "rule": { "en": "Official birthday in February." },
+      "match": { "type": "birthMonth", "months": [2] },
+      "enabled": true
+    },
+    {
+      "id": "month-03",
+      "groupId": "birthday",
+      "label": { "en": "Born in March" },
+      "rule": { "en": "Official birthday in March." },
+      "match": { "type": "birthMonth", "months": [3] },
+      "enabled": true
+    },
+    {
+      "id": "month-04",
+      "groupId": "birthday",
+      "label": { "en": "Born in April" },
+      "rule": { "en": "Official birthday in April." },
+      "match": { "type": "birthMonth", "months": [4] },
+      "enabled": true
+    },
+    {
+      "id": "month-05",
+      "groupId": "birthday",
+      "label": { "en": "Born in May" },
+      "rule": { "en": "Official birthday in May." },
+      "match": { "type": "birthMonth", "months": [5] },
+      "enabled": true
+    },
+    {
+      "id": "month-06",
+      "groupId": "birthday",
+      "label": { "en": "Born in June" },
+      "rule": { "en": "Official birthday in June." },
+      "match": { "type": "birthMonth", "months": [6] },
+      "enabled": false
+    },
+    {
+      "id": "month-07",
+      "groupId": "birthday",
+      "label": { "en": "Born in July" },
+      "rule": { "en": "Official birthday in July." },
+      "match": { "type": "birthMonth", "months": [7] },
+      "enabled": false
+    },
+    {
+      "id": "month-08",
+      "groupId": "birthday",
+      "label": { "en": "Born in August" },
+      "rule": { "en": "Official birthday in August." },
+      "match": { "type": "birthMonth", "months": [8] },
+      "enabled": false
+    },
+    {
+      "id": "month-09",
+      "groupId": "birthday",
+      "label": { "en": "Born in September" },
+      "rule": { "en": "Official birthday in September." },
+      "match": { "type": "birthMonth", "months": [9] },
+      "enabled": false
+    },
+    {
+      "id": "month-10",
+      "groupId": "birthday",
+      "label": { "en": "Born in October" },
+      "rule": { "en": "Official birthday in October." },
+      "match": { "type": "birthMonth", "months": [10] },
+      "enabled": false
+    },
+    {
+      "id": "month-11",
+      "groupId": "birthday",
+      "label": { "en": "Born in November" },
+      "rule": { "en": "Official birthday in November." },
+      "match": { "type": "birthMonth", "months": [11] },
+      "enabled": false
+    },
+    {
+      "id": "month-12",
+      "groupId": "birthday",
+      "label": { "en": "Born in December" },
+      "rule": { "en": "Official birthday in December." },
+      "match": { "type": "birthMonth", "months": [12] },
+      "enabled": false
+    },
+    {
+      "id": "g1-arima-kinen",
+      "groupId": "g1-wins",
+      "label": { "en": "Won the Arima Kinen" },
+      "rule": { "en": "The real horse won the Arima Kinen at least once." },
+      "match": { "type": "includes", "field": "irl.g1Wins", "values": ["arima-kinen"] },
+      "enabled": true
+    },
+    {
+      "id": "g1-japan-cup",
+      "groupId": "g1-wins",
+      "label": { "en": "Won the Japan Cup" },
+      "rule": { "en": "The real horse won the Japan Cup at least once." },
+      "match": { "type": "includes", "field": "irl.g1Wins", "values": ["japan-cup"] },
+      "enabled": true
+    },
+    {
+      "id": "g1-tenno-sho",
+      "groupId": "g1-wins",
+      "label": { "en": "Won a Tenno Sho" },
+      "rule": { "en": "The real horse won the Tenno Sho (Spring) or the Tenno Sho (Autumn)." },
+      "match": {
+        "type": "includes",
+        "field": "irl.g1Wins",
+        "values": ["tenno-sho-spring", "tenno-sho-autumn"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "g1-tokyo-yushun",
+      "groupId": "g1-wins",
+      "label": { "en": "Won the Japanese Derby" },
+      "rule": { "en": "The real horse won the Tokyo Yushun (Japanese Derby)." },
+      "match": { "type": "includes", "field": "irl.g1Wins", "values": ["tokyo-yushun"] },
+      "enabled": true
+    },
+    {
+      "id": "g1-takarazuka-kinen",
+      "groupId": "g1-wins",
+      "label": { "en": "Won the Takarazuka Kinen" },
+      "rule": { "en": "The real horse won the Takarazuka Kinen at least once." },
+      "match": { "type": "includes", "field": "irl.g1Wins", "values": ["takarazuka-kinen"] },
+      "enabled": true
+    },
+    {
+      "id": "g1-satsuki-sho",
+      "groupId": "g1-wins",
+      "label": { "en": "Won the Satsuki Sho" },
+      "rule": { "en": "The real horse won the Satsuki Sho (Japanese 2000 Guineas)." },
+      "match": { "type": "includes", "field": "irl.g1Wins", "values": ["satsuki-sho"] },
+      "enabled": true
+    },
+    {
+      "id": "g1-kikuka-sho",
+      "groupId": "g1-wins",
+      "label": { "en": "Won the Kikuka Sho" },
+      "rule": { "en": "The real horse won the Kikuka Sho (Japanese St. Leger)." },
+      "match": { "type": "includes", "field": "irl.g1Wins", "values": ["kikuka-sho"] },
+      "enabled": true
+    },
+    {
+      "id": "g1-oka-sho",
+      "groupId": "g1-wins",
+      "label": { "en": "Won the Oka Sho" },
+      "rule": { "en": "The real horse won the Oka Sho (Japanese 1000 Guineas)." },
+      "match": { "type": "includes", "field": "irl.g1Wins", "values": ["oka-sho"] },
+      "enabled": true
+    },
+    {
+      "id": "g1-mile",
+      "groupId": "g1-wins",
+      "label": { "en": "Won a mile G1" },
+      "rule": {
+        "en": "The real horse won the Yasuda Kinen, Mile Championship, NHK Mile Cup, or Victoria Mile."
+      },
+      "match": {
+        "type": "includes",
+        "field": "irl.g1Wins",
+        "values": ["yasuda-kinen", "mile-championship", "nhk-mile-cup", "victoria-mile"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "g1-sprint",
+      "groupId": "g1-wins",
+      "label": { "en": "Won a sprint G1" },
+      "rule": {
+        "en": "The real horse won the Sprinters Stakes, Takamatsunomiya Kinen, JBC Sprint, Hong Kong Sprint, or Prix Maurice de Gheest."
+      },
+      "match": {
+        "type": "includes",
+        "field": "irl.g1Wins",
+        "values": [
+          "sprinters-stakes",
+          "takamatsunomiya-kinen",
+          "jbc-sprint",
+          "hong-kong-sprint",
+          "prix-maurice-de-gheest"
+        ]
+      },
+      "enabled": true
+    },
+    {
+      "id": "g1-dirt",
+      "groupId": "g1-wins",
+      "label": { "en": "Won a dirt G1" },
+      "rule": {
+        "en": "The real horse won a dirt G1/JpnI race (e.g. February Stakes, Champions Cup, Teio Sho, Tokyo Daishoten, Kawasaki Kinen, JBC Classic, Dubai World Cup)."
+      },
+      "match": {
+        "type": "includes",
+        "field": "irl.g1Wins",
+        "values": [
+          "february-stakes",
+          "champions-cup",
+          "teio-sho",
+          "tokyo-daishoten",
+          "kawasaki-kinen",
+          "jbc-classic",
+          "jbc-sprint",
+          "jbc-ladies-classic",
+          "kashiwa-kinen",
+          "mile-championship-nambu-hai",
+          "japan-dirt-derby",
+          "zen-nippon-nisai-yushun",
+          "sakitama-hai",
+          "dubai-world-cup",
+          "saudi-cup",
+          "breeders-cup-distaff"
+        ]
+      },
+      "enabled": true
+    },
+    {
+      "id": "g1-overseas",
+      "groupId": "g1-wins",
+      "label": { "en": "Won an overseas G1" },
+      "rule": { "en": "The real horse won a G1 race outside Japan (e.g. Dubai, Hong Kong, France)." },
+      "match": {
+        "type": "includes",
+        "field": "irl.g1Wins",
+        "values": [
+          "dubai-world-cup",
+          "dubai-turf",
+          "dubai-sheema-classic",
+          "saudi-cup",
+          "hong-kong-cup",
+          "hong-kong-vase",
+          "hong-kong-mile",
+          "hong-kong-sprint",
+          "queen-elizabeth-ii-cup-hk",
+          "grand-prix-de-saint-cloud",
+          "prix-jacques-le-marois",
+          "prix-maurice-de-gheest",
+          "cox-plate",
+          "breeders-cup-distaff",
+          "breeders-cup-filly-mare-turf",
+          "american-oaks"
+        ]
+      },
+      "enabled": true
+    },
+    {
+      "id": "g1-juvenile",
+      "groupId": "g1-wins",
+      "label": { "en": "Won a 2-year-old G1" },
+      "rule": {
+        "en": "The real horse won the Asahi Hai Futurity Stakes, Hanshin Juvenile Fillies, Hopeful Stakes, or Zen-Nippon Nisai Yushun."
+      },
+      "match": {
+        "type": "includes",
+        "field": "irl.g1Wins",
+        "values": [
+          "asahi-hai-futurity-stakes",
+          "hanshin-juvenile-fillies",
+          "hopeful-stakes",
+          "zen-nippon-nisai-yushun"
+        ]
+      },
+      "enabled": true
+    },
+    {
+      "id": "g1-count-3",
+      "groupId": "g1-wins",
+      "label": { "en": "3+ G1 wins" },
+      "rule": {
+        "en": "The real horse won at least 3 G1 races in total (JRA G1, NAR JpnI, and overseas G1 count; repeat wins count separately)."
+      },
+      "match": { "type": "atLeast", "field": "irl.g1WinCount", "value": 3 },
+      "enabled": true
+    },
+    {
+      "id": "g1-count-5",
+      "groupId": "g1-wins",
+      "label": { "en": "5+ G1 wins" },
+      "rule": {
+        "en": "The real horse won at least 5 G1 races in total (JRA G1, NAR JpnI, and overseas G1 count; repeat wins count separately)."
+      },
+      "match": { "type": "atLeast", "field": "irl.g1WinCount", "value": 5 },
+      "enabled": true
+    },
+    {
+      "id": "triple-crown",
+      "groupId": "titles",
+      "label": { "en": "Triple Crown" },
+      "rule": { "en": "The real horse won the Satsuki Sho, Tokyo Yushun, and Kikuka Sho." },
+      "match": { "type": "includes", "field": "irl.titles", "values": ["triple-crown"] },
+      "enabled": true
+    },
+    {
+      "id": "triple-tiara",
+      "groupId": "titles",
+      "label": { "en": "Triple Tiara" },
+      "rule": {
+        "en": "The real horse won the Oka Sho, Yushun Himba, and Shuka Sho (before 1996: Queen Elizabeth II Cup instead of Shuka Sho)."
+      },
+      "match": { "type": "includes", "field": "irl.titles", "values": ["triple-tiara"] },
+      "enabled": true
+    },
+    {
+      "id": "classic-winner",
+      "groupId": "titles",
+      "label": { "en": "Classic winner" },
+      "rule": {
+        "en": "The real horse won at least one of: Satsuki Sho, Tokyo Yushun (Japanese Derby), Kikuka Sho, Oka Sho, Yushun Himba (Japanese Oaks), Shuka Sho."
+      },
+      "match": {
+        "type": "includes",
+        "field": "irl.g1Wins",
+        "values": ["satsuki-sho", "tokyo-yushun", "kikuka-sho", "oka-sho", "yushun-himba", "shuka-sho"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "sire-sunday-silence",
+      "groupId": "sire-line",
+      "label": { "en": "Sunday Silence line" },
+      "rule": {
+        "en": "Sunday Silence is the sire, grandsire, great-grandsire, or great-great-grandsire in the male line."
+      },
+      "match": { "type": "includes", "field": "irl.maleLine", "values": ["sunday-silence"] },
+      "enabled": false
+    },
+    {
+      "id": "sire-roberto",
+      "groupId": "sire-line",
+      "label": { "en": "Roberto line" },
+      "rule": {
+        "en": "Roberto is the sire, grandsire, great-grandsire, or great-great-grandsire in the male line."
+      },
+      "match": { "type": "includes", "field": "irl.maleLine", "values": ["roberto"] },
+      "enabled": false
+    },
+    {
+      "id": "sire-northern-dancer",
+      "groupId": "sire-line",
+      "label": { "en": "Northern Dancer line" },
+      "rule": {
+        "en": "Northern Dancer is the sire, grandsire, great-grandsire, or great-great-grandsire in the male line."
+      },
+      "match": { "type": "includes", "field": "irl.maleLine", "values": ["northern-dancer"] },
+      "enabled": false
+    },
+    {
+      "id": "sire-mr-prospector",
+      "groupId": "sire-line",
+      "label": { "en": "Mr. Prospector line" },
+      "rule": {
+        "en": "Mr. Prospector is the sire, grandsire, great-grandsire, or great-great-grandsire in the male line."
+      },
+      "match": { "type": "includes", "field": "irl.maleLine", "values": ["mr-prospector"] },
+      "enabled": false
+    },
+    {
+      "id": "born-1980s",
+      "groupId": "horse-profile",
+      "label": { "en": "Born in the 1980s" },
+      "rule": { "en": "The real horse was foaled between 1980 and 1989." },
+      "match": { "type": "range", "field": "irl.birthYear", "min": 1980, "max": 1989 },
+      "enabled": true
+    },
+    {
+      "id": "born-1990s",
+      "groupId": "horse-profile",
+      "label": { "en": "Born in the 1990s" },
+      "rule": { "en": "The real horse was foaled between 1990 and 1999." },
+      "match": { "type": "range", "field": "irl.birthYear", "min": 1990, "max": 1999 },
+      "enabled": true
+    },
+    {
+      "id": "born-2000s",
+      "groupId": "horse-profile",
+      "label": { "en": "Born in the 2000s" },
+      "rule": { "en": "The real horse was foaled between 2000 and 2009." },
+      "match": { "type": "range", "field": "irl.birthYear", "min": 2000, "max": 2009 },
+      "enabled": true
+    },
+    {
+      "id": "born-2010s",
+      "groupId": "horse-profile",
+      "label": { "en": "Born in the 2010s" },
+      "rule": { "en": "The real horse was foaled between 2010 and 2019." },
+      "match": { "type": "range", "field": "irl.birthYear", "min": 2010, "max": 2019 },
+      "enabled": true
+    },
+    {
+      "id": "coat-bay",
+      "groupId": "horse-profile",
+      "label": { "en": "Bay coat" },
+      "rule": { "en": "The real horse's registered coat color is bay." },
+      "match": { "type": "equals", "field": "irl.coat", "value": "bay" },
+      "enabled": false
+    },
+    {
+      "id": "coat-dark-bay",
+      "groupId": "horse-profile",
+      "label": { "en": "Dark bay coat" },
+      "rule": { "en": "The real horse's registered coat color is dark bay." },
+      "match": { "type": "equals", "field": "irl.coat", "value": "dark-bay" },
+      "enabled": false
+    },
+    {
+      "id": "coat-chestnut",
+      "groupId": "horse-profile",
+      "label": { "en": "Chestnut coat" },
+      "rule": { "en": "The real horse's registered coat color is chestnut (not liver chestnut)." },
+      "match": { "type": "equals", "field": "irl.coat", "value": "chestnut" },
+      "enabled": false
+    },
+    {
+      "id": "coat-grey",
+      "groupId": "horse-profile",
+      "label": { "en": "Grey coat" },
+      "rule": { "en": "The real horse's registered coat color is grey." },
+      "match": { "type": "equals", "field": "irl.coat", "value": "grey" },
+      "enabled": false
+    }
+  ]
+}
