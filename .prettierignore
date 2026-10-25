@@ -8,3 +8,5 @@ package-lock.json
 .specify/
 specs/
 assets/
+src/backend/database.types.ts
+supabase/

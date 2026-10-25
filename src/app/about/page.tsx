@@ -43,7 +43,14 @@ export default async function AboutPage() {
       </section>
       <section>
         <h2 className="font-semibold">{t("privacyTitle")}</h2>
-        <p className="mt-1 text-sm text-slate-700">{t("privacy")}</p>
+        {(["privacy", "privacyAccount", "privacyGuest", "privacyControl", "privacyAge"] as const).map((key) => (
+          <p key={key} className="mt-1 text-sm text-slate-700">
+            {t(key)}
+          </p>
+        ))}
+        <Link href="/account" className="mt-1 inline-block text-sm text-brand-dark underline">
+          {t("accountLink")}
+        </Link>
       </section>
       <Link href="/" className="self-start text-brand-dark underline">
         {t("back")}

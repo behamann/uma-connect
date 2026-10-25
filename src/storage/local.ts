@@ -45,6 +45,8 @@ function detectStore(): KeyValueStore {
 export function createStorage(store: KeyValueStore = detectStore()) {
   const fallback = new MemoryStore();
   let active: KeyValueStore = store;
+  const listeners = new Map<string, Set<() => void>>();
+  const notify = (key: string) => listeners.get(key)?.forEach((l) => l());
 
   const run = <T>(fn: (s: KeyValueStore) => T): T => {
     try {
@@ -56,6 +58,9 @@ export function createStorage(store: KeyValueStore = detectStore()) {
   };
 
   return {
+    getRaw(key: string): string | null {
+      return run((s) => s.getItem(STORAGE_PREFIX + key));
+    },
     get<T>(key: string): T | undefined {
       const raw = run((s) => s.getItem(STORAGE_PREFIX + key));
       if (raw === null) return undefined;
@@ -67,9 +72,25 @@ export function createStorage(store: KeyValueStore = detectStore()) {
     },
     set(key: string, value: unknown): void {
       run((s) => s.setItem(STORAGE_PREFIX + key, JSON.stringify(value)));
+      notify(key);
     },
     remove(key: string): void {
       run((s) => s.removeItem(STORAGE_PREFIX + key));
+      notify(key);
+    },
+    /** Calls `listener` when `key` changes in this tab or (via the storage event) in another tab. */
+    subscribe(key: string, listener: () => void): () => void {
+      const set = listeners.get(key) ?? new Set();
+      set.add(listener);
+      listeners.set(key, set);
+      const onStorage = (e: StorageEvent) => {
+        if (e.key === STORAGE_PREFIX + key) listener();
+      };
+      globalThis.addEventListener?.("storage", onStorage);
+      return () => {
+        set.delete(listener);
+        globalThis.removeEventListener?.("storage", onStorage);
+      };
     },
     keys(): string[] {
       return run((s) => {
@@ -86,15 +107,26 @@ export function createStorage(store: KeyValueStore = detectStore()) {
 
 export type Storage = ReturnType<typeof createStorage>;
 
+let shared: Storage | undefined;
+/** The app-wide storage instance, so writers (e.g. sync) and readers share change notifications. */
+export function sharedStorage(): Storage {
+  shared ??= createStorage();
+  return shared;
+}
+
 export const DAILY_KEY = (puzzleNumber: number) => `daily:${puzzleNumber}`;
 export const HISTORY_KEY = "history";
 export const SETTINGS_KEY = "settings";
+/** Puzzle number whose local game was replaced by another device's (FR-012). */
+export const SYNC_NOTICE_KEY = "sync:notice";
+/** Set once this device's result for a puzzle reached rarity stats (guest) or the account. */
+export const GUEST_SUBMITTED_KEY = (puzzleNumber: number) => `guestSubmitted:${puzzleNumber}`;
 export const KEEP_DAILY_SESSIONS = 30;
 
 /** Removes daily sessions older than KEEP_DAILY_SESSIONS puzzles (history is kept). */
 export function pruneDailySessions(storage: Storage, currentPuzzle: number): void {
   for (const key of storage.keys()) {
-    const m = key.match(/^daily:(\d+)$/);
+    const m = key.match(/^(?:daily|guestSubmitted):(\d+)$/);
     if (m && Number(m[1]) <= currentPuzzle - KEEP_DAILY_SESSIONS) storage.remove(key);
   }
 }

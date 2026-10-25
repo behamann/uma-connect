@@ -21,3 +21,26 @@ jobs:
       - run: npm test
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+
+  supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Start local Supabase
+        run: npx supabase start -x realtime,storage-api,imgproxy,studio,edge-runtime,logflare,vector,supavisor
+      - name: Export local stack env
+        run: |
+          eval "$(npx supabase status -o env)"
+          echo "NEXT_PUBLIC_SUPABASE_URL=$API_URL" >> "$GITHUB_ENV"
+          echo "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=$PUBLISHABLE_KEY" >> "$GITHUB_ENV"
+      - run: npm run db:lint
+      - run: npm run backend:sync-puzzles -- --local
+      - run: npm run db:test
+      - run: npm run test:integration
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e:accounts

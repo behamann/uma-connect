@@ -1,12 +1,15 @@
 "use client";
 
 import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
-import { useTranslations } from "next-intl";
+import { useFormatter, useTranslations } from "next-intl";
 import { useState } from "react";
-import { score } from "@/game/session";
+import { cellRarity, rarityScore } from "@/game/rarity";
+import { isFinished, score } from "@/game/session";
 import { shareText } from "@/game/share";
 import type { GameController } from "@/hooks/useGame";
 import { useCategoryText, useTraineeLookup } from "@/hooks/useDatasetText";
+import { useRarity } from "@/hooks/useRarity";
+import { withBasePath } from "@/lib/basePath";
 import { Countdown } from "./Countdown";
 import { Portrait } from "./Portrait";
 
@@ -27,12 +30,32 @@ export function ResultsDialog({
   const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
   const { session, resolved } = game;
   const { rows, cols } = resolved.grid;
+  const format = useFormatter();
+  const rarity = useRarity(puzzleNumber, isFinished(session));
+  const total = rarity.status === "ready" ? rarityScore(rarity.data, session.cells) : null;
+  const rarityNote =
+    rarity.status === "ready"
+      ? t("rarityScore", { score: total ?? 0 })
+      : rarity.status === "insufficient"
+        ? t("rarityInsufficient", { count: rarity.finishedGames, threshold: rarity.threshold })
+        : t(`rarityStatus.${rarity.status}`);
+  const cellRarityText = (cell: number, picked: string | null) =>
+    rarity.status === "ready"
+      ? format.number(cellRarity(rarity.data, cell, picked)! / 100, { style: "percent", maximumFractionDigits: 1 })
+      : "—";
 
   const text = () =>
-    shareText(session, puzzleNumber, window.location.origin, {
-      daily: (number, s) => t("shareDaily", { number, score: s }),
-      practice: (s) => t("sharePractice", { score: s }),
-    });
+    shareText(
+      session,
+      puzzleNumber,
+      `${window.location.origin}${withBasePath("/")}`,
+      {
+        daily: (number, s) => t("shareDaily", { number, score: s }),
+        practice: (s) => t("sharePractice", { score: s }),
+        rarity: (r) => t("shareRarity", { score: r }),
+      },
+      total,
+    );
 
   const share = async () => {
     try {
@@ -51,6 +74,9 @@ export function ResultsDialog({
           <DialogTitle className="text-center text-xl font-bold">{t("title")}</DialogTitle>
           <p className="mt-1 text-center text-lg" data-testid="results-score">
             {t("score", { score: score(session) })}
+          </p>
+          <p className="text-center text-sm text-slate-600" data-testid="results-rarity">
+            {rarityNote}
           </p>
 
           <div className="mt-3 flex flex-col items-center gap-2">
@@ -92,10 +118,10 @@ export function ResultsDialog({
                       </span>
                       <span
                         className="text-xs text-slate-600"
-                        title={t("rarityUnavailable")}
-                        aria-label={`${t("rarity")}: ${t("rarityUnavailable")}`}
+                        title={rarity.status === "ready" ? undefined : rarityNote}
+                        data-testid="cell-rarity"
                       >
-                        {t("rarity")}: —
+                        {t("rarity")}: {cellRarityText(cell, picked ?? null)}
                       </span>
                     </div>
                     <div className="mt-1 flex items-center gap-2 text-sm">

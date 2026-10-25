@@ -2,11 +2,13 @@
 
 import { useFormatter, useTranslations } from "next-intl";
 import { useState } from "react";
+import { notifyDailyCommit } from "@/backend/load";
 import { getStorage, loadDailyPuzzle, useGame, type Persistence } from "@/hooks/useGame";
 import type { Grid } from "@/game/types";
 import { AppHeader } from "./AppHeader";
 import { Countdown } from "./Countdown";
 import { GameBoard } from "./GameBoard";
+import { SyncNotice } from "./SyncNotice";
 
 function DailyBoard({ grid, persistence }: { grid: Grid; persistence: Persistence }) {
   const game = useGame(grid, `daily:${persistence.puzzleNumber}`, persistence);
@@ -34,10 +36,15 @@ export default function DailyGame() {
           {format.dateTime(today, { dateStyle: "long", timeZone: "UTC" })}
         </p>
       </header>
+      <SyncNotice puzzleNumber={puzzle.puzzleNumber} />
       {puzzle.status === "ok" ? (
         <DailyBoard
           grid={puzzle.grid}
-          persistence={{ storage: getStorage(), puzzleNumber: puzzle.puzzleNumber }}
+          persistence={{
+            storage: getStorage(),
+            puzzleNumber: puzzle.puzzleNumber,
+            onCommit: (prev, next) => notifyDailyCommit(puzzle.puzzleNumber, prev, next),
+          }}
         />
       ) : (
         <p role="alert" className="rounded-xl bg-amber-50 p-4 text-center text-amber-900">

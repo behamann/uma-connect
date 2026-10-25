@@ -1,16 +1,15 @@
 <!--
 Sync Impact Report
-- Version change: (template) → 1.0.0
-- Principles defined:
-  I. Data Integrity & Explicit Category Rules
-  II. Frontend-Only Proof of Concept
-  III. Internationalization-Ready
-  IV. Pure, Tested Game Logic
-  V. Simplicity & Accessibility
-- Added sections: Technology & Content Constraints; Development Workflow & Quality Gates
+- Version change: 1.0.0 → 2.0.0 (MAJOR: Principle II redefined)
+- Modified principles:
+  II. Frontend-Only Proof of Concept → II. Static Frontend, Managed Backend, Guest-First
+  IV. Pure, Tested Game Logic (expanded: shared logic must also validate server-side results)
+- Added principles: VI. Privacy & Security by Default
+- Modified sections: Technology & Content Constraints (managed backend, secrets);
+  Development Workflow & Quality Gates (migrations, access-policy tests)
 - Removed sections: none
 - Templates requiring updates: none (plan/spec/tasks templates read this file at runtime)
-- Deferred TODOs: final category catalog to be decided during /speckit-specify + /speckit-clarify
+- Deferred TODOs: none
 -->
 # Umagrid Constitution
 
@@ -32,16 +31,18 @@ both its row and column categories.
 
 Rationale: the game is only fair and fun if correctness is never debatable.
 
-### II. Frontend-Only Proof of Concept
+### II. Static Frontend, Managed Backend, Guest-First
 
-- The PoC MUST run as a static site with no custom backend, database, or user accounts.
-- Player progress, history, and stats MUST persist in browser storage (`localStorage`).
-- The daily puzzle MUST be deterministic for all players from the calendar date (UTC) so no
-  server is needed to agree on "today's grid".
-- Features that require shared server state (global rarity %, leaderboards) are OUT OF SCOPE
-  for the PoC and MUST be designed so they can be added later without rewriting game logic.
+- The site MUST remain deployable as static files; server-side logic lives only in the managed
+  backend (database, auth, database functions), never in a custom always-on server.
+- Playing MUST NOT require an account or a reachable backend: guests keep full gameplay with
+  progress in browser storage, and signed-in players fall back to local play if the backend is
+  unavailable, syncing later.
+- The daily puzzle MUST stay deterministic for all players from the calendar date (UTC).
+- Shared, cross-player data (rarity %, leaderboards) MUST only be derived from results the
+  backend has validated; client-reported scores are never trusted as-is.
 
-Rationale: validate the gameplay loop and dataset before investing in infrastructure.
+Rationale: keep the game fast, cheap, and resilient while adding accounts and shared features.
 
 ### III. Internationalization-Ready
 
@@ -61,8 +62,10 @@ Rationale: adding a language later must not require touching game logic or compo
 - These modules MUST have unit tests covering valid, invalid, and edge cases before the related
   UI is considered done.
 - The primary player flow (open daily grid → guess → finish → share) MUST have an end-to-end test.
+- Any rule the backend enforces (e.g. validating a submitted guess) MUST produce the same result
+  as the shared TypeScript engine; parity MUST be covered by automated tests.
 
-Rationale: rules are the product; they must be correct and reusable by a future backend.
+Rationale: rules are the product; they must be correct and identical everywhere they run.
 
 ### V. Simplicity & Accessibility
 
@@ -73,12 +76,28 @@ Rationale: rules are the product; they must be correct and reusable by a future 
 
 Rationale: daily puzzle games are played mostly on phones and by a broad audience.
 
+### VI. Privacy & Security by Default
+
+- Collect only data needed for the feature (account identifier, display name, game results);
+  no tracking or advertising data.
+- Every database table MUST have access policies (row-level security) that deny by default; a
+  player can only read/write their own private data. Public data (leaderboards, rarity) MUST be
+  exposed only through aggregate or explicitly public views.
+- Players MUST be able to export and permanently delete their account and data (LGPD/GDPR).
+- Secrets (service keys) MUST never ship to the browser or the repository; only public,
+  policy-restricted keys may be used client-side.
+- Inputs from clients MUST be validated server-side; follow OWASP Top 10 guidance.
+
+Rationale: accounts create trust obligations; a fan project must keep that risk minimal.
+
 ## Technology & Content Constraints
 
 - Stack: Next.js (static export) + React + TypeScript (`strict`) + Tailwind CSS.
+- Backend: managed Postgres + authentication service (decision recorded in the feature plan);
+  schema changes MUST be versioned migrations in the repository.
 - Testing: Vitest for logic/unit tests; Playwright for end-to-end tests.
 - Dataset: versioned JSON (or TS) files in the repository, validated by a schema at build time.
-- Hosting: any static host (e.g. Vercel, GitHub Pages).
+- Hosting: any static host (e.g. Vercel, GitHub Pages) plus the managed backend.
 - Umagrid is an unofficial fan project. Umamusume: Pretty Derby names, images, and materials are
   trademarks and copyrights of Cygames, Inc.; the site MUST display this notice and MUST credit
   the data/image sources it uses. Images MUST be self-hosted or from sources that permit reuse.
@@ -90,6 +109,8 @@ Rationale: daily puzzle games are played mostly on phones and by a broad audienc
 - Before merging, the following MUST pass: type-check, lint, unit tests, dataset schema
   validation, grid solvability check, and end-to-end tests.
 - Any dataset or category-rule change MUST re-run grid validation for all scheduled puzzles.
+- Database migrations MUST apply cleanly to an empty database, and access policies MUST have
+  automated tests proving one player cannot read or modify another player's private data.
 
 ## Governance
 
@@ -98,6 +119,6 @@ Rationale: daily puzzle games are played mostly on phones and by a broad audienc
 - Amendments are made via `/speckit-constitution`, recorded with a Sync Impact Report, and
   versioned with semantic versioning (MAJOR: principle removal/redefinition; MINOR: new
   principle/section; PATCH: clarification).
-- Moving beyond the PoC (e.g. adding a backend for rarity scores) requires amending Principle II.
+- Changes to how shared data is collected or exposed require reviewing Principle VI.
 
-**Version**: 1.0.0 | **Ratified**: 2026-10-25 | **Last Amended**: 2026-10-25
+**Version**: 2.0.0 | **Ratified**: 2026-10-25 | **Last Amended**: 2026-10-25

@@ -8,10 +8,12 @@ export function StatsDialog({
   open,
   onClose,
   stats,
+  synced = false,
 }: {
   open: boolean;
   onClose: () => void;
   stats: PlayerStatistics;
+  synced?: boolean;
 }) {
   const t = useTranslations("stats");
   const format = useFormatter();
@@ -39,7 +41,7 @@ export function StatsDialog({
               </div>
             ))}
           </dl>
-          <p className="mt-3 text-center text-xs text-slate-600">{t("deviceOnly")}</p>
+          <p className="mt-3 text-center text-xs text-slate-600">{t(synced ? "synced" : "deviceOnly")}</p>
           <button
             type="button"
             onClick={onClose}

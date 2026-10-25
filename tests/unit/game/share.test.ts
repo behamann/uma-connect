@@ -31,4 +31,11 @@ describe("shareText", () => {
     expect(text.split("\n")[0]).toBe("Umagrid Practice 7/9");
     expect(text).not.toContain("#");
   });
+
+  it("adds the rarity score after the header when available", () => {
+    const withRarity = { ...strings, rarity: (r: number) => `Rarity: ${r}` };
+    const lines = shareText(session, 12, "https://umagrid.example", withRarity, 123).split("\n");
+    expect(lines.slice(0, 3)).toEqual(["Umagrid #12 7/9", "Rarity: 123", "🟩🟩⬜"]);
+    expect(shareText(session, 12, "https://umagrid.example", withRarity, null)).not.toContain("Rarity");
+  });
 });

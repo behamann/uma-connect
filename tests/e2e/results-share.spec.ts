@@ -28,7 +28,8 @@ test.describe("US3 – review results and share", () => {
     await expect(cellsList).toHaveCount(9);
     const answers = puzzleAnswers(1);
     await expect(cellsList.nth(0)).toContainText(`${answers[0]!.length} valid answer`);
-    await expect(cellsList.nth(0)).toContainText("Rarity: —");
+    // "—" until enough players finished (or without a backend), then a percentage.
+    await expect(cellsList.nth(0)).toContainText(/Rarity: (—|[\d.]+%)/);
 
     await dialog.getByRole("button", { name: "Share" }).click();
     await expect(dialog.getByText("Copied to clipboard!")).toBeVisible();

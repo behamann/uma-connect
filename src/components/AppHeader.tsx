@@ -8,7 +8,9 @@ import { puzzleNumberFor } from "@/game/daily";
 import { computeStats } from "@/game/stats";
 import type { PlayerStatistics } from "@/game/types";
 import { getStorage } from "@/hooks/useGame";
+import { useAuth } from "@/hooks/useAuth";
 import { readHistory, SETTINGS_KEY } from "@/storage/local";
+import { AccountMenu } from "./AccountMenu";
 import { HowToPlayDialog } from "./HowToPlayDialog";
 import { StatsDialog } from "./StatsDialog";
 
@@ -17,9 +19,10 @@ interface Settings {
 }
 
 /** Client-only (rendered inside ssr:false trees): reads settings and history from storage. */
-export function AppHeader({ active }: { active: "daily" | "practice" }) {
+export function AppHeader({ active }: { active?: "daily" | "practice" }) {
   const t = useTranslations("nav");
   const storage = getStorage();
+  const auth = useAuth();
   const [howToOpen, setHowToOpen] = useState(
     () => !storage.get<Settings>(SETTINGS_KEY)?.howToPlaySeen,
   );
@@ -51,7 +54,7 @@ export function AppHeader({ active }: { active: "daily" | "practice" }) {
         {tab("/", "daily")}
         {tab("/practice", "practice")}
       </div>
-      <div className="flex gap-1">
+      <div className="flex flex-wrap justify-end gap-1">
         <button
           type="button"
           onClick={() => setHowToOpen(true)}
@@ -66,9 +69,17 @@ export function AppHeader({ active }: { active: "daily" | "practice" }) {
         >
           {t("stats")}
         </button>
+        <AccountMenu />
       </div>
       <HowToPlayDialog open={howToOpen} onClose={closeHowTo} />
-      {stats && <StatsDialog open onClose={() => setStats(null)} stats={stats} />}
+      {stats && (
+        <StatsDialog
+          open
+          onClose={() => setStats(null)}
+          stats={stats}
+          synced={auth.status === "signed-in"}
+        />
+      )}
     </nav>
   );
 }

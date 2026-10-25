@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/basePath";
 
 export function Portrait({
   src,
@@ -28,7 +29,7 @@ export function Portrait({
   }
   return (
     <Image
-      src={src}
+      src={withBasePath(src)}
       alt=""
       width={size}
       height={size}

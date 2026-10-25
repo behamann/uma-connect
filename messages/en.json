@@ -35,6 +35,7 @@
     "currentStreak": "Current streak",
     "bestStreak": "Best streak",
     "deviceOnly": "Statistics are stored only on this device.",
+    "synced": "Statistics are saved to your account.",
     "close": "Close"
   },
   "practice": {
@@ -57,7 +58,12 @@
       "images": "Trainee chibi images are game assets © Cygames, Inc."
     },
     "privacyTitle": "Privacy",
-    "privacy": "Umagrid has no accounts and sends no data anywhere. Your progress and statistics are stored only in your browser.",
+    "privacy": "You can play without an account; your progress and statistics then stay only in your browser.",
+    "privacyAccount": "If you sign in, we store your email address, a public display name, and your daily games (guesses, scores, and times) so your progress syncs across devices and you can appear on leaderboards. Practice games always stay on your device.",
+    "privacyGuest": "When you finish a daily grid as a guest, your answers may be sent anonymously (no email or account) to calculate how rare each answer is.",
+    "privacyControl": "You can download your data, hide yourself from leaderboards, or permanently delete your account at any time on the Account page. Deletion is immediate; only anonymous answer counts used for rarity remain.",
+    "privacyAge": "Accounts are intended for players aged 13 or older. Account data is hosted by Supabase.",
+    "accountLink": "Go to your account",
     "back": "Back to the game"
   },
   "game": {
@@ -93,9 +99,79 @@
     "sharePractice": "Umagrid Practice {score}/9",
     "answersHeading": "All valid answers",
     "rarity": "Rarity",
-    "rarityUnavailable": "Rarity scores will be available in a future version.",
+    "rarityScore": "Rarity score: {score} (lower is rarer)",
+    "rarityInsufficient": "Rarity: not enough players yet ({count}/{threshold})",
+    "rarityStatus": {
+      "loading": "Loading rarity…",
+      "unavailable": "Rarity is unavailable right now.",
+      "practice": "Rarity is only calculated for daily grids."
+    },
+    "shareRarity": "Rarity: {score}",
     "notFilled": "Not filled",
     "validAnswers": "{count, plural, one {# valid answer} other {# valid answers}}",
     "close": "Close"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "account": "Account",
+    "title": "Sign in to Umagrid",
+    "intro": "Save your progress and continue on any device. We'll email you a one-time sign-in link; no password needed.",
+    "email": "Email",
+    "sendLink": "Email me a sign-in link",
+    "sending": "Sending…",
+    "checkEmail": "Check your email",
+    "checkEmailHint": "We sent a sign-in link to {email}. Open it in this browser to finish signing in.",
+    "privacyNote": "Your games played on this device so far will be added to your account.",
+    "close": "Close",
+    "error": {
+      "rate_limited": "Too many sign-in emails. Please wait a few minutes and try again.",
+      "invalid_email": "Please enter a valid email address.",
+      "unavailable": "Sign-in is unavailable right now. You can keep playing as a guest."
+    },
+    "signedInAs": "Signed in as {email}",
+    "settings": "Account settings",
+    "signOut": "Sign out",
+    "signingIn": "Signing you in…",
+    "callbackError": {
+      "title": "This sign-in link didn't work",
+      "body": "It may have expired, been used already, or been opened in a different browser than the one you requested it from. Request a new link from the same browser.",
+      "back": "Back to the game"
+    }
+  },
+  "sync": {
+    "otherDeviceKept": "You played today's grid on another device first, so that game was kept and the one on this device was discarded.",
+    "dismiss": "Dismiss"
+  },
+  "account": {
+    "title": "Your account",
+    "loading": "Loading…",
+    "loadFailed": "Couldn't load your account. Please try again later.",
+    "unavailable": "Accounts are not available on this site.",
+    "signInPrompt": "Sign in to manage your account and data.",
+    "signIn": "Sign in",
+    "emailTitle": "Email",
+    "nameTitle": "Display name",
+    "nameHint": "Shown on leaderboards. 3–20 letters, numbers, spaces, or . _ -",
+    "save": "Save",
+    "saved": "Saved.",
+    "nameError": {
+      "name_length": "Use 3 to 20 characters.",
+      "name_chars": "Use only letters, numbers, spaces, and . _ -",
+      "name_reserved": "That name isn't allowed. Please choose another.",
+      "name_taken": "That name is already taken.",
+      "failed": "Couldn't save. Please try again."
+    },
+    "leaderboardTitle": "Show me on leaderboards",
+    "leaderboardHint": "Turn off to hide your name and scores from all leaderboards.",
+    "exportTitle": "Download your data",
+    "exportHint": "A JSON file with your profile, daily games, and history.",
+    "exportButton": "Download my data",
+    "deleteTitle": "Delete account",
+    "deleteHint": "Permanently deletes your account, profile, games, and history. This can't be undone.",
+    "deleteButton": "Delete my account",
+    "deleteConfirmLabel": "Type {word} to confirm",
+    "deleteConfirm": "Permanently delete",
+    "deleteFailed": "Couldn't delete your account. Please try again.",
+    "cancel": "Cancel"
   }
 }

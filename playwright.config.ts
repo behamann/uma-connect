@@ -13,8 +13,10 @@ export default defineConfig({
     trace: "on-first-retry",
   },
   projects: [
-    { name: "desktop", use: { ...devices["Desktop Chrome"] } },
-    { name: "mobile", use: { ...devices["Pixel 7"] } },
+    { name: "desktop", testIgnore: "accounts/**", use: { ...devices["Desktop Chrome"] } },
+    { name: "mobile", testIgnore: "accounts/**", use: { ...devices["Pixel 7"] } },
+    // Needs the local Supabase stack (npm run db:start) and its values in the build env.
+    { name: "accounts", testDir: "tests/e2e/accounts", fullyParallel: false, use: { ...devices["Desktop Chrome"] } },
   ],
   webServer: {
     command: `npm run build && npx serve out -l ${PORT} --no-clipboard`,
