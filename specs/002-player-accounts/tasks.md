@@ -45,7 +45,7 @@ custom SMTP are deferred TODOs and have no tasks here; the built-in Supabase mai
 - [X] T009 Implement `scripts/backend/sync-puzzles.ts`: use `dataset`/`schedule` + `dailyGrid`/`resolveGrid` to upsert `trainees`, `puzzles` (with `data_version` = hash of data files), and replace `puzzle_answers` per puzzle; `--local` reads URL/secret key from `npx supabase status -o env`; `--prod` requires being started with `node --env-file=.env.production.secret` (or CI secrets) and refuses to run if the URL is localhost; default (no flag) is `--local`; never logs the key
 - [X] T010 Create migration `supabase/migrations/<ts>_game_functions.sql`: internal `apply_guess(user, puzzle, cell, trainee)` (rejections `puzzle_unavailable` for unknown or `date > (now() at time zone 'utc')::date`, `unknown_trainee`, `bad_cell`, `game_over`, `cell_filled`, `trainee_used`; correctness from `puzzle_answers`; status transitions per data-model), and RPCs `record_guess(p_puzzle, p_index, p_cell, p_trainee)`, `give_up(p_puzzle, p_index)`, `get_my_daily(p_puzzle)` per contracts/database-api.md (index mismatch → `conflict` + session; anonymous callers → `permanent_account_required`; `SECURITY DEFINER`, `search_path = ''`; grant execute to `authenticated` only)
 - [X] T011 [P] pgTAP `supabase/tests/guesses.test.sql`: every rejection code, conflict on index mismatch, transitions to `completed`/`out_of_guesses`/`gave_up`, score maintenance, future puzzle rejected, anonymous caller rejected
-- [ ] T012 [P] Vitest `tests/integration/parity.test.ts` (skipped unless `SUPABASE_URL` env points to the local stack): DB `puzzle_answers` equal engine `resolveGrid` for every scheduled puzzle; 200 seeded random guess sequences produce identical outcomes/final state via `session.ts` and `record_guess`; the same sequences (with and without give-up) replayed through `give_up`, `import_local`, and `submit_guest_result` yield the same final status/score as the engine; add `vitest.config.ts` include for `tests/integration/**`
+- [X] T012 [P] Vitest `tests/integration/parity.test.ts` (skipped unless `SUPABASE_URL` env points to the local stack): DB `puzzle_answers` equal engine `resolveGrid` for every scheduled puzzle; 200 seeded random guess sequences produce identical outcomes/final state via `session.ts` and `record_guess`; the same sequences (with and without give-up) replayed through `give_up`, `import_local`, and `submit_guest_result` yield the same final status/score as the engine; add `vitest.config.ts` include for `tests/integration/**`
 
 ### Client foundation
 
@@ -117,16 +117,16 @@ custom SMTP are deferred TODOs and have no tasks here; the built-in Supabase mai
 
 ### Tests for User Story 3
 
-- [ ] T038 [P] [US3] pgTAP `supabase/tests/privacy.test.sql`: profile auto-created with `Trainer-######` for permanent users only; backfill creates profiles for permanent users that existed before the migration; name rules (`name_length`, `name_chars`, `name_reserved`, `name_taken` case-insensitive); export contains only caller data; `delete_my_account` removes auth user, profile, sessions, legacy history while `answer_counts`/`puzzle_stats` stay unchanged
-- [ ] T039 [P] [US3] E2E `tests/e2e/accounts/account-page.spec.ts`: rename, toggle opt-out, download export JSON (check keys), delete with confirmation → signed out and data gone
+- [X] T038 [P] [US3] pgTAP `supabase/tests/privacy.test.sql`: profile auto-created with `Trainer-######` for permanent users only; backfill creates profiles for permanent users that existed before the migration; name rules (`name_length`, `name_chars`, `name_reserved`, `name_taken` case-insensitive); export contains only caller data; `delete_my_account` removes auth user, profile, sessions, legacy history while `answer_counts`/`puzzle_stats` stay unchanged
+- [X] T039 [P] [US3] E2E `tests/e2e/accounts/account-page.spec.ts`: rename, toggle opt-out, download export JSON (check keys), delete with confirmation → signed out and data gone
 
 ### Implementation for User Story 3
 
-- [ ] T040 [US3] Migration `supabase/migrations/<ts>_profile_privacy.sql`: trigger on `auth.users` insert/update (create profile when user is not anonymous), backfill profiles for existing permanent users, seed `reserved_names`, RPCs `get_my_profile` (returns email, no providers list), `update_profile`, `export_my_data`, `delete_my_account` per contracts
-- [ ] T041 [US3] Add wrappers to `src/backend/api.ts` for profile/export/delete
-- [ ] T042 [US3] Create `src/app/account/page.tsx` (client-only): signed-in email, display name form with inline validation errors, opt-out switch, "Download my data" (Blob → `umagrid-export.json`), delete flow requiring typed confirmation; redirect guests to sign in
-- [ ] T043 [P] [US3] Update `src/app/about/page.tsx` + `messages/en.json` privacy section (FR-026): data stored, purpose, 13+ notice, export/delete instructions, anonymous guest rarity submission
-- [ ] T044 [US3] Add `account` namespace strings to `messages/en.json`
+- [X] T040 [US3] Migration `supabase/migrations/<ts>_profile_privacy.sql`: trigger on `auth.users` insert/update (create profile when user is not anonymous), backfill profiles for existing permanent users, seed `reserved_names`, RPCs `get_my_profile` (returns email, no providers list), `update_profile`, `export_my_data`, `delete_my_account` per contracts
+- [X] T041 [US3] Add wrappers to `src/backend/api.ts` for profile/export/delete
+- [X] T042 [US3] Create `src/app/account/page.tsx` (client-only): signed-in email, display name form with inline validation errors, opt-out switch, "Download my data" (Blob → `umagrid-export.json`), delete flow requiring typed confirmation; redirect guests to sign in
+- [X] T043 [P] [US3] Update `src/app/about/page.tsx` + `messages/en.json` privacy section (FR-026): data stored, purpose, 13+ notice, export/delete instructions, anonymous guest rarity submission
+- [X] T044 [US3] Add `account` namespace strings to `messages/en.json`
 
 ---
 
@@ -138,18 +138,18 @@ custom SMTP are deferred TODOs and have no tasks here; the built-in Supabase mai
 
 ### Tests for User Story 4
 
-- [ ] T045 [P] [US4] Unit tests for `cellRarity`/`rarityScore` (empty/wrong = 100, unavailable below threshold, rounding) in `tests/unit/game/rarity.test.ts`
-- [ ] T046 [P] [US4] pgTAP `supabase/tests/stats.test.sql`: counts increment once when a non-imported session becomes final; imported sessions never counted; `get_rarity` returns `cells = null` below 20 games; `submit_guest_result` anonymous-only, replay-validated, `already_submitted` on second call; future puzzles hidden
-- [ ] T047 [P] [US4] E2E `tests/e2e/accounts/rarity.spec.ts`: seed 25 finished games via SQL; finish game → results show per-cell % and total; with 5 games → "not enough players yet"; backend down → "unavailable"
+- [X] T045 [P] [US4] Unit tests for `cellRarity`/`rarityScore` (empty/wrong = 100, unavailable below threshold, rounding) in `tests/unit/game/rarity.test.ts`
+- [X] T046 [P] [US4] pgTAP `supabase/tests/stats.test.sql`: counts increment once when a non-imported session becomes final; imported sessions never counted; `get_rarity` returns `cells = null` below 20 games; `submit_guest_result` anonymous-only, replay-validated, `already_submitted` on second call; future puzzles hidden
+- [X] T047 [P] [US4] E2E `tests/e2e/accounts/rarity.spec.ts`: seed 25 finished games via SQL; finish game → results show per-cell % and total; with 5 games → "not enough players yet"; backend down → "unavailable"
 
 ### Implementation for User Story 4
 
-- [ ] T048 [US4] Migration `supabase/migrations/<ts>_stats.sql`: trigger updating `puzzle_stats`/`answer_counts`, RPCs `get_rarity` (anon + authenticated) and `submit_guest_result` (anonymous only), `pg_cron` daily job deleting anonymous users older than 30 days
-- [ ] T049 [P] [US4] Implement `src/game/rarity.ts` per contracts/client-sync.md
-- [ ] T050 [US4] Add `ensureGuestSession()` to `src/backend/auth.ts` and guest submission on daily finish (lazy load, once per puzzle via `umagrid:v1:guestSubmitted:<n>`, silently skipped offline/disabled); puzzles finished while signed in are also added to `guestSubmitted` (kept on sign-out) so a device never re-submits them as a guest
-- [ ] T051 [US4] Implement `src/hooks/useRarity.ts` (loads `get_rarity` after finish; states loading/insufficient/unavailable/ready)
-- [ ] T052 [US4] Update `src/components/ResultsDialog.tsx`: per-cell % replaces the "—" slot, total rarity score, "not enough players yet (N/20)", unavailable state; update `src/game/share.ts` + `tests/unit/game/share.test.ts` to add an optional `Rarity: <score>` line (still no names)
-- [ ] T053 [US4] Add `rarity` strings to `messages/en.json`
+- [X] T048 [US4] Migration `supabase/migrations/<ts>_stats.sql`: trigger updating `puzzle_stats`/`answer_counts`, RPCs `get_rarity` (anon + authenticated) and `submit_guest_result` (anonymous only), `pg_cron` daily job deleting anonymous users older than 30 days
+- [X] T049 [P] [US4] Implement `src/game/rarity.ts` per contracts/client-sync.md
+- [X] T050 [US4] Add `ensureGuestSession()` to `src/backend/auth.ts` and guest submission on daily finish (lazy load, once per puzzle via `umagrid:v1:guestSubmitted:<n>`, silently skipped offline/disabled); puzzles finished while signed in are also added to `guestSubmitted` (kept on sign-out) so a device never re-submits them as a guest
+- [X] T051 [US4] Implement `src/hooks/useRarity.ts` (loads `get_rarity` after finish; states loading/insufficient/unavailable/ready)
+- [X] T052 [US4] Update `src/components/ResultsDialog.tsx`: per-cell % replaces the "—" slot, total rarity score, "not enough players yet (N/20)", unavailable state; update `src/game/share.ts` + `tests/unit/game/share.test.ts` to add an optional `Rarity: <score>` line (still no names)
+- [X] T053 [US4] Add `rarity` strings to `messages/en.json`
 
 ---
 
@@ -180,8 +180,8 @@ custom SMTP are deferred TODOs and have no tasks here; the built-in Supabase mai
 - [ ] T062 [P] E2E accessibility: axe scan on `/account`, `/leaderboard`, Sign-in dialog; keyboard flow for sign-in in `tests/e2e/accounts/a11y.spec.ts`
 - [ ] T063 Deploy to the existing Supabase project `xhykmwpgylwzvjqjfbgo` (user-assisted): `npx supabase db push`, Auth URL config (Site URL `https://<user>.github.io/<repo>/`, redirect `…/auth/callback/` + localhost), confirm anonymous sign-ins + rate limit, `npm run backend:sync-puzzles -- --prod` via `node --env-file=.env.production.secret`
 - [ ] T064 Run quickstart A1–A15 and record results in `specs/002-player-accounts/checklists/requirements.md`
-- [ ] T065 [P] GitHub Pages support: `next.config.ts` reads `NEXT_PUBLIC_BASE_PATH` for `basePath` and sets `trailingSlash: true`; add `withBasePath()` helper in `src/lib/basePath.ts` and use it for portrait `src`, the share URL, and the auth `emailRedirectTo`; existing E2E stays green with an empty base path
-- [ ] T066 GitHub Pages deploy workflow `.github/workflows/deploy-pages.yml`: on push to `main`, build with repository variables `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_BASE_PATH`, upload `out/` with `actions/upload-pages-artifact`, deploy with `actions/deploy-pages`; add `out/.nojekyll`
+- [X] T065 [P] GitHub Pages support: `next.config.ts` reads `NEXT_PUBLIC_BASE_PATH` for `basePath` and sets `trailingSlash: true`; add `withBasePath()` helper in `src/lib/basePath.ts` and use it for portrait `src`, the share URL, and the auth `emailRedirectTo`; existing E2E stays green with an empty base path
+- [X] T066 GitHub Pages deploy workflow `.github/workflows/deploy-pages.yml`: on push to `main`, build with repository variables `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_BASE_PATH`, upload `out/` with `actions/upload-pages-artifact`, deploy with `actions/deploy-pages`; add `out/.nojekyll`
 
 ---
 
