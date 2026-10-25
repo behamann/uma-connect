@@ -23,7 +23,8 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
+      # npm ci rejects the lockfile over bundled deps of optional wasm32 packages (Windows-generated lock).
+      - run: npm install --no-audit --no-fund
       - run: npm run build
         env:
           # Public values only (repository variables); the secret key never reaches the browser build.
