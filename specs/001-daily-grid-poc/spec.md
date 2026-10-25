@@ -19,6 +19,10 @@
 - Q: Which category groups form the initial catalog? → A: Track aptitude, Distance aptitude,
   Running style aptitude, Dorm, Birthday, Real-life G1 wins, Triple Crown/Tiara, Sire line,
   Birth decade/coat color.
+- Q: How are alternate trainee versions (outfits) with different aptitudes handled? → A: Each
+  trainee version is a separate answer with its own aptitudes; profile and real-horse attributes
+  are shared by all versions of the same character.
+- Q: How are names for JP-only characters written? → A: Most common community romanization.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -26,11 +30,11 @@
 
 A player opens Umagrid and sees today's 3x3 grid: three category labels across the top
 (columns) and three down the side (rows). The player selects an empty cell, types part of an
-Umamusume's name, picks a suggestion, and the guess is checked against both the cell's row
-and column categories. A correct guess locks the character (name and portrait) into the cell;
-an incorrect guess leaves the cell empty but still consumes one of the 9 guesses. A character
-already placed on the grid cannot be used again. The game ends when all 9 cells are filled or
-all 9 guesses are spent.
+Umamusume's name, picks a trainee version from the suggestions, and the guess is checked against
+both the cell's row and column categories. A correct guess locks the trainee version (name,
+version label, and portrait) into the cell; an incorrect guess leaves the cell empty but still
+consumes one of the 9 guesses. A trainee version already placed on the grid cannot be used
+again. The game ends when all 9 cells are filled or all 9 guesses are spent.
 
 **Why this priority**: This is the entire core gameplay loop; without it there is no product.
 
@@ -42,18 +46,19 @@ correctly.
 
 1. **Given** a new daily grid, **When** the player opens the site, **Then** 6 category labels,
    9 empty cells, and a remaining-guesses counter of 9 are shown.
-2. **Given** an empty cell, **When** the player picks a character that satisfies both the row and
-   column categories, **Then** the cell shows that character, becomes locked, and remaining
+2. **Given** an empty cell, **When** the player picks a trainee version that satisfies both the
+   row and column categories, **Then** the cell shows that trainee version, becomes locked, and
+   remaining guesses decrease by 1.
+3. **Given** an empty cell, **When** the player picks a trainee version that fails either
+   category, **Then** the cell stays empty, the player is told the guess was wrong, and remaining
    guesses decrease by 1.
-3. **Given** an empty cell, **When** the player picks a character that fails either category,
-   **Then** the cell stays empty, the player is told the guess was wrong, and remaining guesses
-   decrease by 1.
-4. **Given** a character already placed in another cell, **When** the player searches for it,
-   **Then** it is shown as unavailable and cannot be submitted (no guess is consumed).
-5. **Given** 1 remaining guess, **When** the player submits a guess, **Then** the game ends and
-   the results view is shown.
+4. **Given** a trainee version already placed in another cell, **When** the player searches for
+   it, **Then** it is shown as unavailable and cannot be submitted (no guess is consumed).
+5. **Given** 1 remaining guess, **When** the player submits a guess, **Then** the game ends, no
+   further guesses are accepted, and the final score is shown (the full results view is
+   delivered by User Story 3).
 6. **Given** a game in progress, **When** the player chooses "Give up" and confirms, **Then** the
-   game ends with the current state and the results view is shown.
+   game ends with the current state and the final score is shown.
 
 ---
 
@@ -71,20 +76,20 @@ verify the results view; advance the date, verify a new grid.
 **Acceptance Scenarios**:
 
 1. **Given** a partially played daily grid, **When** the player reloads the page on the same day,
-   **Then** filled cells, remaining guesses, and wrong-guess history are restored.
+   **Then** filled cells and remaining guesses are restored.
 2. **Given** a finished daily grid, **When** the player reopens the site the same day, **Then**
-   the results view for that grid is shown and no new guesses are accepted.
+   the finished grid and score for that day are shown and no new guesses are accepted.
 3. **Given** two players on different devices on the same day, **When** both open the site,
    **Then** both see the identical grid.
 4. **Given** the daily reset time has passed, **When** the player opens the site, **Then** a new
-   grid is shown and a countdown to the next reset is visible on the results view.
+   grid is shown and a countdown to the next reset is visible once the game is finished.
 
 ---
 
 ### User Story 3 - Review results and share (Priority: P2)
 
 When the game ends, the player sees their score, the filled grid, and for every cell the list of
-all valid answers (so they learn characters they did not know). The player can copy a
+all valid answers (so they learn trainee versions they did not know). The player can copy a
 spoiler-free text summary (an emoji grid plus puzzle number and score) to share on social
 media.
 
@@ -161,14 +166,15 @@ the daily game state.
 
 ### Edge Cases
 
-- A character matches the cell but was already used elsewhere: it must not be submittable and
-  must not consume a guess.
+- A trainee version matches the cell but was already used elsewhere: it must not be submittable
+  and must not consume a guess.
 - The player types a name with different spacing, casing, punctuation, or an alternate
-  romanization (e.g. "Hokkō" vs "Hokko"): search must still find the character.
-- The player tries to submit free text that is not a known character: submission is not
-  possible; only listed characters can be chosen.
-- Same character with multiple in-game variants (e.g. alternate outfits): the character is one
-  answer; variants are not separate answers.
+  romanization (e.g. "Hokkō" vs "Hokko"): search must still find the trainee versions.
+- The player tries to submit free text that is not a known trainee version: submission is not
+  possible; only listed trainee versions can be chosen.
+- Same character with multiple trainee versions (e.g. original and Summer outfit): each version
+  is a separate answer (e.g. "Special Week" and "Special Week · Summer"), shown with its version
+  label in search, and each version can be used once per grid.
 - Daily reset happens while the page is open: the current game remains playable until reload;
   after reload the new grid is shown.
 - Browser storage is unavailable or cleared: the game is still playable, progress simply is not
@@ -183,18 +189,20 @@ the daily game state.
 **Grid & gameplay**
 
 - **FR-001**: The system MUST present a 3x3 grid with 3 row categories and 3 column categories.
-- **FR-002**: The system MUST allow the player to select any empty cell and choose a character
-  through a type-ahead search over the full character roster.
+- **FR-002**: The system MUST allow the player to select any empty cell and choose a trainee
+  version through a type-ahead search over the full answer roster.
 - **FR-003**: Search MUST be case-, accent-, and punctuation-insensitive and MUST also match
   known alternate names/romanizations.
-- **FR-004**: The system MUST NOT reveal, in search results, whether a character is valid for the
-  selected cell.
-- **FR-005**: A guess MUST be correct only if the character satisfies both the row and the column
-  category of the cell.
+- **FR-004**: The system MUST NOT reveal, in search results, whether a trainee version is valid
+  for the selected cell.
+- **FR-005**: A guess MUST be correct only if the trainee version satisfies both the row and the
+  column category of the cell.
 - **FR-006**: Each submitted guess (correct or not) MUST consume one of exactly 9 guesses.
-- **FR-007**: A character placed on the grid MUST NOT be usable again in the same grid; such
-  characters MUST appear as unavailable and MUST NOT consume a guess.
-- **FR-008**: Correct cells MUST lock and display the character's name and portrait.
+- **FR-007**: A trainee version placed on the grid MUST NOT be usable again in the same grid;
+  such versions MUST appear as unavailable and MUST NOT consume a guess. Other versions of the
+  same character remain available.
+- **FR-008**: Correct cells MUST lock and display the trainee version's name, version label, and
+  portrait.
 - **FR-009**: The game MUST end when all cells are filled, when guesses reach 0, or when the
   player confirms "Give up".
 - **FR-010**: The score MUST be the number of correctly filled cells (0–9). The results view MUST
@@ -207,8 +215,10 @@ the daily game state.
   requiring a server.
 - **FR-012**: The daily grid MUST change at 00:00 UTC, and each daily grid MUST have a sequential
   puzzle number.
-- **FR-013**: Every grid (daily or practice) MUST have at least 3 valid answers per cell and MUST
-  be completable with 9 distinct characters.
+- **FR-013**: Every grid (daily or practice) MUST have at least 3 valid answers per cell, coming
+  from at least 2 different characters, and MUST be solvable with 9 trainee versions belonging
+  to 9 different characters (Constitution I: solvable without reusing a character). Players may
+  still use several versions of one character (FR-007); this rule only constrains generation.
 - **FR-014**: The same combination of 6 categories MUST NOT repeat as a daily grid within 90 days.
 
 **Persistence & results**
@@ -229,9 +239,11 @@ the daily game state.
 
 - **FR-021**: The system MUST show a "How to play" dialog on first visit and allow reopening it.
 - **FR-022**: Every category MUST have a player-visible rule description.
-- **FR-023**: The character roster MUST include every Umamusume released as a playable trainee
-  on any server (Japanese or Global), and only those. Characters that exist only as support
-  cards, NPCs, or in other media are excluded.
+- **FR-023**: The answer roster MUST include every trainee version (each outfit/release of a
+  character) released as playable on any server (Japanese or Global), and only those.
+  Characters that exist only as support cards, NPCs, or in other media are excluded. Each
+  trainee version is a distinct answer with its own aptitudes; profile and real-horse
+  attributes come from its character and are shared across versions.
 - **FR-024**: Categories MUST be drawn from an approved category catalog with at least 25
   individual categories. The initial catalog consists of these category groups:
   1. **Track aptitude** — Turf ≥ A, Dirt ≥ A.
@@ -243,16 +255,14 @@ the daily game state.
   6. **Real-life G1 wins** — won a specific G1 race (e.g. Arima Kinen, Japan Cup, Tokyo Yushun
      (Japanese Derby), Tenno Sho (Spring/Autumn), Takarazuka Kinen, Satsuki Sho, Kikuka Sho), or
      won N+ G1 races.
-  7. **Real-life titles** — Triple Crown winner, Triple Tiara winner (including partial: won at
-     least one Classic race).
+  7. **Real-life titles** — Triple Crown winner; Triple Tiara winner; Classic winner (won at
+     least one of Satsuki Sho, Tokyo Yushun, Kikuka Sho, Oka Sho, Yushun Himba, Shuka Sho).
   8. **Real horse sire line** — descends in the male line from e.g. Sunday Silence,
      Mr. Prospector, Northern Dancer, Roberto.
   9. **Real horse profile** — birth decade (e.g. 1980s, 1990s, 2000s, 2010s), coat color.
-- **FR-024a**: Two categories from the same group MUST NOT appear on the same axis pair if no
-  character can satisfy both (e.g. Ritto × Miho), and a grid MUST use at least 4 different
-  category groups.
+- **FR-024a**: A grid MUST use categories from at least 4 different category groups.
 - **FR-025**: Each character data point used by a category MUST record the reference source it
-  was taken from.
+  was taken from (one source reference per field group: profile, real-horse, trainee aptitudes).
 - **FR-026**: The site MUST display an unofficial fan-project notice crediting Cygames, Inc. as
   rights holder, and credit data/image sources.
 
@@ -266,17 +276,20 @@ the daily game state.
 
 ### Key Entities
 
-- **Character**: An Umamusume in the roster. Attributes: stable ID, display name (per locale),
-  alternate names for search, portrait image, and the attribute values used by categories
-  (e.g. aptitudes, dorm, birthday, real-horse facts), each with its source reference.
+- **Character**: An Umamusume. Attributes: stable ID, display name (per locale), alternate names
+  for search, and shared attribute values used by categories (dorm, birthday, real-horse facts),
+  each with its source reference.
+- **Trainee Version**: A playable release of a character (original or alternate outfit) and the
+  unit used as an answer. Attributes: stable ID, owning character, version label (per locale),
+  portrait, and its own aptitudes (track, distance, running style), with source reference.
 - **Category Group**: A family of related categories (e.g. "Distance Aptitude", "Dorm",
   "Real-life G1 wins"). Used to keep a grid varied and to avoid contradictory pairs.
 - **Category**: A single row/column label with a locale-aware label, a rule description, and a
-  membership rule that determines which characters qualify.
+  membership rule that determines which trainee versions qualify.
 - **Grid (Puzzle)**: 3 row categories + 3 column categories, a puzzle number (daily) or practice
-  flag, and the precomputed set of valid characters per cell.
-- **Game Session**: A player's attempt at a grid: placed characters per cell, wrong guesses,
-  remaining guesses, status (in progress / finished / gave up), score.
+  flag, and the derived set of valid trainee versions per cell.
+- **Game Session**: A player's attempt at a grid: placed trainee versions per cell, guesses,
+  remaining guesses, status (in progress / completed / out of guesses / gave up), score.
 - **Player Statistics**: Per-device aggregate of daily sessions (played, average, perfect,
   streaks).
 
@@ -289,8 +302,8 @@ the daily game state.
 - **SC-002**: A full game (9 guesses) can be completed in under 5 minutes by a player who knows
   the answers.
 - **SC-003**: 100% of published daily grids for the first 90 days pass the solvability check
-  (≥ 3 answers per cell, completable with distinct characters).
-- **SC-004**: Search returns the intended character within the top 5 suggestions for 95% of
+  (≥ 3 answers per cell, solvable with 9 different characters).
+- **SC-004**: Search returns the intended trainee version within the top 5 suggestions for 95% of
   queries of 3 or more characters, including alternate spellings.
 - **SC-005**: Reloading the page never loses a submitted guess (0 lost guesses across all
   end-to-end test runs).
@@ -309,9 +322,8 @@ the daily game state.
 - The daily grid is determined by the device's calendar date in UTC.
 - Daily grids are pre-generated and validated ahead of time; practice grids are generated on
   demand using the same validation rules.
-- Each character is a single answer regardless of how many in-game outfits/versions it has;
-  outfit-specific attributes (e.g. aptitudes) use the character's original/base version unless a
-  category rule states otherwise.
+- Each trainee version is a separate answer; aptitude categories evaluate that version's own
+  aptitudes, while all other categories evaluate the shared character attributes.
 - Character data is compiled manually or semi-automatically from public references
   (GameTora, umamusu.wiki, Umamusume fandom wiki) and stored with the site; the game does not
   call those sites at runtime.
