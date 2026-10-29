@@ -36,7 +36,7 @@ select throws_ok($$ select public.update_profile('ab') $$, 'P0001', 'name_length
 select throws_ok($$ select public.update_profile(repeat('a', 21)) $$, 'P0001', 'name_length', 'too long');
 select throws_ok($$ select public.update_profile('bad!name') $$, 'P0001', 'name_chars', 'bad characters');
 select throws_ok($$ select public.update_profile('SuperAdmin') $$, 'P0001', 'name_reserved', 'reserved term');
-select throws_ok($$ select public.update_profile('Umagrid fan') $$, 'P0001', 'name_reserved', 'brand term');
+select throws_ok($$ select public.update_profile('UmaConnect fan') $$, 'P0001', 'name_reserved', 'brand term');
 select is(public.update_profile('  Speedy  ') ->> 'display_name', 'Speedy', 'valid name saved (trimmed)');
 select is((public.update_profile(null, true) ->> 'leaderboard_opt_out')::boolean, true, 'opt out saved');
 select is(public.get_my_profile() ->> 'display_name', 'Speedy', 'opt-out keeps the name');

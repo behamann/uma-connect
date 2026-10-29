@@ -203,6 +203,9 @@ isOneToOne: true
 "export_my_data":
 { Args: Record<PropertyKey, never>; Returns: Json
                            },
+"get_leaderboard":
+{ Args: { "p_key": string,"p_period": string }; Returns: Json
+                           },
 "get_my_daily":
 { Args: { "p_puzzle": number }; Returns: Json
                            },
@@ -223,6 +226,9 @@ isOneToOne: true
                            },
 "record_guess":
 { Args: { "p_cell": number,"p_index": number,"p_puzzle": number,"p_trainee": string }; Returns: Json
+                           },
+"refresh_leaderboards":
+{ Args: Record<PropertyKey, never>; Returns: undefined
                            },
 "submit_guest_result":
 { Args: { "p_gave_up": boolean,"p_guesses": Json,"p_puzzle": number }; Returns: Json

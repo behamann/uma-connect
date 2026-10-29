@@ -124,7 +124,7 @@ custom SMTP are deferred TODOs and have no tasks here; the built-in Supabase mai
 
 - [X] T040 [US3] Migration `supabase/migrations/<ts>_profile_privacy.sql`: trigger on `auth.users` insert/update (create profile when user is not anonymous), backfill profiles for existing permanent users, seed `reserved_names`, RPCs `get_my_profile` (returns email, no providers list), `update_profile`, `export_my_data`, `delete_my_account` per contracts
 - [X] T041 [US3] Add wrappers to `src/backend/api.ts` for profile/export/delete
-- [X] T042 [US3] Create `src/app/account/page.tsx` (client-only): signed-in email, display name form with inline validation errors, opt-out switch, "Download my data" (Blob → `umagrid-export.json`), delete flow requiring typed confirmation; redirect guests to sign in
+- [X] T042 [US3] Create `src/app/account/page.tsx` (client-only): signed-in email, display name form with inline validation errors, opt-out switch, "Download my data" (Blob → `uma-connect-export.json`), delete flow requiring typed confirmation; redirect guests to sign in
 - [X] T043 [P] [US3] Update `src/app/about/page.tsx` + `messages/en.json` privacy section (FR-026): data stored, purpose, 13+ notice, export/delete instructions, anonymous guest rarity submission
 - [X] T044 [US3] Add `account` namespace strings to `messages/en.json`
 
@@ -161,20 +161,20 @@ custom SMTP are deferred TODOs and have no tasks here; the built-in Supabase mai
 
 ### Tests for User Story 5
 
-- [ ] T054 [P] [US5] pgTAP `supabase/tests/leaderboard.test.sql`: daily order score desc → rarity asc → finished_at asc; week/month/all aggregates and tiebreaks per FR-022; opted-out and anonymous users excluded; a deleted or newly opted-out user disappears from period leaderboards immediately, before any MV refresh; top 100 + caller `me`; no user ids/emails in output
-- [ ] T055 [P] [US5] E2E `tests/e2e/accounts/leaderboard.spec.ts`: seeded accounts → tabs show correct order, own row highlighted, opt-out hidden
+- [X] T054 [P] [US5] pgTAP `supabase/tests/leaderboard.test.sql`: daily order score desc → rarity asc → finished_at asc; week/month/all aggregates and tiebreaks per FR-022; opted-out and anonymous users excluded; a deleted or newly opted-out user disappears from period leaderboards immediately, before any MV refresh; top 100 + caller `me`; no user ids/emails in output
+- [X] T055 [P] [US5] E2E `tests/e2e/accounts/leaderboard.spec.ts`: seeded accounts → tabs show correct order, own row highlighted, opt-out hidden
 
 ### Implementation for User Story 5
 
-- [ ] T056 [US5] Migration `supabase/migrations/<ts>_leaderboards.sql`: `leaderboard_totals` materialized view + unique index, `pg_cron` refresh every 10 min (`concurrently`), RPC `get_leaderboard(p_period, p_key)` that inner-joins the MV with live `profiles` (display name and opt-out read live)
-- [ ] T057 [P] [US5] Implement `src/hooks/useLeaderboard.ts` and `src/components/LeaderboardTable.tsx` (accessible table, rank/name/score/rarity, highlighted own row, "updated N min ago")
-- [ ] T058 [US5] Create `src/app/leaderboard/page.tsx` with Daily/Weekly/Monthly/All-time tabs (Headless UI `TabGroup`), current period keys from `daily.ts`; add nav link in `AppHeader` when `backendEnabled`; strings in `messages/en.json`
+- [X] T056 [US5] Migration `supabase/migrations/<ts>_leaderboards.sql`: `leaderboard_totals` materialized view + unique index, `pg_cron` refresh every 10 min (`concurrently`), RPC `get_leaderboard(p_period, p_key)` that inner-joins the MV with live `profiles` (display name and opt-out read live)
+- [X] T057 [P] [US5] Implement `src/hooks/useLeaderboard.ts` and `src/components/LeaderboardTable.tsx` (accessible table, rank/name/score/rarity, highlighted own row, "updated N min ago")
+- [X] T058 [US5] Create `src/app/leaderboard/page.tsx` with Daily/Weekly/Monthly/All-time tabs (Headless UI `TabGroup`), current period keys from `daily.ts`; add nav link in `AppHeader` when `backendEnabled`; strings in `messages/en.json`
 
 ---
 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
-- [ ] T059 Guest-only guarantee (A1, SC-004): CI step builds without Supabase env and runs the 001 E2E suite; add a unit/E2E check that a guest page load makes no requests to the Supabase URL
+- [X] T059 Guest-only guarantee (A1, SC-004): CI step builds without Supabase env and runs the 001 E2E suite; add a unit/E2E check that a guest page load makes no requests to the Supabase URL
 - [X] T060 [P] Bundle check: `npm run size` initial budget unchanged for guests; backend code only in lazy chunks
 - [ ] T061 [P] Performance (A15, SC-007): `supabase/seed/load-test.sql` generating 10k sessions for one puzzle; measure `get_rarity`/`get_leaderboard` with `explain analyze` (target ≤ 300 ms DB time); add indexes if needed
 - [ ] T062 [P] E2E accessibility: axe scan on `/account`, `/leaderboard`, Sign-in dialog; keyboard flow for sign-in in `tests/e2e/accounts/a11y.spec.ts`

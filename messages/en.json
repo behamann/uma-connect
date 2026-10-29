@@ -1,8 +1,8 @@
 {
   "common": {
-    "title": "Umagrid",
+    "title": "Uma-connect",
     "description": "A daily Umamusume grid trivia game.",
-    "fanNotice": "Umagrid is an unofficial fan project. Umamusume: Pretty Derby names, images, and materials are trademarks and copyrights of Cygames, Inc.",
+    "fanNotice": "Uma-connect is an unofficial fan project. Umamusume: Pretty Derby names, images, and materials are trademarks and copyrights of Cygames, Inc.",
     "aboutLink": "About & credits",
     "loading": "Loading…"
   },
@@ -10,6 +10,7 @@
     "label": "Main",
     "daily": "Daily",
     "practice": "Practice",
+    "leaderboard": "Leaderboards",
     "howToPlay": "How to play",
     "stats": "Stats"
   },
@@ -45,12 +46,12 @@
     "noGrid": "Couldn't build a grid for this seed. Try a new grid."
   },
   "about": {
-    "title": "About Umagrid",
-    "intro": "Umagrid is a daily grid trivia game about Umamusume: Pretty Derby, inspired by PokeDoku and Immaculate Grid.",
+    "title": "About Uma-connect",
+    "intro": "Uma-connect is a daily grid trivia game about Umamusume: Pretty Derby, inspired by PokeDoku and Immaculate Grid.",
     "disclaimerTitle": "Disclaimer",
-    "disclaimer": "Umagrid is an unofficial, non-commercial fan project and is not affiliated with or endorsed by Cygames, Inc. Umamusume: Pretty Derby names, images, and materials are trademarks and copyrights of Cygames, Inc. Real-horse names belong to their respective owners.",
+    "disclaimer": "Uma-connect is an unofficial, non-commercial fan project and is not affiliated with or endorsed by Cygames, Inc. Umamusume: Pretty Derby names, images, and materials are trademarks and copyrights of Cygames, Inc. Real-horse names belong to their respective owners.",
     "sourcesTitle": "Data sources",
-    "guidelines": "Umagrid is free, has no ads, and follows the official",
+    "guidelines": "Uma-connect is free, has no ads, and follows the official",
     "guidelinesLink": "Umamusume: Pretty Derby Fan-Created Content Guidelines.",
     "source": {
       "gametora": { "name": "GameTora", "use": "trainee versions, aptitudes, birthdays, and dorms." },
@@ -67,7 +68,7 @@
     "back": "Back to the game"
   },
   "game": {
-    "dailyTitle": "Umagrid #{number}",
+    "dailyTitle": "Uma-connect #{number}",
     "boardLabel": "Game board",
     "gridLabel": "Puzzle grid: pick a trainee that matches both the row and the column",
     "remaining": "{count, plural, one {# guess left} other {# guesses left}}",
@@ -95,8 +96,8 @@
     "copied": "Copied to clipboard!",
     "copyFailed": "Couldn't copy automatically. Select the text below and copy it.",
     "shareTextLabel": "Share text",
-    "shareDaily": "Umagrid #{number} {score}/9",
-    "sharePractice": "Umagrid Practice {score}/9",
+    "shareDaily": "Uma-connect #{number} {score}/9",
+    "sharePractice": "Uma-connect Practice {score}/9",
     "answersHeading": "All valid answers",
     "rarity": "Rarity",
     "rarityScore": "Rarity score: {score} (lower is rarer)",
@@ -114,7 +115,7 @@
   "auth": {
     "signIn": "Sign in",
     "account": "Account",
-    "title": "Sign in to Umagrid",
+    "title": "Sign in to Uma-connect",
     "intro": "Save your progress and continue on any device. We'll email you a one-time sign-in link; no password needed.",
     "email": "Email",
     "sendLink": "Email me a sign-in link",
@@ -173,5 +174,38 @@
     "deleteConfirm": "Permanently delete",
     "deleteFailed": "Couldn't delete your account. Please try again.",
     "cancel": "Cancel"
+  },
+  "leaderboard": {
+    "title": "Leaderboards",
+    "loading": "Loading…",
+    "unavailable": "Leaderboards are unavailable right now.",
+    "disabled": "Leaderboards are not available on this site.",
+    "joinPrompt": "Sign in to appear on the leaderboards.",
+    "tabs": "Leaderboard period",
+    "period": {
+      "daily": "Daily",
+      "week": "Weekly",
+      "month": "Monthly",
+      "all": "All-time"
+    },
+    "caption": {
+      "daily": "Today's grid #{number}",
+      "week": "This week ({week})",
+      "month": "{month}",
+      "all": "All time"
+    },
+    "rules": {
+      "daily": "Highest score, then lowest rarity score, then earliest finish.",
+      "week": "Total score, then lowest total rarity, then more games played.",
+      "month": "Total score, then lowest total rarity, then more games played.",
+      "all": "Total score, then more perfect grids, then earliest account."
+    },
+    "updated": "Updated {time}",
+    "rank": "Rank",
+    "player": "Player",
+    "score": "Score",
+    "rarity": "Rarity",
+    "you": "(you)",
+    "empty": "No finished games yet."
   }
 }

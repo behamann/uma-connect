@@ -14,7 +14,7 @@ const DAY = noonOfPuzzle(1);
 test.describe("US1 – play today's grid", () => {
   test("shows 6 categories, 9 empty cells, and 9 guesses", async ({ page }) => {
     await openDaily(page, DAY);
-    await expect(page.getByRole("heading", { name: "Umagrid #1" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Uma-connect #1" })).toBeVisible();
     await expect(page.getByRole("columnheader").filter({ hasText: /\S/ })).toHaveCount(3);
     await expect(page.getByRole("rowheader")).toHaveCount(3);
     await expect(cells(page)).toHaveCount(9);

@@ -55,7 +55,7 @@ function ProfileSettings({ initial }: { initial: Profile }) {
     const url = URL.createObjectURL(new Blob([JSON.stringify(res.data, null, 2)], { type: "application/json" }));
     const a = document.createElement("a");
     a.href = url;
-    a.download = "umagrid-export.json";
+    a.download = "uma-connect-export.json";
     a.click();
     URL.revokeObjectURL(url);
   };

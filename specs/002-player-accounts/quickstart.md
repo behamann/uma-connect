@@ -30,16 +30,43 @@ git-ignored) and is read only by `npm run backend:sync-puzzles -- --prod`.
 ## Production setup (one time)
 
 1. Supabase project already created (ref `xhykmwpgylwzvjqjfbgo`); publishable + secret keys exist.
-2. Auth → URL configuration: Site URL `https://<user>.github.io/<repo>/`; redirect URLs
-   `https://<user>.github.io/<repo>/auth/callback/`, `http://localhost:3000/auth/callback/`.
+2. Auth → URL configuration: Site URL = the production site's HTTPS URL; redirect URLs =
+   `<production-site-url>/auth/callback/` and `http://localhost:3000/auth/callback/`.
 3. Enable providers: Email (magic link); enable **Anonymous sign-ins**; set anonymous sign-in
    rate limit. Keep the built-in mailer for now (TODO: Google, Discord, custom SMTP).
 4. `npx supabase link --project-ref xhykmwpgylwzvjqjfbgo` (done) then `npx supabase db push`.
 5. Put `SUPABASE_URL` + `SUPABASE_SECRET_KEY` in `.env.production.secret`, then
    `npm run backend:sync-puzzles -- --prod` (CI: repository secret `SUPABASE_SECRET_KEY`).
-6. GitHub repository variables: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`,
-   `NEXT_PUBLIC_BASE_PATH` (e.g. `/Umagrid`); enable Pages → "GitHub Actions"; push to `main`
-   to run the deploy workflow.
+6. Configure a static host using the instructions below. The existing GitHub Pages workflow is
+   an alternative: set repository variables `NEXT_PUBLIC_SUPABASE_URL` and
+   `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, enable Pages → "GitHub Actions", and push to `master`.
+   That workflow sets the repository base path automatically.
+
+### Cloudflare Pages
+
+Create a **Pages** project from the Git repository, not a Worker (the latter defaults to
+`npx wrangler deploy`, which is not the deployment command for this static export).
+
+| Setting | Value |
+|---|---|
+| Production branch | `master` |
+| Framework preset | Next.js (Static HTML Export), or None with the settings below |
+| Build command | `npm run build` |
+| Build output directory | `out` |
+| Root directory | Repository root |
+| Build environment | `NODE_VERSION=24`; production `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` |
+| Base path | Leave `NEXT_PUBLIC_BASE_PATH` unset for a `pages.dev` hostname or a custom domain served at its root |
+
+Never put `SUPABASE_SECRET_KEY` in the frontend build. Update Supabase's Site URL and allowed
+redirect URLs when moving from GitHub Pages to the Pages hostname or a custom domain.
+
+Commit the dependency lockfile before deploying. An npm 10.9.2 clean install rejected the
+previous lockfile because optional WASM dependencies `@emnapi/core` and `@emnapi/runtime` were
+missing, even though npm 11.6.1 accepted it. The lockfile was repaired with
+`npm exec --yes --package=npm@10.9.2 -- npm install --package-lock-only --ignore-scripts --no-audit --no-fund`
+and validated with both npm versions. If this error returns, inspect the `Missing:` or `Invalid:`
+lines and validate using the npm version reported by the host; do not delete the lockfile or
+disable clean-install validation as a first workaround.
 
 ## Validation scenarios
 

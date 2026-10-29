@@ -1,4 +1,4 @@
-# Data Model: Umagrid Daily Grid (Frontend PoC)
+# Data Model: Uma-connect Daily Grid (Frontend PoC)
 
 **Feature**: [spec.md](spec.md) | **Plan**: [plan.md](plan.md)
 

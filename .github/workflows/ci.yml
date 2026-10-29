@@ -2,12 +2,16 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
 
 jobs:
+  # Guest-only build (A1, SC-004): no Supabase env, runs the 001 E2E suite.
   ci:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: ""
+      NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ""
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

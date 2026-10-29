@@ -53,7 +53,7 @@ history, statistics, and today's game are shown unchanged and are stored in the 
 
 ### User Story 2 - Continue on another device (Priority: P1)
 
-A signed-in player starts today's grid on their phone and later opens Umagrid on a computer,
+A signed-in player starts today's grid on their phone and later opens Uma-connect on a computer,
 signed in to the same account. They see today's grid exactly as they left it, plus their full
 history and statistics.
 

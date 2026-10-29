@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
+import { backendEnabled } from "@/backend/config";
 import { schedule } from "@/game/data";
 import { puzzleNumberFor } from "@/game/daily";
 import { computeStats } from "@/game/stats";
@@ -19,7 +20,7 @@ interface Settings {
 }
 
 /** Client-only (rendered inside ssr:false trees): reads settings and history from storage. */
-export function AppHeader({ active }: { active?: "daily" | "practice" }) {
+export function AppHeader({ active }: { active?: "daily" | "practice" | "leaderboard" }) {
   const t = useTranslations("nav");
   const storage = getStorage();
   const auth = useAuth();
@@ -36,7 +37,7 @@ export function AppHeader({ active }: { active?: "daily" | "practice" }) {
   const openStats = () =>
     setStats(computeStats(readHistory(storage), puzzleNumberFor(new Date(), schedule.launchDate)));
 
-  const tab = (href: string, key: "daily" | "practice") => (
+  const tab = (href: string, key: "daily" | "practice" | "leaderboard") => (
     <Link
       href={href}
       aria-current={active === key ? "page" : undefined}
@@ -53,6 +54,7 @@ export function AppHeader({ active }: { active?: "daily" | "practice" }) {
       <div className="flex gap-1">
         {tab("/", "daily")}
         {tab("/practice", "practice")}
+        {backendEnabled && tab("/leaderboard", "leaderboard")}
       </div>
       <div className="flex flex-wrap justify-end gap-1">
         <button

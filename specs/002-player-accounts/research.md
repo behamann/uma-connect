@@ -133,7 +133,7 @@
   `display_name` is `citext` unique, 3\u201320 chars, `^[A-Za-z0-9 _.-]+$`, not in
   `reserved_names` (blocklist table seeded from a reviewed list).
 - **Export**: `export_my_data()` returns JSON (profile, sessions, legacy history); the client
-  downloads it as `umagrid-export.json`.
+  downloads it as `uma-connect-export.json`.
 - **Delete**: `delete_my_account()` (`SECURITY DEFINER`, owned by `postgres`) deletes
   `auth.users` row for `auth.uid()`; FKs cascade to profile/sessions/history; client signs out.
   Leaderboards stop showing the user immediately (live join with `profiles`, R8).
@@ -152,7 +152,7 @@
 
 - **Decision**: deploy the static export to GitHub Pages with a GitHub Actions workflow
   (`actions/upload-pages-artifact` + `actions/deploy-pages`). Project sites live under a base
-  path, so `next.config.ts` reads `NEXT_PUBLIC_BASE_PATH` (e.g. `/Umagrid`) for `basePath`, and
+  path, so `next.config.ts` reads `NEXT_PUBLIC_BASE_PATH` (e.g. `/uma-connect`) for `basePath`, and
   sets `trailingSlash: true` so routes like `/auth/callback/` resolve to `index.html` files.
 - **Asset URLs**: `next/link` handles `basePath`, but `unoptimized` images and data paths
   (`/portraits/...`) and the share URL must be prefixed manually with a small `withBasePath()`

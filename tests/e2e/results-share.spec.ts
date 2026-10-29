@@ -35,7 +35,7 @@ test.describe("US3 – review results and share", () => {
     await expect(dialog.getByText("Copied to clipboard!")).toBeVisible();
     const text = await page.evaluate(() => (window as unknown as { __copied: string }).__copied);
     const lines = text.split("\n");
-    expect(lines[0]).toBe("Umagrid #1 1/9");
+    expect(lines[0]).toBe("Uma-connect #1 1/9");
     expect(lines.slice(1, 4)).toEqual(["🟩⬜⬜", "⬜⬜⬜", "⬜⬜⬜"]);
     expect(text).not.toContain(name);
   });

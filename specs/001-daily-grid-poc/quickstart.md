@@ -1,4 +1,4 @@
-# Quickstart & Validation: Umagrid Daily Grid (Frontend PoC)
+# Quickstart & Validation: Uma-connect Daily Grid (Frontend PoC)
 
 Design references: [plan.md](plan.md), [data-model.md](data-model.md),
 [contracts/](contracts/).

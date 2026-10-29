@@ -44,7 +44,7 @@ test.describe("US3 – profile and data", () => {
     const download = page.waitForEvent("download");
     await page.getByRole("button", { name: "Download my data" }).click();
     const file = await download;
-    expect(file.suggestedFilename()).toBe("umagrid-export.json");
+    expect(file.suggestedFilename()).toBe("uma-connect-export.json");
     const exported = JSON.parse(await readFile((await file.path())!, "utf8"));
     expect(Object.keys(exported).sort()).toEqual(["exported_at", "legacy_history", "profile", "sessions"]);
     expect(exported.profile.email).toBe(email);

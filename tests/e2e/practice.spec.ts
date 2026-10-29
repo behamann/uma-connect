@@ -24,7 +24,7 @@ test.describe("US6 – practice mode", () => {
 
   test("a missing seed gets one in the URL", async ({ page }) => {
     await page.goto("/practice");
-    await expect(page).toHaveURL(/\/practice\?seed=\w+/);
+    await expect(page).toHaveURL(/\/practice\/?\?seed=\w+/);
   });
 
   test("practice never touches daily progress or history", async ({ page }) => {

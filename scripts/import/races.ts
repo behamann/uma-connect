@@ -1,5 +1,5 @@
 /**
- * Top-level races counted as "G1" by Umagrid (JRA G1, NAR JpnI, overseas G1).
+ * Top-level races counted as "G1" by Uma-connect (JRA G1, NAR JpnI, overseas G1).
  * `since` = first year the race had G1/JpnI status; earlier wins are not counted.
  * Classic/major JRA races are counted for all years (pre-1984 "G1-equivalent" Hachidai Kyoso).
  */

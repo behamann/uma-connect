@@ -1,19 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: 1.0.0 → 2.0.0 (MAJOR: Principle II redefined)
-- Modified principles:
-  II. Frontend-Only Proof of Concept → II. Static Frontend, Managed Backend, Guest-First
-  IV. Pure, Tested Game Logic (expanded: shared logic must also validate server-side results)
-- Added principles: VI. Privacy & Security by Default
-- Modified sections: Technology & Content Constraints (managed backend, secrets);
-  Development Workflow & Quality Gates (migrations, access-policy tests)
-- Removed sections: none
-- Templates requiring updates: none (plan/spec/tasks templates read this file at runtime)
+- Version change: 2.0.0 → 2.0.1 (PATCH: project renamed from Umagrid to Uma-connect)
+- Modified principles: none
+- Added/removed sections: none
+- Templates requiring updates: none
 - Deferred TODOs: none
 -->
-# Umagrid Constitution
+# Uma-connect Constitution
 
-Umagrid is a daily 3x3 grid trivia game themed on Umamusume: Pretty Derby, inspired by the
+Uma-connect is a daily 3x3 grid trivia game themed on Umamusume: Pretty Derby, inspired by the
 PokeDoku / Immaculate Grid format: each cell must be filled with one Umamusume that satisfies
 both its row and column categories.
 
@@ -98,7 +93,7 @@ Rationale: accounts create trust obligations; a fan project must keep that risk 
 - Testing: Vitest for logic/unit tests; Playwright for end-to-end tests.
 - Dataset: versioned JSON (or TS) files in the repository, validated by a schema at build time.
 - Hosting: any static host (e.g. Vercel, GitHub Pages) plus the managed backend.
-- Umagrid is an unofficial fan project. Umamusume: Pretty Derby names, images, and materials are
+- Uma-connect is an unofficial fan project. Umamusume: Pretty Derby names, images, and materials are
   trademarks and copyrights of Cygames, Inc.; the site MUST display this notice and MUST credit
   the data/image sources it uses. Images MUST be self-hosted or from sources that permit reuse.
 - The game MUST NOT depend on third-party APIs at runtime to be playable.
@@ -121,4 +116,4 @@ Rationale: accounts create trust obligations; a fan project must keep that risk 
   principle/section; PATCH: clarification).
 - Changes to how shared data is collected or exposed require reviewing Principle VI.
 
-**Version**: 2.0.0 | **Ratified**: 2026-10-25 | **Last Amended**: 2026-10-25
+**Version**: 2.0.1 | **Ratified**: 2026-10-25 | **Last Amended**: 2026-10-29

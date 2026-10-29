@@ -33,7 +33,7 @@ test.describe("US2 – resume and finish the daily game", () => {
 
     await page.clock.setFixedTime(new Date(noonOfPuzzle(2).getTime() - 12 * 3600_000 + 60_000));
     await page.reload();
-    await expect(page.getByRole("heading", { name: "Umagrid #2" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Uma-connect #2" })).toBeVisible();
     await expect(page.getByTestId("remaining")).toHaveText("9 guesses left");
   });
 });

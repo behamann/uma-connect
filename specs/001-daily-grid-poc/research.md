@@ -1,4 +1,4 @@
-# Research: Umagrid Daily Grid (Frontend PoC)
+# Research: Uma-connect Daily Grid (Frontend PoC)
 
 **Feature**: [spec.md](spec.md) | **Plan**: [plan.md](plan.md) | **Date**: 2026-10-25
 

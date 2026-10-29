@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dailyGrid, dateForPuzzle, msUntilNextPuzzle, puzzleNumberFor } from "@/game/daily";
+import { dailyGrid, dateForPuzzle, msUntilNextPuzzle, periodKeys, puzzleNumberFor } from "@/game/daily";
 import type { Schedule } from "@/game/types";
 
 const LAUNCH = "2026-11-01";
@@ -50,5 +50,23 @@ describe("msUntilNextPuzzle", () => {
   it("counts down to the next UTC midnight", () => {
     expect(msUntilNextPuzzle(new Date("2026-11-01T23:59:59Z"))).toBe(1000);
     expect(msUntilNextPuzzle(new Date("2026-11-01T00:00:00Z"))).toBe(86_400_000);
+  });
+});
+
+describe("periodKeys", () => {
+  it("uses ISO weeks (Monday start) and calendar months in UTC", () => {
+    expect(periodKeys(new Date("2026-10-29T12:00:00Z"))).toEqual({ week: "2026-W44", month: "2026-10" });
+    expect(periodKeys(new Date("2026-11-01T23:59:59Z"))).toEqual({ week: "2026-W44", month: "2026-11" });
+    expect(periodKeys(new Date("2026-11-02T00:00:00Z")).week).toBe("2026-W45");
+  });
+
+  it("assigns year-boundary weeks to the ISO week-year", () => {
+    expect(periodKeys(new Date("2000-01-01T00:00:00Z"))).toEqual({ week: "1999-W52", month: "2000-01" });
+    expect(periodKeys(new Date("2021-01-03T00:00:00Z")).week).toBe("2020-W53");
+    expect(periodKeys(new Date("2024-12-30T00:00:00Z")).week).toBe("2025-W01");
+  });
+
+  it("depends only on the UTC date", () => {
+    expect(periodKeys(new Date("2026-11-01T22:00:00-03:00"))).toEqual({ week: "2026-W45", month: "2026-11" });
   });
 });

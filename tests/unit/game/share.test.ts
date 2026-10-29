@@ -3,8 +3,8 @@ import { shareText, type ShareStrings } from "@/game/share";
 import type { GameSession } from "@/game/types";
 
 const strings: ShareStrings = {
-  daily: (n, s) => `Umagrid #${n} ${s}/9`,
-  practice: (s) => `Umagrid Practice ${s}/9`,
+  daily: (n, s) => `Uma-connect #${n} ${s}/9`,
+  practice: (s) => `Uma-connect Practice ${s}/9`,
 };
 
 const session: GameSession = {
@@ -16,26 +16,26 @@ const session: GameSession = {
 
 describe("shareText", () => {
   it("renders the daily layout row-major", () => {
-    expect(shareText(session, 12, "https://umagrid.example", strings)).toBe(
-      ["Umagrid #12 7/9", "🟩🟩⬜", "🟩🟩🟩", "⬜🟩🟩", "https://umagrid.example"].join("\n"),
+    expect(shareText(session, 12, "https://uma-connect.example", strings)).toBe(
+      ["Uma-connect #12 7/9", "🟩🟩⬜", "🟩🟩🟩", "⬜🟩🟩", "https://uma-connect.example"].join("\n"),
     );
   });
 
   it("contains no trainee IDs or names", () => {
-    const text = shareText(session, 12, "https://umagrid.example", strings);
+    const text = shareText(session, 12, "https://uma-connect.example", strings);
     for (const id of session.cells) if (id) expect(text).not.toContain(id);
   });
 
   it("omits the puzzle number in practice mode", () => {
-    const text = shareText(session, null, "https://umagrid.example", strings);
-    expect(text.split("\n")[0]).toBe("Umagrid Practice 7/9");
+    const text = shareText(session, null, "https://uma-connect.example", strings);
+    expect(text.split("\n")[0]).toBe("Uma-connect Practice 7/9");
     expect(text).not.toContain("#");
   });
 
   it("adds the rarity score after the header when available", () => {
     const withRarity = { ...strings, rarity: (r: number) => `Rarity: ${r}` };
-    const lines = shareText(session, 12, "https://umagrid.example", withRarity, 123).split("\n");
-    expect(lines.slice(0, 3)).toEqual(["Umagrid #12 7/9", "Rarity: 123", "🟩🟩⬜"]);
-    expect(shareText(session, 12, "https://umagrid.example", withRarity, null)).not.toContain("Rarity");
+    const lines = shareText(session, 12, "https://uma-connect.example", withRarity, 123).split("\n");
+    expect(lines.slice(0, 3)).toEqual(["Uma-connect #12 7/9", "Rarity: 123", "🟩🟩⬜"]);
+    expect(shareText(session, 12, "https://uma-connect.example", withRarity, null)).not.toContain("Rarity");
   });
 });

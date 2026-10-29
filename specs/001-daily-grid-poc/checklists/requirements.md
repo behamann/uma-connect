@@ -1,4 +1,4 @@
-# Specification Quality Checklist: Umagrid Daily Grid (Frontend PoC)
+# Specification Quality Checklist: Uma-connect Daily Grid (Frontend PoC)
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning
 **Created**: 2026-10-25

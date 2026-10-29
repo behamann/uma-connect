@@ -32,3 +32,13 @@ export function dailyGrid(schedule: Schedule, puzzleNumber: number): Grid | null
 export function msUntilNextPuzzle(now: Date): number {
   return startOfUtcDay(now) + DAY_MS - now.getTime();
 }
+
+/** Leaderboard period keys for a UTC date: ISO week (`2026-W44`) and month (`2026-10`). */
+export function periodKeys(now: Date): { week: string; month: string } {
+  const day = startOfUtcDay(now);
+  const weekday = (new Date(day).getUTCDay() + 6) % 7;
+  const thursday = day + (3 - weekday) * DAY_MS;
+  const year = new Date(thursday).getUTCFullYear();
+  const week = Math.floor((thursday - Date.UTC(year, 0, 1)) / (7 * DAY_MS)) + 1;
+  return { week: `${year}-W${String(week).padStart(2, "0")}`, month: toIsoDate(day).slice(0, 7) };
+}

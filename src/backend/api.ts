@@ -1,6 +1,7 @@
 import type { PostgrestError } from "@supabase/supabase-js";
 import type { SessionStatus } from "@/game/types";
 import { getClient } from "./client";
+import type { Leaderboard, LeaderboardPeriod } from "./public";
 
 export interface ServerGuess {
   cell: number;
@@ -31,6 +32,7 @@ export const REJECTION_CODES = [
   "already_submitted",
   "guest_only",
   "not_finished",
+  "bad_input",
 ] as const;
 export type RejectionCode = (typeof REJECTION_CODES)[number];
 
@@ -120,3 +122,7 @@ export const deleteMyAccount = () => call<null>("delete_my_account", {});
 
 export const submitGuestResult = (puzzle: number, guesses: { cell: number; trainee_id: string }[], gaveUp: boolean) =>
   call<{ result: "ok" }>("submit_guest_result", { p_puzzle: puzzle, p_guesses: guesses, p_gave_up: gaveUp });
+
+/** Same as the public endpoint, plus the caller's own rank (`me`). */
+export const getLeaderboard = (period: LeaderboardPeriod, key: string) =>
+  call<Leaderboard>("get_leaderboard", { p_period: period, p_key: key });

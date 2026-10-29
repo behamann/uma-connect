@@ -1,4 +1,4 @@
-# Feature Specification: Umagrid Daily Grid (Frontend PoC)
+# Feature Specification: Uma-connect Daily Grid (Frontend PoC)
 
 **Feature Branch**: `001-daily-grid-poc`
 
@@ -28,7 +28,7 @@
 
 ### User Story 1 - Play today's grid (Priority: P1)
 
-A player opens Umagrid and sees today's 3x3 grid: three category labels across the top
+A player opens Uma-connect and sees today's 3x3 grid: three category labels across the top
 (columns) and three down the side (rows). The player selects an empty cell, types part of an
 Umamusume's name, picks a trainee version from the suggestions, and the guess is checked against
 both the cell's row and column categories. A correct guess locks the trainee version (name,

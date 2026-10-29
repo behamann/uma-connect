@@ -1,9 +1,9 @@
 ---
 
-description: "Task list for Umagrid Daily Grid (Frontend PoC)"
+description: "Task list for Uma-connect Daily Grid (Frontend PoC)"
 ---
 
-# Tasks: Umagrid Daily Grid (Frontend PoC)
+# Tasks: Uma-connect Daily Grid (Frontend PoC)
 
 **Input**: Design documents from `/specs/001-daily-grid-poc/`
 

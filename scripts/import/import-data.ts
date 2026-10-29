@@ -13,7 +13,7 @@ const ROOT = path.resolve(import.meta.dirname, "../..");
 const CACHE_DIR = path.join(ROOT, "data/.cache");
 const SD_DIR = path.join(ROOT, "assets/images/sd");
 const PORTRAIT_DIR = path.join(ROOT, "public/portraits");
-const USER_AGENT = "umagrid-data-import/0.1 (fan project)";
+const USER_AGENT = "uma-connect-data-import/0.1 (fan project)";
 const GAMETORA = "https://gametora.com";
 const WIKI = "https://umamusu.wiki";
 

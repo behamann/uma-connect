@@ -20,7 +20,7 @@ Rules:
 Template strings come from `messages/en.json`; layout:
 
 ```text
-Umagrid #<puzzleNumber> <score>/9
+Uma-connect #<puzzleNumber> <score>/9
 🟩🟩⬜
 🟩🟩🟩
 ⬜🟩🟩
@@ -30,7 +30,7 @@ Umagrid #<puzzleNumber> <score>/9
 - `🟩` = filled cell, `⬜` = empty cell. Row-major, 3 lines.
 - MUST NOT include character names or category labels (spoiler-free).
 - Copied with the Clipboard API; on failure, the text is shown in a selectable field.
-- Practice share text uses `Umagrid Practice` and omits the puzzle number.
+- Practice share text uses `Uma-connect Practice` and omits the puzzle number.
 
 ## Rarity slot (FR-010)
 

@@ -1,4 +1,4 @@
-# Implementation Plan: Umagrid Daily Grid (Frontend PoC)
+# Implementation Plan: Uma-connect Daily Grid (Frontend PoC)
 
 **Branch**: `001-daily-grid-poc` | **Date**: 2026-10-25 | **Spec**: [spec.md](spec.md)
 
